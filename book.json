@@ -1,0 +1,25 @@
+{
+    "root": "/",
+    "gitbook": "3.2.3",
+    "title": "CS Note",
+    "page": {
+        "title": "CS Note"
+    },
+    "author": "leah",
+    "variables": {
+        "authorName": "leah"
+    },
+    "plugins": [
+        "accordion",
+        "search-pro",
+        "-search",
+        "tbfed-pagefooter"
+    ],
+    "pluginsConfig": {
+        "tbfed-pagefooter": {
+            "copyright": "Copyright &copy Leah 2024",
+            "modify_label": "modified time:",
+            "modift_format": "YYYY-MM-DD HH:mm:ss"
+        }
+    }
+}
