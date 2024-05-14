@@ -225,3 +225,17 @@ adb shell dmesg
 
 
 
+【查看当前窗口属于的应用】
+
+```shell
+adb shell dumpsys window | grep mCurrentFocus
+```
+
+
+
+【查看？】
+
+```shell
+adb shell dumpsys activity > 1.txt
+```
+
