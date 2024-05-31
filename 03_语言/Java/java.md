@@ -821,29 +821,49 @@ hashCode的通用约定如下：
 
 包装类对象的初始值为null
 
+# 字符串
+
 ## String
 
-![image-20220311083814534](java_imgs\image-20220311083814534.png)
+特点：
+
+- **不可变性**：`String`对象是不可变的，一旦创建，其值就不能改变。如果需要对字符串进行修改，实际上会创建一个新的`String`对象。
+- **线程安全**：由于不可变性，`String`是线程安全的，可以在多个线程中安全使用而无需同步。
 
 ![image-20220311084214891](java_imgs\image-20220311084214891.png)
 
-![image-20220311084943601](java_imgs\image-20220311084943601.png)
+## String的常用方法
 
-![image-20220311085002119](java_imgs\image-20220311085002119.png)
-
-线程安全是对应多线程的，一般只用单线程，所以StringBuilder就够了
+![image-20220311083814534](java_imgs\image-20220311083814534.png)
 
 
 
-**isEmpty()方法**
+## StringBuffer
 
-String a = new String();
+特点：
 
-String b = ""
+- **可变性**：`StringBuffer`对象是可变的，可以对其内容进行修改而不创建新的对象。
+- **线程安全**：`StringBuffer`是同步的，所有方法都被` synchronized`修饰，所以它是线程安全的，但同步导致性能开销较大。
 
-String c = null
+## StringBuilder
 
-以上都会被判断为true
+特点：
+
+- **可变性**：`StringBuilder`与`StringBuffer`类似，都是可变的。
+- **非线程安全**：`StringBuilder`不是同步的，所以在单线程环境下性能比`StringBuffer`高。
+- **性能优越**：因为没有同步开销，`StringBuilder`在单线程操作字符串时比`StringBuffer`更快。
+
+## StringBuffer和StringBuilder的常用方法
+
+1. **append()**：添加字符串到末尾
+2. **insert()**：在指定位置插入字符串
+3. **replace()**：替换指定范围内的字符串
+4. **delete()**：删除指定范围内的字符
+5. **deleteCharAt()**：删除指定位置的字符
+6. **reverse()**：反转字符串
+7. **setCharAt()**：修改指定位置的字符
+8. **substring()**：获取子字符串
+9. **toString()**：转换为 `String`
 
 # 集合
 
