@@ -606,22 +606,6 @@ int temp=14; {     int .temp=12;     System.out.printlnC"我是普通代码块1�
 还有：
 元注解
 
-# 异常
-
-Throwable- Error/Exception
-
-Error：程序无法处理的错误，表示运行应用程序中较严重的问题：VirtualMachineError虚拟机错误、OutOfMemoryError内存溢出、ThreadDeath线程死锁
-
-Exception：程序本身可以处理的异常：Checked Exception检查异常、Unchecked Exception 非检查异常
-
-Unchecked Exception非检查异常：编译器不要求强制处理的异常：RuntimeException：NullPointerException空指针异常、ArrayIndexOutOfBoundsException数组下标越界异常、ArithmeticException算数异常、ClassCastException类型转换异常
-
-CheckedException：检查异常：IOException、SQLException
-
-1.try块后可接零个或多个catch块，如果没有catch块，则必须跟一个finally块
-
-2.throw抛出的只能够是可抛出类Throwable或者其子类的实例对象
-
 # 常用类
 
 ## Object类
