@@ -239,3 +239,11 @@ adb shell dumpsys window | grep mCurrentFocus
 adb shell dumpsys activity > 1.txt
 ```
 
+
+
+【监控广播发送】
+
+```shell
+adb logcat -v time | grep -i "broadcast"
+```
+
