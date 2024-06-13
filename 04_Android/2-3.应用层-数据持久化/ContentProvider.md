@@ -17,3 +17,7 @@ Android四大组件之一，为存储和获取数据提供统一的接口。可�
    - Context 类定义了 `getContentResolver()`方法，用于获取 ContentResolver 对象，并且由 ContextWrapper 重写实现了该方法，所以，Activity 和 Service 均通过继承得到了 `getContentResolver()`方法。
 
 使用ContentProvider可以提高应用程序之间的数据共享，并提高应用程序的安全性。但是，您必须确保您的ContentProvider能够正确地处理数据，以防止其他应用程序访问您的数据并修改它。
+
+# ContentObserver
+
+`ContentObserver` 是一个抽象类，用于监听内容提供者（`ContentProvider`）的数据变化。它通常用于监视系统设置、联系人、短信等数据的变化。继承 `ContentObserver` 类，并实现 `onChange` 方法来处理数据变化的逻辑。
