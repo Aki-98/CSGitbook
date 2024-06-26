@@ -229,6 +229,7 @@ adb shell dmesg
 
 ```shell
 adb shell dumpsys window | grep mCurrentFocus
+adb shell dumpsys activity activities | grep "mResumedActivity"
 ```
 
 
