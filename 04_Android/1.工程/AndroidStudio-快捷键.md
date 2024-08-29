@@ -13,3 +13,9 @@
 | Ctrl+Alt+M      | 提取方法                 |
 | Ctrl+Alt+F      | 提取全局变量             |
 | Alt+J           | Json格式化工具（自定义） |
+
+
+
+# Logcat的使用
+
+https://developer.android.com/studio/debug/logcat?hl=zh-cn
