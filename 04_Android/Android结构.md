@@ -1,19 +1,4 @@
-# 背景
-
-## 发展历史
-
-![1](Android_imgs\1.PNG)
-
-## 系统
-
-### SDK与NDK
-
-SDK：Software Development Kit，软件开发工具包
-NDK：Native Development Kit，Android原生工具开发包
-
-### 安卓系统架构
-
-## API级别和版本号
+# API级别和版本号
 
 https://source.android.com/setup/start/build-numbers
 
@@ -27,7 +12,7 @@ https://source.android.com/setup/start/build-numbers
 - Linux内核(Linux Kernel)
 
 *安卓系统结构示意图*
-![Android System Architecture](Android_imgs\2.png)
+![Android System Architecture](imgs\2.png)
 
 下面对每层进行详细说明
 
@@ -66,30 +51,31 @@ Android 包含一些C/C++库，这些库能被Android系统中不同的组件使
 该核心库提供了JAVA编程语言核心库的大多数功能。
 每一个Android应用程序都在它自己的进程中运 行，都拥有一个独立的Dalvik虚拟 机实例。Dalvik被设计成一个设备可以同时高效地运行多个虚拟系统。 Dalvik虚拟机执行（.dex）的Dalvik可执行文件，该格式文件针对小内存使用做了 优化。同时虚拟机是基于寄存器的，所有的类都经由JAVA编译器编译，然后通过SDK中 的 "dx" 工具转化成.dex格式由虚拟机执行。
 
+Dalvik 是 Android 操作系统早期版本中的应用程序运行时环境，它的主要职责是执行 Android 应用程序的字节码。具体来说：
+
+#### **Dalvik 运行时简介**
+
+- **角色**：Dalvik 是一种基于寄存器的虚拟机，专门为 Android 移动设备设计和优化。它负责解释和执行经过编译的应用程序字节码，确保应用程序能够在 Android 系统上运行。
+- **工作原理**：
+  - **DEX 格式**：与传统的 Java 虚拟机（JVM）不同，Dalvik 使用了一种称为 DEX（Dalvik Executable）格式的字节码文件。Java 编译器首先将 Java 源代码编译为标准的 Java 字节码（.class 文件），然后 Android 的编译工具将这些字节码转换为 DEX 格式，以便在 Dalvik 上执行。
+  - **内存优化**：Dalvik 被设计为在内存受限的环境中运行，如智能手机和平板电脑，因此 DEX 文件格式比标准的 Java 字节码更紧凑，减少了内存占用。
+- **多应用实例**：Dalvik 虚拟机的一个关键特点是，它在每个 Android 应用程序中都运行一个独立的虚拟机实例，这种设计使得每个应用程序在其自己的进程中运行，具有独立的内存空间，从而增强了系统的稳定性和安全性。
+
+#### **Dalvik 的历史与演变**
+
+- **早期 Android 版本**：Dalvik 是自 Android 1.0 版本以来的默认运行时环境，支持 Android 应用程序在移动设备上高效运行。
+- **ART 的出现**：随着 Android 4.4（KitKat）的发布，Google 引入了一个新的运行时环境，名为 Android Runtime（ART），它作为 Dalvik 的替代品。ART 提供了许多性能改进和新功能，如 Ahead-of-Time (AOT) 编译、更加高效的垃圾回收和更好的调试支持。
+- **从 Dalvik 到 ART**：自 Android 5.0（Lollipop）开始，ART 成为默认的运行时环境，逐步取代了 Dalvik。ART 的引入标志着 Android 应用程序运行效率的显著提升，因此 Dalvik 从 Android 5.0 版本之后逐渐被淘汰。
+
+### **3) 关系**
+
+- **协作工作**：ART 负责执行应用程序的 Java 字节码，而这些应用程序在运行时需要调用 Libraries 中的功能来完成各种任务。ART 通过 JNI 与 Libraries 交互，以便调用本地库提供的功能。
+- **执行依赖**：应用程序的许多功能依赖于 Libraries 提供的底层支持，而 ART 则确保这些库功能能够在运行时正确执行和管理。因此，ART 和 Libraries 共同为应用程序提供了一个完整的运行时环境。
+
 ## 4. Linux内核(Linux Kernel)
 
 Android的核心系统服务依赖于Linux 2.6 内核，如安全性，内存管理，进程管理， 网络协议栈和驱动模型。 Linux 内核也同时作为硬件和软件栈之间的抽象层。其外还对其做了部分修改，主要涉及两部分修改：
 
 1. Binder (IPC)：提供有效的进程间通信，虽然linux内核本身已经提供了这些功能，但Android系统很多服务都需要用到该功能，为了某种原因其实现了自己的一套。
 2. 电源管理：主要是为了省电，毕竟是手持设备嘛，低耗电才是我们的追求。
-
-注:最后附上原博连接[懒虫一个V：android系统体系结构](http://blog.csdn.net/spy19881201/article/details/5775484)，关于谷歌Android源码的目录结构并未一并贴出可在原博查阅
-
-### Dalvik
-
-Dalvik是Google公司设计的，用于在Android平台上运行的虚拟机，其指令售用于寄存器架构，执行其特有的dex文件来完成对象生命周期管理、堆栈管理、线程管理、安全异常管理、垃圾回收等重要功能。每一个Android应用在底层都会对应一个独立的Dalvik虚拟机实例，其代码在虚拟机的解释下得以执行，Dalvik虚拟机编译文件的过程如下图所示。
-
-![image-20220227204025098](Android_imgs\image-20220227204025098.png)
-
-### Android版本
-
-![image-20220227204103929](Android_imgs\image-20220227204103929.png)
-
-- Gingerbread 号称最稳定 手机届的xp系统
-- honeycomb  平板
-- 4.0 手机平板兼容 默认的 比较流行的
-
-### Android应用领域
-
-![image-20220227204157281](Android_imgs\image-20220227204157281.png)
 

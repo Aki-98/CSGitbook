@@ -14,7 +14,7 @@ tips activity内部有intent-filter代表主入口,可以让多个activity都有
 
 ## AppCompatActivity和Activity的区别
 
-AppcompaActivity相对于Activity的主要的两点变化；
+AppCompatActivity相对于Activity的主要的两点变化；
 1：主界面带有toolbar的标题栏；
 2：theme主题只能用android:theme=”@style/AppTheme （appTheme主题或者其子类），而不能用android:style。 否则会提示错误： Caused by: java.lang.IllegalStateException: You need to use a Theme.AppCompat theme (or descendant) with this activity.
 
@@ -45,7 +45,7 @@ method2 代码设置![0.7581949137520234.png](Activity_imgs\0.7581949137520234.p
 ## **顶部复用模式(singleTop)**
 ![0.8429975162329554.png](Activity_imgs\0.8429975162329554.png)
 
-<u>如果在任务的栈顶正好存在该Activity的实例， 就重用该实例</u>，而不会创建新的Activity对象，不过它会调用onNewIntent()方法。如果栈顶部不存在就会创建新的实例并放入栈顶(即使栈中已经存在该Activity实例，只要不在栈顶，都会创建实例)。
+<u>如果在任务的栈顶正好存在该Activity的实例， 就重用该实例</u>，而不会创建新的Activity对象，不过它会调用**onNewIntent()**方法。如果栈顶部不存在就会创建新的实例并放入栈顶(**即使栈中已经存在该Activity实例，只要不在栈顶，都会创建实例**)。
 
 如果启动此Activity的Intent中没有设置FLAG_ACTIVITY_NEW_TASK标志, 则这个Activity与启动他的Activity在同一个Task中。"launchMode"设置为"singleTop"的Activity可以被实例化多次,  可以在Task中的任何位置, 对于一个新的Intent请求如果在Task栈顶, 则会用栈顶的Activity响应Intent请求,而不会重新实例化对象接收请求, 如果没有在栈顶, 则会实例化一个新的对象接收Intent请求.
 
@@ -55,7 +55,7 @@ method2 代码设置![0.7581949137520234.png](Activity_imgs\0.7581949137520234.p
 
 ![0.5683297211517564.png](Activity_imgs\0.5683297211517564.png)
 
-如果在栈中已经有该Activity的实例，就重用该实例(会调用实例的onNewIntent())。重用时，会让该实例回到栈顶，因此在它上面的实例将会被移除栈。如果栈中不存在该实例，将会创建新的实例放入栈中。
+<u>如果在栈中已经有该Activity的实例，就重用该实例(会调用实例的onNewIntent())</u>。重用时，会让该实例回到栈顶，因此在<u>它上面的实例将会被移除栈</u>。如果栈中不存在该实例，将会创建新的实例放入栈中。
 
 和singleTop在名字上即可看出区别，即<u>singleTop每次只检测当前栈顶</u>的Activity是否是我们需要请求创建的，而<u>singleTask则会检测栈中全部的Activity对象，从上向下</u>，如果检测到是我们所请求的则会消灭此Activity对象上面的对象，直接把检测到的我们需要的Activity置为栈顶。
 
@@ -78,24 +78,24 @@ method2 代码设置![0.7581949137520234.png](Activity_imgs\0.7581949137520234.p
 ![0.5621750421825074.png](Activity_imgs\0.5621750421825074.png)
 ![0.4475089323059067.png](Activity_imgs\0.4475089323059067.png)
 
-例子:
+## 流程案例
 
 - 正常启动:onCreate -> onStart -> onResume；正常退出:onPause -> onStop -> onDestory
 - 已经处于前台的Activity,点击主页按钮离开当前Activity:onPause -> onStop；回到Activity:<u>onRestart</u> -> onStart -> onResume
 - Activity不可操作(如:息屏、打开了其他Activity,而应用被强行杀死了),再回到Activity:onCreate -> onStart -> onResume
-- 当启动另一个Activity时,当前Activity:onPause -> onStop,当点击返回按钮使另一个Activity退出时,当前Activity:onRestart -> onStart -> onResume,当前Activity回调onPause后便会开始SecondActivity的启动操作
+- 当启动另一个Activity时,当前Activity:onPause -> onStop,当点击返回按钮使另一个Activity退出时,当前Activity:onRestart -> onStart -> onResume，<u>当前Activity回调onPause后便会开始SecondActivity的启动操作</u>
 - 普通对话框对生命周期没有任何影响
 - 如果有个Activity伪装成对话框模式,那么它启动时,之前的Activity:onPause,"对话框"消失后,onResume再次回到前台
 
 注意事项:
 
-不要在MainActivity的onPause()中做耗时操作,可以把处理放到onStop,否则会影响SecondActivity的启动速度
+<u>不要在MainActivity的onPause()中做耗时操作,可以把处理放到onStop,否则会影响SecondActivity的启动速度</u>
 
 ## onAttachedToWindow()/onDetachedFromWindow()
 
 适用于View附加到Window后/View从Window分离后
 
-此时View还未经过测量和绘制
+<u>此时View还未经过测量和绘制</u>
 
 调用顺序 onResume -> onAttachedToWindow(还未经过测量和绘制) -> onWindowsFocuesChanged(hasFocus:true时已经经过测量和绘制) -> onDetachedFromWindow() -> onPause
 
@@ -105,7 +105,7 @@ method2 代码设置![0.7581949137520234.png](Activity_imgs\0.7581949137520234.p
 
 ## onNewIntent()
 
-前提:ActivityA已经启动过,处于当前应用的Activity任务栈中;
+<u>前提:ActivityA已经启动过,处于当前应用的Activity任务栈中;</u>
 
 - 当ActivityA的LaunchMode为Standard时：
   - 由于每次启动ActivityA都是启动新的实例，和原来启动的没关系，所以不会调用原来ActivityA的onNewIntent方法
@@ -122,9 +122,9 @@ method2 代码设置![0.7581949137520234.png](Activity_imgs\0.7581949137520234.p
 
   - onPause—>跳转其它页面—>onCreate—>onStart—>onResume—onPause—>跳转A—>onNewIntent—>onRestart—>onStart—>onResume
 
-总的来说，只对SingleTop(且位于栈顶)，SingleTask和SingleInstance(且已经在任务栈中存在实例)的情况下，再次启动它们时才会调用，即只对startActivity有效，对仅仅从后台切换到前台而不再次启动的情形，不会触发onNewIntent。
+总的来说，只对SingleTop(且位于栈顶)，SingleTask和SingleInstance(且已经在任务栈中存在实例)的情况下，再次启动它们时才会调用，即<u>只对startActivity有效，对仅仅从后台切换到前台而不再次启动的情形，不会触发onNewIntent</u>。
 
-## onActivityResult()
+## onActivityResult()（Deprecated）
 
 - 待跳转的Activity启动模式错误： standard与singletop模式是会在跳转后的Activity finish后执行onActivityResult，而singletask和singleinstance模式是在startActivityforresult后立即执行onActivityResult；
 - startActivityforresult（）的第二个参数requestCode必须>=0,而且<0xffff api文档里是这么说的：
@@ -140,32 +140,12 @@ method2 代码设置![0.7581949137520234.png](Activity_imgs\0.7581949137520234.p
 应用程序的界面从横向变为纵向或从纵向变为横向时，将会回调以下生命周期方法：
 
 1. `onPause()`: 在活动完全不可见时调用，这是在切换屏幕方向时会发生的。在该方法内您可以暂停正在进行的操作，例如暂停视频播放。
-2. `onSaveInstanceState(Bundle outState)`: 在活动被销毁之前调用，用于保存当前活动的状态信息，例如滚动位置、文本框中的文本等。
+2. `onSaveInstanceState(Bundle outState)`: 在活动被销毁之前调用，<u>用于保存当前活动的状态信息</u>，例如滚动位置、文本框中的文本等。
 3. `onStop()`: 在活动不可见时调用，用于释放资源或停止一些操作。
 4. `onDestroy()`: 在活动被销毁之前调用，用于释放资源或停止一些操作。
 5. `onCreate(Bundle savedInstanceState)`: 当活动被重新创建时，例如在屏幕方向变化后，该方法会被调用。您可以使用 `savedInstanceState` 参数来恢复保存的状态信息。
 6. `onStart()`: 在活动变得可见时调用，您可以在此处开始一些操作或恢复之前暂停的操作。
 7. `onResume()`: 在活动准备好与用户进行交互时调用，例如在屏幕方向变化后。在此方法内您可以恢复之前暂停的操作。
-
-# 四种状态
-
-**1. 活动（Active/Running）状态**
-
-当Activity运行在屏幕前台(处于当前任务活动栈的最上面),此时它获取了焦点能响应用户的操作,属于运行状态，同一个时刻只会有一个Activity 处于活动(Active)或运行(Running)状态。
-
-此状态由onResume()进入，由onPause()退出
-
-**2. 暂停(Paused)状态**
-
-当Activity失去焦点(如在它之上有另一个透明的Activity或返回桌面)它将处于暂停, 再进而进入其他状态。暂停的Activity仍然是存活状态(它保留着所有的状态和成员信息并保持和窗口管理器的连接)，但是当系统内存极小时可以被系统杀掉。Android7.0后, 多窗口模式下失去焦点的Activity也将进入onPause，但这不意味着Activity中的活动(动画、视频)等会暂停。虽然官方文档使用的是"an activity is going into the background" 来描述，但这不意味着一个Toast或者由本Activity创建的Dialog会调用onPause。结合[这里](https://hit-alibaba.github.io/interview/Android/basic/Android-LaunchMode.html)对Activity的栈机制不难理解，<u>只要当前Activity仍处于栈顶，系统就默认其仍处于活跃状态。</u>
-
-此状态由onPause()进入，可能下一步进入onResume()或者onCreate()重新唤醒软件，或者被onStop()杀掉
-
-**3. 停止(Stopped)状态**
-
-完全被另一个Activity遮挡时处于停止状态,它仍然保留着所有的状态和成员信息。只是对用户不可见,当其他地方需要内存时它往往被系统杀掉。
-
-该状态由onStop()进入，如果被杀掉，可能进入onCreate()或onRestart()，如果彻底死亡，进入onDestroy()
 
 # Activity启动方式
 
