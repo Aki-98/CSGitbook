@@ -1,6 +1,8 @@
 上面我们针对 Groovy 语言进行简单的学习，接下来就是 Gradle DSL 语言的学习。Gradle 是 Android Studio 中采用的全新项目构建方式。
 
-> Gradle 是一个开源的自动化构建工具，提供更高的灵活和体验。Gradle 脚本采用 Groovy 或 Kotlin 进行编写。[官方文档](https://docs.gradle.org/current/dsl/index.html)
+> Gradle 是一个开源的自动化构建工具，提供更高的灵活和体验。Gradle 脚本采用 Groovy 或 Kotlin 进行编写。
+
+官方文档：https://docs.gradle.org/current/dsl/index.html
 
 # 基本概念
 
@@ -201,7 +203,7 @@ project.tasks.create("TaskContainer") {
 
 在 1 节中，我们提到了创建任务时可以通过 Map 配置任务的依赖属性关系，里面涉及到 任务类型（type），默认值是 DefaultTask 类型，关于 type，我的理解是 Groovy 系统的 Task 类型，我们查看官方文档，可以看到有很多 Task 类的子类，这些应该都可以作为 type 值进行设置？那么常见的任务类型有哪些呢？
 
-> [官方 Task API](https://docs.gradle.org/current/javadoc/org/gradle/api/Task.html)
+官方 Task API：https://docs.gradle.org/current/javadoc/org/gradle/api/Task.html
 
 1. Copy 类型 Task，Copy 任务的方法：
 
@@ -255,7 +257,7 @@ task makeJars(type: org.gradle.jvm.tasks.Jar) {
 
 在 Gradle 中提供了很多常见的任务：
 
-![img](https:////upload-images.jianshu.io/upload_images/5167290-31581dce8c63214f.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+![img](Gradle-DSL语言_imgs\mmqcSXGGctq.png)
 
 Gradle System Tasks
 

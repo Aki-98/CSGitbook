@@ -43,7 +43,7 @@ TCP,IP协议族
 
 ##### <span id="head5">3次握手</span>
 
-![TCP连接三次握手](TCP,IP协议族_imgs\TCP连接三次握手.png)
+![TCP连接三次握手](TCP,IP协议族_imgs\fm8VBuiXNGT.png)
 
 
 过程 | 具体描述 | 报文段信息 | 状态
@@ -68,7 +68,7 @@ TCP,IP协议族
 
 在通信结束后，双方都可以释放连接，共需四次挥手
 
-![TCP四次挥手](TCP,IP协议族_imgs\TCP四次挥手.png)
+![TCP四次挥手](TCP,IP协议族_imgs\D5pVhbycQWx.png)
 
 
 过程 | 具体描述 | 报文段信息 | 状态

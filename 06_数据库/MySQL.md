@@ -522,7 +522,7 @@ select str_to_date('1998-3-2','%Y-%c-%d') as out_put; #1990-03-02
 select * from employees where hiredate = str_to_date('1992-4-3','%c-%d %Y');
 ```
 
-![clipboard.png](MySQL_imgs\clip_image002.png)
+![clipboard.png](MySQL_imgs\g6B5JSMFzjm.png)
 
 #### 1.3.6 date_format
 
@@ -1078,11 +1078,11 @@ from beauty b
 cross join boys bo;
 ```
 
-![image-20230320174549282](MySQL_imgs\image-20230320174549282.png)
+![image-20230320174549282](MySQL_imgs\fO9HYNQ4G3J.png)
 
 
 
-![image-20230320174604532](MySQL_imgs\image-20230320174604532.png)
+![image-20230320174604532](MySQL_imgs\cXR3ZzPT8oU.png)
 
 #### 2.3 子查询
 
@@ -1645,9 +1645,9 @@ binary和varbinary用于保存较短的二进制
 
 ### 3.3日期型
 
-![image-20230321170232595](MySQL_imgs\image-20230321170232595.png)
+![image-20230321170232595](MySQL_imgs\wMMMLJmhs5h.png)
 
-![image-20230321170243481](MySQL_imgs\image-20230321170243481.png)
+![image-20230321170243481](MySQL_imgs\lmTWwEqpBDg.png)
 
 ## 4.常见约束
 
@@ -1840,7 +1840,7 @@ savepoint;保存点，只搭配rollback使用
 
 数据库提供的4种事务隔离级别
 
-![image-20230321173431178](MySQL_imgs\image-20230321173431178.png)
+![image-20230321173431178](MySQL_imgs\g1naHmDPu5P.png)
 
 Oracle支持的2种事务隔离级别：read commited，serializable。Oracle默认的事务隔离级别为：read commited。
 

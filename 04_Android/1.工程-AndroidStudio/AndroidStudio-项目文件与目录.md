@@ -1,6 +1,6 @@
 # 一、总项目的目录结构
 
-![img](AndroidStudio-项目文件与目录_imgs\v2-de9c6550f5ded5de1ee348448c568fdc_720w.webp)
+![img](AndroidStudio-项目文件与目录_imgs\AsKUrwV1dMe.webp)
 
 | 目录名/文件名       | 作用                                                         |
 | ------------------- | ------------------------------------------------------------ |
@@ -18,11 +18,11 @@
 
 注意：而gradle文件里面包含gradlewrapper配置文件，使用gradle wrapper方式会自动联网下载gradle,，当然AndroidStudio会首先检查本地是否有缓存gradle，没有就会自动联网下载gradle，这样就不用自己先下载gradle，当然如果要使用离线模式，也可以自己setting：File---Settings---Build,Execution,Deployment---Gradle
 
-![img](AndroidStudio-项目文件与目录_imgs\v2-4b195082c091c9f241e57a4546f7b5f1_720w.png)
+![img](AndroidStudio-项目文件与目录_imgs\23ntZJBjUDc.png)
 
 # 二、app目录下的结构
 
-![img](AndroidStudio-项目文件与目录_imgs\v2-bd09386eeec3e2b826d1f566ed8feba9_720w.png)
+![img](AndroidStudio-项目文件与目录_imgs\COSYaOewLn6.png)
 
 | 目录名/文件名       | 作用                                                         |
 | ------------------- | ------------------------------------------------------------ |

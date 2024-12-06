@@ -93,7 +93,7 @@
 
 # `VoiceInteractionService`、`VoiceInteractionSessionService` 和 `VoiceInteractionSession`
 
-![image-20220728111158125](VoiceInteractionServiceAPI_imgs\1.png)
+![image-20220728111158125](VoiceInteractionServiceAPI_imgs\BfbbuxaGb86.png)
 
 如前所述，`VoiceInteractionService` 是 VIA 的入口点。此服务的主要职责包括：
 
@@ -192,7 +192,7 @@ https://source.android.google.cn/static/devices/automotive/images/vi_08.gif?hl=z
 
 此流程的工作原理如下：
 
-![通知提醒流程](VoiceInteractionServiceAPI_imgs\2.png)
+![通知提醒流程](VoiceInteractionServiceAPI_imgs\4r1PqfZY76E.png)
 
 2. **语音回复**
 这是实现起来最简单的流程：用 `VoiceInteractionSession#onShow()` 回调发起语音提示，向用户说明需要执行什么操作，然后询问用户（如果根据用户体验限制状态允许进行设置）是否想要启动设置流程。如果当时无法进行设置，则对此作出解释。
@@ -215,7 +215,7 @@ https://source.android.google.cn/static/devices/automotive/images/vi_08.gif?hl=z
 - 如果 `UX_RESTRICTIONS_NO_SETUP` 限制当时有效，则不应允许进行设置。如需了解详情，请参阅[有关防止驾驶员分心的准则](https://source.android.google.cn/devices/automotive/driver_distraction/guidelines?hl=zh-cn)。
 - 首次设置屏幕应与每辆车的设计系统相匹配。一般屏幕布局、图标、颜色及其他方面应与界面的其余部分保持一致。如需了解详情，请参阅[自定义](https://source.android.google.cn/devices/automotive/voice/voice_interaction_guide/integration_flows?hl=zh-cn#customization)。
 
-![“设置”集成](VoiceInteractionServiceAPI_imgs\3.gif)
+![“设置”集成](VoiceInteractionServiceAPI_imgs\fxAXme8QjIw.gif)
 
 设置屏幕属于常规 Android Activity。如果设置屏幕已实现，必须在 `res/xml/interaction_service.xml` 中将其入口点声明为 VIA 清单的一部分（请参阅清单部分）。“设置”部分非常适合用来继续进行首次设置和登录（如果用户未完成此步骤），或在需要时提供退出帐号或切换用户选项。与上述首次设置屏幕类似，这些屏幕应该：
 
@@ -237,7 +237,7 @@ VIA 需要的权限可分为三类：
 
 您应使用常规 `ActivityCompat#requestPermission()` 方法（或等效方法）请求危险权限。如需详细了解如何请求权限，请参阅[请求应用权限](https://developer.android.google.cn/training/permissions/requesting?hl=zh-cn)。
 
-![请求权限](VoiceInteractionServiceAPI_imgs\4.gif)
+![请求权限](VoiceInteractionServiceAPI_imgs\jLjemdIxYP3.gif)
 
 ### 通知监听器权限
 
@@ -261,7 +261,7 @@ private void requestNotificationListenerAccess() {
 
 当 `VoiceInteractionSession` 收到 `onShow()` 回调时，它可以显示语音控制面板界面。如需了解有关语音控制面板实现的视觉和用户体验准则，请参阅[预加载的助理：用户体验指南](https://source.android.google.cn/static/devices/automotive/voice/voice_interaction_guide/preloaded-assistants_UX-guidelines.pdf?hl=zh-cn)。
 
-![显示语音控制面板](VoiceInteractionServiceAPI_imgs\1.gif)
+![显示语音控制面板](VoiceInteractionServiceAPI_imgs\zPUqI6cuZlQ.gif)
 
 实现此界面的方式有两种：
 

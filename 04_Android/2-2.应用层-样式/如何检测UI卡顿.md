@@ -15,13 +15,13 @@
 
 GPU 渲染模式分析工具以图表（以颜色编码的直方图）的形式显示各个阶段及其相对时间。图 1 显示了此图表的一个示例。
 
-![https://developer.android.google.cn/static/topic/performance/images/bars.png?hl=zh-cn](D:\.repo\CSGitbook\04_Android\2-2.应用层-样式\如何检测UI卡顿_imgs\clip_image002.png)
+![https://developer.android.google.cn/static/topic/performance/images/bars.png?hl=zh-cn](如何检测UI卡顿_imgs\9pa5AHXWmo6.png)
 
 **图 1.** GPU 渲染模式分析图表
 
 GPU 渲染模式分析图表中显示的每个竖条中的每个分段都表示流水线的一个阶段，并在条形图中使用特定的颜色突出显示。图 2 说明了显示的每种颜色所代表的含义。
 
-![https://developer.android.google.cn/static/topic/performance/images/s-profiler-legend.png?hl=zh-cn](D:\.repo\CSGitbook\04_Android\2-2.应用层-样式\如何检测UI卡顿_imgs\clip_image004.png)
+![https://developer.android.google.cn/static/topic/performance/images/s-profiler-legend.png?hl=zh-cn](如何检测UI卡顿_imgs\GlORJ3WSj1C.png)
 
 **图 2.** GPU 渲染模式分析图表的图例
 

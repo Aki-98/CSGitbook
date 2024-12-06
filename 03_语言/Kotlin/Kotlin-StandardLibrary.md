@@ -40,7 +40,7 @@ In turn, mutable collections aren't covariant; otherwise, this would lead to run
 
 Below is a diagram of the Kotlin collection interfaces:
 
-![Collection interfaces hierarchy](Kotlin-StandardLibrary_imgs\collections-diagram.png)
+![Collection interfaces hierarchy](Kotlin-StandardLibrary_imgs\dwTVGQn1CIR.png)
 
 Let's walk through the interfaces and their implementations. To learn about `Collection`, read the section below. To learn about `List`, `Set`, and `Map`, you can either read the corresponding sections or watch a video by Sebastian Aigner, Kotlin Developer Advocate:
 

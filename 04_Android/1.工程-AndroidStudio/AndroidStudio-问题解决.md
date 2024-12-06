@@ -29,13 +29,13 @@ That should fix it.
 
 更改apk生成的路径，举个栗子，Android studio 打包默认路径是这样的：
 
-![img](AndroidStudio-问题解决_imgs\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x1b19ib2tl,size_16,color_FFFFFF,t_70.png)
+![img](AndroidStudio-问题解决_imgs\4VyUOE6PC1L.png)
 
 等待你的就是`Entry name 'res/layout/test_toolbar.xml' collided`
 
 解决办法，更改生成apk的路径，如
 
-![img](AndroidStudio-问题解决_imgs\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x1b19ib2tl,size_13color_FFFFFF,t_70.png)
+![img](AndroidStudio-问题解决_imgs\eeRB8A4i6bp.png)
 
 # Entry name *.xml collided 解决
 
@@ -53,7 +53,7 @@ https://stackoverflow.com/questions/58822538/current-jdk-version-1-8-has-a-bug-t
 
 https://stackoverflow.com/questions/71452170/the-specified-gradle-installation-directory-does-not-exist-error-after-android-s
 
-![image-20230403145156197](AndroidStudio-问题解决_imgs\image-20230403145156197.png)
+![image-20230403145156197](AndroidStudio-问题解决_imgs\tQ7aI5Xxs7z.png)
 
 选择'gradle-wrapper.properties' file
 
@@ -69,13 +69,13 @@ https://www.cnblogs.com/bellkosmos/p/AndroidStudio_custom_TODO.html#:~:text=Andr
 
 cmd下启动使用模拟器
 
-![image-20220227205156214](AndroidStudio-问题解决_imgs\image-20220227205156214.png)
+![image-20220227205156214](AndroidStudio-问题解决_imgs\gCMtxWtkUNI.png)
 
 # 先运行一次程序才能找到R文件
 
-![image-20220227205228484](AndroidStudio-问题解决_imgs\image-20220227205228484.png)
+![image-20220227205228484](AndroidStudio-问题解决_imgs\aMYdGBTLjeJ.png)
 
-![image-20220227205241703](AndroidStudio-问题解决_imgs\image-20220227205241703.png)
+![image-20220227205241703](AndroidStudio-问题解决_imgs\0de8hTTcn4G.png)
 
 # **修改工程名称及修改包名**
 
@@ -85,21 +85,21 @@ https://blog.csdn.net/u012693479/article/details/107233954
 
 File > Project Structure
 
-![image-20220301163145537](AndroidStudio-问题解决_imgs\image-20220301163130133.png)
+![image-20220301163145537](AndroidStudio-问题解决_imgs\x253FHchZ2S.png)
 
 然后就可以搜索了
 
-![image-20220301163227009](AndroidStudio-问题解决_imgs\image-20220301163227009.png)
+![image-20220301163227009](AndroidStudio-问题解决_imgs\5tIMJ8EFGmF.png)
 
 # **将本机文件导入到手机**
 
-![image-20220307112518415](AndroidStudio-问题解决_imgs\image-20220307112518415.png)
+![image-20220307112518415](AndroidStudio-问题解决_imgs\iV08dwuJ8Bi.png)
 
 # **打开模块设置**
 
-![image-20220321101803316](AndroidStudio-问题解决_imgs\image-20220321101803316.png)
+![image-20220321101803316](AndroidStudio-问题解决_imgs\0zo6aXwUrR9.png)
 
-![image-20220321102422691](AndroidStudio-问题解决_imgs\image-20220321102422691.png)
+![image-20220321102422691](AndroidStudio-问题解决_imgs\L6voYx9nDcX.png)
 
 # **Gradle SDK Java AndroidStudio的历史版本查看下载**
 
@@ -115,5 +115,5 @@ https://www.jianshu.com/p/f7eca878b8d7
 apksigner verify -v <apk-file>
 ```
 
-![image-20230327161548042](AndroidStudio-问题解决_imgs\image-20230327161548042.png)
+![image-20230327161548042](AndroidStudio-问题解决_imgs\2HBred7gCDI.png)
 

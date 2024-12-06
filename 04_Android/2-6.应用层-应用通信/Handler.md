@@ -7,7 +7,7 @@
 
 ## **相关概念**
 
-![c1113313-ae24-4f80-9dcc-73c9eabb35e5.jpg](Handler_imgs\c1113313-ae24-4f80-9dcc-73c9eabb35e5.jpg)
+![c1113313-ae24-4f80-9dcc-73c9eabb35e5.jpg](Handler_imgs\7zdbPxRM5XJ.jpg)
 
 - **UI线程**:就是我们的主线程,系统在创建UI线程的时候会初始化一个Looper对象,同时也会创建一个与其关联的MessageQueue;
 - **Handler**:作用就是发送与处理信息,如果希望Handler正常工作,在当前线程中要有一个Looper对象

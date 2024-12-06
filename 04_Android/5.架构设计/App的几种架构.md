@@ -8,7 +8,7 @@ MVC（Model-View-Controller）是最常见的软件架构之一，业界有着�
 
 MVC最最主要的思想就是分层，不再大杂烩了。MVC模式的意思是，软件可以分成三个部分：
 
-![img114971984](App的几种架构_imgs\66.png)
+![img114971984](App的几种架构_imgs\QaWzkJ7vmqm.png)
 
 - 视图（View）：用户界面，专门用来控制页面的。
 - 控制器（Controller）：业务逻辑，用来获取用户的输入，操作 M 和 V，说白了就是调用 M 和 V 中的方法。
@@ -18,7 +18,7 @@ MVC最最主要的思想就是分层，不再大杂烩了。MVC模式的意思�
 
 至于它们之间的具体相互关系，就看你具体代码的体现，并没有一个书面话的定义，最常见的是这种：
 
-![img](App的几种架构_imgs\67.png)
+![img](App的几种架构_imgs\BBovsO9SyPV.png)
 
 所有通信都是单向的：
 
@@ -28,7 +28,7 @@ MVC最最主要的思想就是分层，不再大杂烩了。MVC模式的意思�
 
 但MVC在真正大型运用的时候，最接近这种：
 
-![img](App的几种架构_imgs\68.png)
+![img](App的几种架构_imgs\HyQJeo1kM0Z.png)
 
 也就是说如果不触及复杂逻辑或者数据的情况下，一些简单逻辑就直接在Controller处理了，然后 Controller 再作用于 View 。还有一点就是MVC中View是可以和 Model 直接进行交流的。
 
@@ -36,7 +36,7 @@ MVC最最主要的思想就是分层，不再大杂烩了。MVC模式的意思�
 
 如果非要切断 Model 和 View 之间的关系的话，那样就演变成 MVP 了。MVP 模式将 Controller 改名为 Presenter，同时改变了通信方向。
 
-![img](App的几种架构_imgs\69.png)
+![img](App的几种架构_imgs\JdRidTkFIJR.png)
 
 - 各部分之间的通信，都是**双向**的。
 - **View 与 Model 不发生联系**，都通过 Presenter 传递。
@@ -50,7 +50,7 @@ MVC 架构方式虽然比之前的大杂烩好很多，但是 M C 之间相互�
 
 MVVM 模式将 Presenter 改名为 ViewModel，基本上与 MVP 模式完全一致。
 
-![img](App的几种架构_imgs\70.png)
+![img](App的几种架构_imgs\YInlUTyjV2e.png)
 
 唯一的区别是，它采用**双向绑定**（data-binding），View的变动，自动反映在 ViewModel，反之亦然。
 

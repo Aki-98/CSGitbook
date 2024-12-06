@@ -1,4 +1,3 @@
-# 4-2.框架层-权限
-
-
-[Android Framework 源码开发揭秘 xiangxue888.pdf](Android Framework 源码开发揭秘 xiangxue888.pdf)
+> 文件索引
+[白名单和权限](白名单和权限)
+索引结束 <

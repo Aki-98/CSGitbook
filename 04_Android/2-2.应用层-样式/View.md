@@ -2,7 +2,7 @@
 
 ## 通用属性
 
-![img](View_imgs\71.png)
+![img](View_imgs\6uffmKyd57u.png)
 
 ### **LayoutInflater**
 
@@ -226,11 +226,11 @@ setTypeface(Typeface typeface);
 //字体样式
 ```
 
-![image-20220608164537262](View_imgs\image-20220608164537262.png)
+![image-20220608164537262](View_imgs\A4yn5kS3Klg.png)
 
 ## **状态的存储与恢复**
 
- ![image-20220608105151749](View_imgs\image-20220608105151749.png)
+ ![image-20220608105151749](View_imgs\9arizpYhBj8.png)
 
 需要视图设置id
 
@@ -318,4 +318,4 @@ public class CustomerView extends AppCompatImageView {
 
   只会获取用户设定的值，不会造成成员变量的覆盖
 
-![image-20220608102832255](View_imgs\image-20220608102832255.png)
+![image-20220608102832255](View_imgs\Nx1vpkz631u.png)

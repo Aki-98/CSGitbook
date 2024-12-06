@@ -4,11 +4,11 @@
 
 计算机网络架构
 
-![image-20230412182924636](Linux - 服务器（原理&编程）_imgs\image-20230412182924636.png)
+![image-20230412182924636](Linux - 服务器（原理&编程）_imgs\rq0zfxUH6xv.png)
 
 socket编程原理：
 
-![image-20230412183037263](Linux - 服务器（原理&编程）_imgs\image-20230412183037263.png)
+![image-20230412183037263](Linux - 服务器（原理&编程）_imgs\mZvI2TabXAy.png)
 
 当使用socket进行通讯时，进程会先生成一个socket文件，之后再通过socket文件进行数据传递
 

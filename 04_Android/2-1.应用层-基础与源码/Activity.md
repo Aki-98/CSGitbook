@@ -4,13 +4,13 @@ step1 创建类继承自AppCompactActivity（Tv中使用继承自Activity）
 
 step2 在manifest中注册
 
-可以直接在类中利用快捷键进行注册![0.36557631299618.png](Activity_imgs\0.36557631299618.png)
+可以直接在类中利用快捷键进行注册![0.36557631299618.png](Activity_imgs\cxGDIxTM1tk.png)
 
 也可以在manifest文件中注册
 
 tips activity内部有intent-filter代表主入口,可以让多个activity都有主入口的intent-filter,系统中会有两个入口指向同一个app
 
-![0.8315151484658686.png](Activity_imgs\0.8315151484658686.png)
+![0.8315151484658686.png](Activity_imgs\be7pyCcQG2o.png)
 
 ## AppCompatActivity和Activity的区别
 
@@ -26,7 +26,7 @@ https://blog.csdn.net/today_work/article/details/79300181
 
 method1 在manifest中设置launchMode属性
 
-method2 代码设置![0.7581949137520234.png](Activity_imgs\0.7581949137520234.png)
+method2 代码设置![0.7581949137520234.png](Activity_imgs\MqSayspWrTi.png)
 
 - CLEAR_TASK代表清除栈
 - CLEAR_TOP代表清除栈顶
@@ -34,7 +34,7 @@ method2 代码设置![0.7581949137520234.png](Activity_imgs\0.7581949137520234.p
 
 ## **标准启动模式(standard)(默认)**
 
-![0.541081863601735.png](Activity_imgs\0.541081863601735.png)
+![0.541081863601735.png](Activity_imgs\zr551kBbaKL.png)
 
 每次激活Activity时都会创建Activity，并放入任务栈中。
 
@@ -43,7 +43,7 @@ method2 代码设置![0.7581949137520234.png](Activity_imgs\0.7581949137520234.p
 使用场景：Standard 模式是系统默认的启动模式，一般我们 app 中大部分页面都是由该模式的页面构成的，比较常见的场景是：社交应用中，点击查看用户A信息->查看用户A粉丝->在粉丝中挑选查看用户B信息->查看用户A粉丝... 这种情况下一般我们需要保留用户操作 Activity 栈的页面所有执行顺序。
 
 ## **顶部复用模式(singleTop)**
-![0.8429975162329554.png](Activity_imgs\0.8429975162329554.png)
+![0.8429975162329554.png](Activity_imgs\EyvBMxblyOl.png)
 
 <u>如果在任务的栈顶正好存在该Activity的实例， 就重用该实例</u>，而不会创建新的Activity对象，不过它会调用**onNewIntent()**方法。如果栈顶部不存在就会创建新的实例并放入栈顶(**即使栈中已经存在该Activity实例，只要不在栈顶，都会创建实例**)。
 
@@ -53,7 +53,7 @@ method2 代码设置![0.7581949137520234.png](Activity_imgs\0.7581949137520234.p
 
 ## **单一任务模式(singleTask)**
 
-![0.5683297211517564.png](Activity_imgs\0.5683297211517564.png)
+![0.5683297211517564.png](Activity_imgs\6rFpmWpoTiL.png)
 
 <u>如果在栈中已经有该Activity的实例，就重用该实例(会调用实例的onNewIntent())</u>。重用时，会让该实例回到栈顶，因此在<u>它上面的实例将会被移除栈</u>。如果栈中不存在该实例，将会创建新的实例放入栈中。
 
@@ -65,7 +65,7 @@ method2 代码设置![0.7581949137520234.png](Activity_imgs\0.7581949137520234.p
 
 ## **单例模式(singleInstance )**
 
-![0.9913129439221058.png](Activity_imgs\0.9913129439221058.png)
+![0.9913129439221058.png](Activity_imgs\GnRyploQteP.png)
 
  在一个新栈中创建该Activity实例，并让<u>多个应用共享该Activity实例</u>。一旦这种模式的Activity实例存在于某个栈中，任何应用再激活这个Activity时都会重用该栈中的实例，其效果相当于多个应用程序共享一个应用，不管谁激活该Activity都会进入同一个应用中。此启动模式和我们使用的浏览器工作原理类似，在多个程序中访问浏览器时，如果当前浏览器没有打开，则打开浏览器，否则会在当前打开的浏览器中访问。此模式会节省大量的系统资源，因为他能保证要请求的Activity对象在当前的栈中只存在一个。
 
@@ -75,8 +75,8 @@ method2 代码设置![0.7581949137520234.png](Activity_imgs\0.7581949137520234.p
 
 # 生命周期
 
-![0.5621750421825074.png](Activity_imgs\0.5621750421825074.png)
-![0.4475089323059067.png](Activity_imgs\0.4475089323059067.png)
+![0.5621750421825074.png](Activity_imgs\0fxdZtaD9WJ.png)
+![0.4475089323059067.png](Activity_imgs\hvht8juIVb6.png)
 
 ## 流程案例
 
@@ -151,18 +151,18 @@ method2 代码设置![0.7581949137520234.png](Activity_imgs\0.7581949137520234.p
 
 **显式启动**
 
-![0.7390524214529458.png](Activity_imgs\0.7390524214529458.png)
+![0.7390524214529458.png](Activity_imgs\PnUy5zRNa1R.png)
 
 **隐式启动**
 
 **①启动系统Activity**
 
-![0.5254931069301615.png](Activity_imgs\0.5254931069301615.png)
+![0.5254931069301615.png](Activity_imgs\ScFMTKOXFUS.png)
 
 **②启动普通Activity**
 
-![0.9944215231862644.png](Activity_imgs\0.9944215231862644.png)
-![0.013035496187995514.png](Activity_imgs\0.013035496187995514.png)
+![0.9944215231862644.png](Activity_imgs\0KTNWtUCJ75.png)
+![0.013035496187995514.png](Activity_imgs\hFOk5Q0mBOJ.png)
 
 
 

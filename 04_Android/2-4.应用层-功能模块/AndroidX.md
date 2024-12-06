@@ -22,6 +22,6 @@ AndroidX和Android Support Library中的库是非常不建议混合在一起使�
 
 那么对于老项目的迁移应该怎么办呢？由于涉及到了包名的改动，如果从Android Support Library升级到AndroidX需要手动去改每一个文件的包名，那可真得要改死了。为此，Android Studio提供了一个一键迁移的功能，只需要对着你的项目名右击 → Refactor → Migrate to AndroidX，就会弹出如下图所示的窗口。
 
-![img](AndroidX_imgs\17.png)
+![img](AndroidX_imgs\8CliNV85QnZ.png)
 
 这里点击Migrate，Android Studio就会自动检查你项目中所有使用Android Support Library的地方，并将它们全部改成AndroidX中对应的库。另外Android Studio还会将你原来的项目备份成一个zip文件，这样即使迁移之后的代码出现了问题你还可以随时还原回之前的代码。

@@ -8,7 +8,7 @@ CI/CD 可让持续自动化和持续监控贯穿于应用的整个生命周期�
 
 这些关联的事务通常被统称为 **CI/CD 管道**，由开发和运维团队以敏捷方式协同支持。
 
-![img](CICD_imgs\v2-c38f79af673a565f6a4069c1fd8096c7_r.jpg)
+![img](CICD_imgs\OubDwlDC4ul.jpg)
 
 # 二、CI 持续集成（Continuous Integration）
 
@@ -16,7 +16,7 @@ CI/CD 可让持续自动化和持续监控贯穿于应用的整个生命周期�
 
 ## 1.CI：代码提交阶段
 
-![img](CICD_imgs\v2-456ef3b6ac186b5c3fe3c49195d5b6a3_720w.webp)
+![img](CICD_imgs\U50SujmWZfW.webp)
 
 参与者：开发工程师，数据库管理员（DBA），基础架构团队
 
@@ -36,7 +36,7 @@ CI/CD 可让持续自动化和持续监控贯穿于应用的整个生命周期�
 
 ## 3.CI：构建
 
-![img](CICD_imgs\v2-644dc55255bc8acfff86ff6dd77fa3eb_720w.webp)
+![img](CICD_imgs\JXibI3KAUaN.webp)
 
 参与者：开发工程师
 
@@ -56,7 +56,7 @@ CI/CD 可让持续自动化和持续监控贯穿于应用的整个生命周期�
 
 ## 4.CI：测试阶段
 
-![img](CICD_imgs\v2-28383e048aff47434b31941c89450fd9_720w.webp)
+![img](CICD_imgs\7W1KzBWYEHE.webp)
 
 参与者：测试人员、QA
 
@@ -76,7 +76,7 @@ Selenium、JMeter等自动化测试工具也可执行性能和压力测试，以
 
 # 三、CD 持续交付（Continuous Delivery）
 
-![img](CICD_imgs\v2-2eb04cf91c755e76f420f1ba3ab9a900_720w.webp)
+![img](CICD_imgs\9Vm4rlXFB8v.webp)
 
 参与者：站点可靠性工程师（SRE）、运营和维护团队。
 
@@ -86,7 +86,7 @@ Selenium、JMeter等自动化测试工具也可执行性能和压力测试，以
 
 # 四、CD 持续部署（Continuous Deployment）
 
-![img](CICD_imgs\v2-0e16528db6d3252402cc9e230ef81eea_720w.webp)
+![img](CICD_imgs\4EMrXXINIUM.webp)
 
 参与者：基础架构工程师，SRE，运维工程师
 

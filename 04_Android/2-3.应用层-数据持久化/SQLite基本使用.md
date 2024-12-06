@@ -2,7 +2,7 @@
 
 SQLite数据库是个轻量级的数据库，本质上是个二进制文件。
 
-![image-20220303170613410](SQLite基本使用_imgs\image-20220303170613410.png)
+![image-20220303170613410](SQLite基本使用_imgs\C2ffFgOGlIl.png)
 
 **SQLiteExpert工具**
 

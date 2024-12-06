@@ -3125,7 +3125,7 @@ s.send(b'exit')
 s.close()
 ```
 我们需要打开两个命令行窗口，一个运行服务器程序，另一个运行客户端程序，就可以看到效果了：
-![C:\Users\Administrator\Documents\My Knowledge\temp\79ca7736-d8de-47d2-8c0e-3342b7d4f651\128\index_files\1.png](Python详细教程_imgs\1.png)
+![C:\Users\Administrator\Documents\My Knowledge\temp\79ca7736-d8de-47d2-8c0e-3342b7d4f651\128\index_files\1.png](Python详细教程_imgs\xyhqnNBWg1Y.png)
 需要注意的是，客户端程序运行完毕就退出了，而服务器程序会永远运行下去，必须按Ctrl+C退出程序。
 ## UCP编程
 TCP是建立可靠连接，并且通信双方都可以以流的形式发送数据。相对TCP，UDP则是面向无连接的协议。
@@ -3162,7 +3162,7 @@ s.close()
 ```
 从服务器接收数据仍然调用recv()方法。
 仍然用两个命令行分别启动服务器和客户端测试，结果如下：
-![C:\Users\Administrator\Documents\My Knowledge\temp\79ca7736-d8de-47d2-8c0e-3342b7d4f651\128\index_files\2.png](Python详细教程_imgs\2.png)
+![C:\Users\Administrator\Documents\My Knowledge\temp\79ca7736-d8de-47d2-8c0e-3342b7d4f651\128\index_files\2.png](Python详细教程_imgs\0jBLKLPNJiH.png)
 
 ## 异步IO
 

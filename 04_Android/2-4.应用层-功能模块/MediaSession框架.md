@@ -3,7 +3,7 @@
 - C/S架构
 - 规范了音视频应用中界面与播放器之间的通信接口，实现界面与播放器之间的完全解耦。
 
-![img](MediaSession框架_imgs\v2-e1f6747dab51b11d1d6b2656452b6953_720w.webp)
+![img](MediaSession框架_imgs\67J8rqOv1Uv.webp)
 
 ## **MediaSession媒体会话（Server）**
 
@@ -21,7 +21,7 @@
 
 # MediaSession-授权框架
 
-![image-20240920155216578](E:\.personal\CSGitbook\04_Android\2-4.应用层-功能模块\MediaSession框架_imgs\image-20240920155216578.png)
+![image-20240920155216578](MediaSession框架_imgs\3R5xkiugvGp.png)
 
 ## **MediaBrowser媒体浏览器（Client）**
 

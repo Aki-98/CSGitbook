@@ -4,7 +4,7 @@
 
 ### 组件是什么（Component）
 
-![img](Jira（一）核心概念_imgs\Jira_1.png)
+![img](Jira（一）核心概念_imgs\svUpqgHcMpD.png)
 
 组件是项目中对问题单的一种逻辑分组，例如上图中的UI，DB，Server和Bug，组件一个项目根据组织的需要可能会包括多种组件。
 
@@ -28,7 +28,7 @@
 
 JIRA中的工作流由一系列的状态（statuses）和变迁（transitions）构成，一个问题单在其生命周期中会经过这些状态和变迁。下图为例：
 
-![img](Jira（一）核心概念_imgs\Jira_2.png)
+![img](Jira（一）核心概念_imgs\pc8mOJSCVt1.png)
 
 ## 3.Issue（问题单）
 

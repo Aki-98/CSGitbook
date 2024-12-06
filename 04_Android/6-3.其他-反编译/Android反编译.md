@@ -446,7 +446,7 @@ apk酷安下载地址: https://www.coolapk.com/apk/com.toshiba_dealin.developerh
 
 然后用VS Code打开,这里最好在VS Code里面装一个`Smali`插件,用于在VS Code里面支持smali语法,高亮之类的.完成之后大概是这个样子:
 
-![img](Android反编译_imgs\20200909163611.png)
+![img](Android反编译_imgs\KeuPJLBTPTo.png)
 
 环境倒是OK了,回到正题,我们需要修改执行逻辑.在此之前,我们最好先简单学习一下smali的基本语法,详情见我之前写过的文章[反编译基础知识](https://blog.csdn.net/xfhy_/article/details/107026357).
 
@@ -766,19 +766,19 @@ public void test() {
 
 把apktool反编译好的文件夹导入Android Studio,把所有smali开头的文件夹都标记一下Sources Root(标记方法: 文件夹右键,Mark Directory as -> Sources Root).然后找到你需要调试的类,打好断点.
 
-![img](Android反编译_imgs\smalidea打断点.png)
+![img](Android反编译_imgs\FC8sML6TPZc.png)
 
 打开需要调试的App,然后打开Android Device Monitor(在`SDK\tools`里面).打开Monitor的时候需要关闭Android Studio.
 
-![img](Android反编译_imgs\Monitor端口号.png)
+![img](Android反编译_imgs\actS95ET7ld.png)
 
 查看该App对应的端口是多少,记录下来.重新打开Android Studio,编辑`Edit Configurations`,点击`Add New Configuration`,添加之后再修改一下端口号就行,这里的端口号填上面Monitor看到的那个端口号.
 
-![img](Android反编译_imgs\ConfigurationPort.png)
+![img](Android反编译_imgs\UnlboZmeXgM.png)
 
 Configuration添加好之后,点击Debug按钮即可进行调试.
 
-![img](Android反编译_imgs\smalidea调试.png)
+![img](Android反编译_imgs\ZAWXH8D3oMV.png)
 
 熟悉的界面,熟悉的调试方式,开始愉快的调试吧,起飞~
 

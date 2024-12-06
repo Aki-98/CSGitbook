@@ -11,7 +11,7 @@
 
 # 参数
 
-![22](Monkey_imgs\22.jpg)
+![22](Monkey_imgs\baNP6uGFObW.jpg)
 
 ## 帮助
 

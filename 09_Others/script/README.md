@@ -1,4 +1,3 @@
-# Script
-
-[newFileType_markdown.reg](newFileType_markdown.reg)
-[newFileType_txt.reg](newFileType_txt.reg)
+> 文件索引
+[README](README)
+索引结束 <

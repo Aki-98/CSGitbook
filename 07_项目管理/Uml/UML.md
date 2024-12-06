@@ -64,7 +64,7 @@ UML模型的解释部分，用来对模型中的元素进行说明、解释
 
 用例图是从用户角度描述系统功能， 是用户所能观察到的系统功能的模型图，用例是系统中的一个功能单元 
 
-![在这里插入图片描述](UML_imgs\1.png)
+![在这里插入图片描述](UML_imgs\FiqZgh1rxyR.png)
 
 ### 2. 类图[Class Diagram]:
 
@@ -73,7 +73,7 @@ UML模型的解释部分，用来对模型中的元素进行说明、解释
 
 (2)类图是以类为中心类组织的，类图中的其他元素或属于某个类或与类相关联
 
-![img](UML_imgs\2.png)
+![img](UML_imgs\HS8vhYfPJLp.png)
 
 ### 3. 对象图[Object Diagram]:
 
@@ -81,7 +81,7 @@ UML模型的解释部分，用来对模型中的元素进行说明、解释
 
 他们的不同点在于对象图显示类的多个对象实例，而不是实际的类
 
-![img](UML_imgs\3.png)
+![img](UML_imgs\n37OlIoMPlF.png)
 
 ### 4. 顺序图[Sequence Diagram]:
 
@@ -89,7 +89,7 @@ UML模型的解释部分，用来对模型中的元素进行说明、解释
 
 (2)顺序图的一个用途是用来表示用例中的行为顺序。当执行一个用例行为时，顺序图中的每条消息对应了一个类操作或引起状态转换的触发事件
 
-![[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-NKFjtLMz-1579259958177)(C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20200117191156185.png)]](UML_imgs\4.png)
+![[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-NKFjtLMz-1579259958177)(C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20200117191156185.png)]](UML_imgs\5eRRiE9ewD7.png)
 
 ### 5. 协作图[Collaboration Diagram]:
 
@@ -97,13 +97,13 @@ UML模型的解释部分，用来对模型中的元素进行说明、解释
 
 (2)协作图的一个用途是表示一个类操作的实现
 
-![在这里插入图片描述](UML_imgs\5.png)
+![在这里插入图片描述](UML_imgs\NSyyb0D5BAu.png)
 
 ### 6. 状态图[State Chart Diagram]:
 
 状态图是一个类对象所可能经历的所有历程的模型图。状态图由对象的各个状态和连接这些状态的转换组成
 
-![在这里插入图片描述](UML_imgs\6.png)
+![在这里插入图片描述](UML_imgs\KVtnmDkFRNc.png)
 
 ### 7. 活动图[Activity Diagram]:
 
@@ -111,24 +111,24 @@ UML模型的解释部分，用来对模型中的元素进行说明、解释
 
 (2)活动图描述了一组顺序的或并发的活动
 
-![在这里插入图片描述](UML_imgs\7.png)
+![在这里插入图片描述](UML_imgs\RSA9srlRLzl.png)
 
 ### 8. 构件图[Component Diagram]:
 
 构件图为系统的构件建模型——构件即构造应用的软件单元——还包括各构件之间的依赖关系，以便通过这些依赖关系来估计对系统构件的修改给系统可能带来的影响
 
-![在这里插入图片描述](UML_imgs\8.png)
+![在这里插入图片描述](UML_imgs\ytMCy9y2dVT.png)
 
 ### 9. 部署图[Deployment Diagram]:
 
 部署视图描述位于节点实例上的运行构件实例的安排。节点是一组运行资源，如计算机、设备或存储器。这个视图允许评估分配结果和资源分配
 
-![在这里插入图片描述](UML_imgs\9.png)
+![在这里插入图片描述](UML_imgs\3qRsz6h2CrG.png)
 
 ### 各UML图的关系
 
-![在这里插入图片描述](UML_imgs\1.png0)
+![在这里插入图片描述](UML_imgs\FiqZgh1rxyR.png0)
 
 # 三、UML语法描述
 
-![在这里插入图片描述](UML_imgs\1.png1)
+![在这里插入图片描述](UML_imgs\FiqZgh1rxyR.png1)

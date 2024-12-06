@@ -1,4 +1,4 @@
-![img](Android项目构建流程_imgs\Android项目构建流程_1.png)
+![img](Android项目构建流程_imgs\Dm588cTMZFE.png)
 
 整体流程：
 
@@ -69,7 +69,7 @@ aidl，全名Android Interface Definition Language，即Android接口定义语�
 
 调用dx.bat将所有的class文件转化为classes.dex文件，dx会将class转换为Dalvik字节码，生成常量池，消除冗余数据等。由于dalvik是一种针对嵌入式设备而特殊设计的java虚拟机，所以dex文件与标准的class文件在结构设计上有着本质的区别,当java程序编译成class后，使用dx工具将所有的class文件整合到一个dex文件，目的是其中各个类能够共享数据，在一定程度上降低了冗余，同时也是文件结构更加经凑，实验表明，dex文件是传统jar文件大小的50%左右。class文件结构和dex文件结构比对。
 
-![img](Android项目构建流程_imgs\Android项目构建流程_2.png)
+![img](Android项目构建流程_imgs\A4BBHvwraBe.png)
 
 # 第6步：apkbuilder
 

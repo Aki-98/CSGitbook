@@ -63,7 +63,7 @@ private WindowManagerService(Context context, InputManagerService inputManager,
 
 由这三步可知，最终由PhoneWindowManager处理。将上述整理成时序图：
 
-![img](PhoneWindowManager-Power键的处理_imgs\2.png)
+![img](PhoneWindowManager-Power键的处理_imgs\0NSpo29YqCK.png)
 
 
 

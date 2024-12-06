@@ -12,7 +12,7 @@ https://source.android.com/setup/start/build-numbers
 - Linux内核(Linux Kernel)
 
 *安卓系统结构示意图*
-![Android System Architecture](imgs\2.png)
+![Android System Architecture](Android结构_imgs\7VensX8qqxd.png)
 
 下面对每层进行详细说明
 

@@ -4,7 +4,7 @@
 
 # 生命周期
 
-![image-20220302110412972](Fragment_imgs\image-20220302110412972.png)
+![image-20220302110412972](Fragment_imgs\hfAwTUxNRRW.png)
 
 **状态解析**
 
@@ -118,9 +118,9 @@ transaction.attach();//重建view视图，附加到UI上并显示。
 
 **示例**
 
-![image-20220302110520216](Fragment_imgs\image-20220302110520216.png)
+![image-20220302110520216](Fragment_imgs\uNuloOLGs9k.png)
 
-![image-20220302110531350](Fragment_imgs\image-20220302110531350.png)
+![image-20220302110531350](Fragment_imgs\dtFp8xtRgFt.png)
 
 # 通信
 

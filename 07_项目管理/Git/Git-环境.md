@@ -8,7 +8,7 @@ https://cloud.tencent.com/developer/article/1739792
 
 git命令行
 
-![image-20220311090415545](Git-环境_imgs\image-20220311090415545.png)
+![image-20220311090415545](Git-环境_imgs\94j3HZC58fF.png)
 
 安装UbuntuGUI
 
