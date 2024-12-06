@@ -143,9 +143,9 @@ usermod -s /bin/ksh -d /home/z -g developer sam
 
 内容类似：
 
-![image-20230331134910098](Linux - Others -用户与用户组管理（命令&原理）_imgs\image-20230331134910098.png)
+![image-20230331134910098](Linux - Others -用户与用户组管理（命令&原理）_imgs\LOahmmPRbTy.png)
 
-![image-20230331134942011](Linux - Others -用户与用户组管理（命令&原理）_imgs\image-20230331134942011.png)
+![image-20230331134942011](Linux - Others -用户与用户组管理（命令&原理）_imgs\L7ZdAQo9EnZ.png)
 
 每一行记录对应着一个用户，每行记录又被冒号:分隔为7个字段，其格式和具体含义如下：
 
@@ -191,9 +191,9 @@ usermod -s /bin/ksh -d /home/z -g developer sam
 
 内容类似：
 
-![image-20230331151723788](Linux - Others -用户与用户组管理（命令&原理）_imgs\image-20230331151723788.png)
+![image-20230331151723788](Linux - Others -用户与用户组管理（命令&原理）_imgs\hep8bsLW6jI.png)
 
-![image-20230331151733789](Linux - Others -用户与用户组管理（命令&原理）_imgs\image-20230331151733789.png)
+![image-20230331151733789](Linux - Others -用户与用户组管理（命令&原理）_imgs\3o8UX4Z3m0E.png)
 
 /etc/shadow中的记录行与/etc/passwd中的一一对应，它由pwconv命令根据etc/passwd中的数据自动产生
 
@@ -216,7 +216,7 @@ usermod -s /bin/ksh -d /home/z -g developer sam
 
 内容例子：
 
-![image-20230331152335470](Linux - Others -用户与用户组管理（命令&原理）_imgs\image-20230331152335470.png)
+![image-20230331152335470](Linux - Others -用户与用户组管理（命令&原理）_imgs\eR7QCYeshc3.png)
 
 放置用户组的所有信息
 
@@ -267,9 +267,9 @@ usermod -s /bin/ksh -d /home/z -g developer sam
 
 每一列按照/etc/passwd密码文件的格式书写，要注意每个用户的用户名、UID、宿主目录都不可以相同，其中密码栏可以留做空白或输入x号，一个范例文件user.txt内容如下：
 
-![image-20230331153336509](Linux - Others -用户与用户组管理（命令&原理）_imgs\image-20230331153336509.png)
+![image-20230331153336509](Linux - Others -用户与用户组管理（命令&原理）_imgs\OLs56OVSN8V.png)
 
-![image-20230331153345226](Linux - Others -用户与用户组管理（命令&原理）_imgs\image-20230331153345226.png)
+![image-20230331153345226](Linux - Others -用户与用户组管理（命令&原理）_imgs\D6xyK9ABpg9.png)
 
 **(2)以root身份执行命令/usr/sbin/newusers,从刚创建的用户文件user.txt中导入数据.创建用户：**
 
@@ -287,7 +287,7 @@ newusers < user.txt
 
 范例文件passwd.txt内容如下：
 
-![image-20230331153839387](Linux - Others -用户与用户组管理（命令&原理）_imgs\image-20230331153839387.png)
+![image-20230331153839387](Linux - Others -用户与用户组管理（命令&原理）_imgs\V1gybUv5Ful.png)
 
 **(5)以root身份执行命令/usr/sbin/chpasswd**
 

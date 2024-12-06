@@ -241,7 +241,7 @@ android:focusableInTouchMode="true"
 
 1. 光标
 
-step1 在drawable目录下自定义光标文件(一般为shape文件)，比如以下文件为:text_cursor.xml![img](View-others_imgs\360a710e-eadd-46af-aa1e-c1bab76e9d79-16252333.jpg)
+step1 在drawable目录下自定义光标文件(一般为shape文件)，比如以下文件为:text_cursor.xml![img](View-others_imgs\5DccNQstJgX.jpg)
 
 step2 在xml 中给edittext设置属性
 
@@ -543,7 +543,7 @@ android:layout_rowSpan//跨几行
 
 **【例子】**
 
-![image-20220227210216010](View-others_imgs\image-20220227210216010.png)
+![image-20220227210216010](View-others_imgs\a1ieNvmRyhr.png)
 
 ### MapView
 
@@ -697,7 +697,7 @@ scrollView.post(new Runnable() {
 
 **Z轴的概念**
 
-![image-20220301163709013](View-others_imgs\image-20220301163709013.png)
+![image-20220301163709013](View-others_imgs\47DiTNEKa4X.png)
 
 Z属性可以通过elevation和translationZ进行修改
 Z＝ elevation＋translationZ
@@ -776,8 +776,8 @@ layout_constraintBaseline_toBaselineOf //此控件的基本线与另一个控件
 
 
 
-![3a05af62-4eb7-47ca-87c9-02c730adc7d6.jpg](View-others_imgs\3a05af62-4eb7-47ca-87c9-02c730adc7d6.jpg)
-![8e827b5b-6143-45ee-bc71-22bd5691b91f.jpg](View-others_imgs\8e827b5b-6143-45ee-bc71-22bd5691b91f.jpg)
+![3a05af62-4eb7-47ca-87c9-02c730adc7d6.jpg](View-others_imgs\SDiXCwnm5iT.jpg)
+![8e827b5b-6143-45ee-bc71-22bd5691b91f.jpg](View-others_imgs\sFrLzqf7gm2.jpg)
 
 ```xml
     <TextView
@@ -791,7 +791,7 @@ layout_constraintBaseline_toBaselineOf //此控件的基本线与另一个控件
         app:layout_constraintBaseline_toBaselineOf="@+id/TextView1"/>
 ```
 
-![41b86e05-e941-4ce8-9c5b-77638ac6e3c4.jpg](View-others_imgs\41b86e05-e941-4ce8-9c5b-77638ac6e3c4.jpg)
+![41b86e05-e941-4ce8-9c5b-77638ac6e3c4.jpg](View-others_imgs\r7J9pgEBBRp.jpg)
 
 
 
@@ -818,7 +818,7 @@ app:layout_constraintCircleAngle="120"(角度)
 app:layout_constraintCircleRadius="150dp"(距离)
 指的是TextView2的中心在TextView1的中心的120度,距离为150dp,效果如下:
 
-![ff964bd0-ae2d-4beb-9c5b-99d2ea3cd700.jpg](View-others_imgs\ff964bd0-ae2d-4beb-9c5b-99d2ea3cd700.jpg)
+![ff964bd0-ae2d-4beb-9c5b-99d2ea3cd700.jpg](View-others_imgs\712Yhk0exHy.jpg)
 
 **margin**
 
@@ -848,11 +848,11 @@ margin只能大于等于0
 
 效果如下,TextView2在TextView1的右边,且没有边距。
 
-![50b82e0c-08be-440d-8adb-d62ee23a35ad.jpg](View-others_imgs\50b82e0c-08be-440d-8adb-d62ee23a35ad.jpg)
+![50b82e0c-08be-440d-8adb-d62ee23a35ad.jpg](View-others_imgs\IFXXv8Xo6nM.jpg)
 
 这个时候把TextView1的可见性设为gone,效果如下:
 
-![20d94efe-b2d2-42d2-9079-96eaa5cd6f43.jpg](View-others_imgs\20d94efe-b2d2-42d2-9079-96eaa5cd6f43.jpg)
+![20d94efe-b2d2-42d2-9079-96eaa5cd6f43.jpg](View-others_imgs\M6UXJXjNEZ3.jpg)
 
 TextView1消失后,TextView2有一个距离左边10dp的边距。
 
@@ -892,7 +892,7 @@ TextView1消失后,TextView2有一个距离左边10dp的边距。
        app:layout_constraintRight_toRightOf="parent" />
 ```
 
-![f5f7a4c9-f307-4850-8945-aee42f46f68c.jpg](View-others_imgs\f5f7a4c9-f307-4850-8945-aee42f46f68c.jpg)
+![f5f7a4c9-f307-4850-8945-aee42f46f68c.jpg](View-others_imgs\D5PNvvNEqKz.jpg)
 
 ```xml
     <TextView
@@ -903,7 +903,7 @@ TextView1消失后,TextView2有一个距离左边10dp的边距。
        app:layout_constraintRight_toRightOf="parent" />
 ```
 
-![b8a620cf-a6bc-4004-a914-b81818ee5c5f.jpg](View-others_imgs\b8a620cf-a6bc-4004-a914-b81818ee5c5f.jpg)
+![b8a620cf-a6bc-4004-a914-b81818ee5c5f.jpg](View-others_imgs\9usrekZRe1r.jpg)
 
 假如现在要实现水平偏移,给TextView1的layout_constraintHorizontal_bias赋一个范围为 0-1 的值,假如赋值为0,则TextView1在布局的最左侧,假如赋值为1,则TextView1在布局的最右侧,假如假如赋值为0.5,则水平居中,假如假如赋值为0.3,则更倾向于左侧。
 垂直偏移同理。
@@ -940,7 +940,7 @@ app:constrainedHeight="true"
         android:visibility="visible" />
 ```
 
-![d64d2826-fe99-49d9-8e0c-e9bf788033df.png](View-others_imgs\d64d2826-fe99-49d9-8e0c-e9bf788033df.png)
+![d64d2826-fe99-49d9-8e0c-e9bf788033df.png](View-others_imgs\KMkuJ8DL0aB.png)
 
 ④宽高比
 
@@ -954,7 +954,7 @@ app:constrainedHeight="true"
         app:layout_constraintRight_toRightOf="parent" />
 ```
 
-![1b9e5b75-6c86-4871-8f8d-f5536f7f4d1b.jpg](View-others_imgs\1b9e5b75-6c86-4871-8f8d-f5536f7f4d1b.jpg)
+![1b9e5b75-6c86-4871-8f8d-f5536f7f4d1b.jpg](View-others_imgs\Og3rQTdLfc2.jpg)
 
 在设置宽高比的值的时候,还可以在前面加W或H,分别指定宽度或高度限制。 例如:
 app:layout_constraintDimensionRatio="H,2:3"指的是 高:宽=2:3
@@ -964,7 +964,7 @@ app:layout_constraintDimensionRatio="W,2:3"指的是 宽:高=2:3
 
 如果两个或以上控件通过下图的方式约束在一起,就可以认为是他们是一条链(图为横向的链,纵向同理)。
 
-![ca342539-c176-45cf-8180-33433f10b102.jpg](View-others_imgs\ca342539-c176-45cf-8180-33433f10b102.jpg)
+![ca342539-c176-45cf-8180-33433f10b102.jpg](View-others_imgs\lkqtRVHzJyK.jpg)
 
 ```xml
   <TextView
@@ -992,7 +992,7 @@ app:layout_constraintDimensionRatio="W,2:3"指的是 宽:高=2:3
 
 3个TextView相互约束,两端两个TextView分别与parent约束,成为一条链,效果如下:
 
-![a39c0e6c-cc39-4712-bd40-f31b048bfde0.jpg](View-others_imgs\a39c0e6c-cc39-4712-bd40-f31b048bfde0.jpg)
+![a39c0e6c-cc39-4712-bd40-f31b048bfde0.jpg](View-others_imgs\zrdlxoIS6Kl.jpg)
 
 一条链的第一个控件是这条链的链头,我们可以在链头中设置 layout_constraintHorizontal_chainStyle来改变整条链的样式。chains提供了3种样式,分别是:
 
@@ -1002,7 +1002,7 @@ app:layout_constraintDimensionRatio="W,2:3"指的是 宽:高=2:3
 
 如图所示:
 
-![0dd323f5-387a-4302-b456-4de600424e34.jpg](View-others_imgs\0dd323f5-387a-4302-b456-4de600424e34.jpg)
+![0dd323f5-387a-4302-b456-4de600424e34.jpg](View-others_imgs\g9oCTqDirHw.jpg)
 
 上面的例子创建了一个样式链,除了样式链外,还可以创建一个权重链。
 可以留意到上面所用到的3个TextView宽度都为wrap_content,如果我们把宽度都设为0dp,这个时候可以在每个TextView中设置横向权重layout_constraintHorizontal_weight(constraintVertical为纵向)来创建一个权重链,如下所示:
@@ -1036,7 +1036,7 @@ app:layout_constraintDimensionRatio="W,2:3"指的是 宽:高=2:3
 
 效果如下:
 
-![78713f17-19cf-4e6e-9e6e-657a24fb2a2a.jpg](View-others_imgs\78713f17-19cf-4e6e-9e6e-657a24fb2a2a.jpg)
+![78713f17-19cf-4e6e-9e6e-657a24fb2a2a.jpg](View-others_imgs\f8GhKFmR8ee.jpg)
 
 **辅助工具**
 
@@ -1053,11 +1053,11 @@ app:layout_constraintDimensionRatio="W,2:3"指的是 宽:高=2:3
 
 ②Barrier
 
-![96abd7c2-a60f-44f2-b369-704b1590987b.jpg](View-others_imgs\96abd7c2-a60f-44f2-b369-704b1590987b.jpg)
+![96abd7c2-a60f-44f2-b369-704b1590987b.jpg](View-others_imgs\yEtrfQ1s8yo.jpg)
 
 假设有3个控件ABC,C在AB的右边,但是AB的宽是不固定的,这个时候C无论约束在A的右边或者B的右边都不对。当出现这种情况可以用Barrier来解决。Barrier可以在多个控件的一侧建立一个屏障,如下所示:
 
-![b95abb7a-2a04-4d84-83c2-ef87788ad909.jpg](View-others_imgs\b95abb7a-2a04-4d84-83c2-ef87788ad909.jpg)
+![b95abb7a-2a04-4d84-83c2-ef87788ad909.jpg](View-others_imgs\Q7HNS2hMHjV.jpg)
 
 这个时候C只要约束在Barrier的右边就可以了,代码如下:
 
@@ -1113,7 +1113,7 @@ Group可以把多个控件归为一组,方便隐藏或显示一组控件,举个�
        app:layout_constraintLeft_toRightOf="@id/TextView2" />
 ```
 
-![4608af4d-504d-420e-9c07-bd77d8ef482e.jpg](View-others_imgs\4608af4d-504d-420e-9c07-bd77d8ef482e.jpg)
+![4608af4d-504d-420e-9c07-bd77d8ef482e.jpg](View-others_imgs\ChH2lfXONYk.jpg)
 
 现在有3个并排的TextView,用Group把TextView1和TextView3归为一组,再设置这组控件的可见性,如下所示:
 
@@ -1126,7 +1126,7 @@ Group可以把多个控件归为一组,方便隐藏或显示一组控件,举个�
        app:constraint_referenced_ids="TextView1,TextView3" />
 ```
 
-![b47f408d-3cd1-491b-80c2-fd3cccdebed5.png](View-others_imgs\b47f408d-3cd1-491b-80c2-fd3cccdebed5.png)
+![b47f408d-3cd1-491b-80c2-fd3cccdebed5.png](View-others_imgs\boZjVW2ELJ5.png)
 
 **Placeholder**
 
@@ -1155,7 +1155,7 @@ Placeholder指的是占位符。在Placeholder中可使用setContent()设置另�
 
 新建一个Placeholder约束在屏幕的左上角,新建一个TextView约束在屏幕的右上角,在Placeholder中设置 app:content="@+id/textview",这时TextView会跑到屏幕的左上角。效果如下:
 
-![732f2ec3-eeb0-4920-9b99-fa8d424e0ff4.jpg](View-others_imgs\732f2ec3-eeb0-4920-9b99-fa8d424e0ff4.jpg)
+![732f2ec3-eeb0-4920-9b99-fa8d424e0ff4.jpg](View-others_imgs\940GTRhyRrl.jpg)
 
 **Guideline**
 
@@ -1188,7 +1188,7 @@ Guildline的主要属性:
 
 guideline1为水平辅助线,开始位置是距离顶部50dp,guideline2位垂直辅助线,开始位置为屏幕宽的0.5(中点位置),效果如下:
 
-![b3d45a85-8b99-47e5-98a7-cb3e1de90974.jpg](View-others_imgs\b3d45a85-8b99-47e5-98a7-cb3e1de90974.jpg)
+![b3d45a85-8b99-47e5-98a7-cb3e1de90974.jpg](View-others_imgs\U6b7gpmZMQ9.jpg)
 
 
 
@@ -1202,33 +1202,33 @@ guideline1为水平辅助线,开始位置是距离顶部50dp,guideline2位垂直
 
 step1 定义ViewPager对象和视图id数组
 
-![image-20220302110821450](View-others_imgs\image-20220302110821450.png)
+![image-20220302110821450](View-others_imgs\sFk1f5eEXWa.png)
 
 step2 把视图添加到视图List中
 
-![image-20220302110838895](View-others_imgs\image-20220302110838895.png)
+![image-20220302110838895](View-others_imgs\MHKIX2Z976R.png)
 
 step3 添加适配器PagerAdapter
 
-![image-20220302110857439](View-others_imgs\image-20220302110857439.png)
+![image-20220302110857439](View-others_imgs\wA6cT8jiTSW.png)
 
-![image-20220302110909238](View-others_imgs\image-20220302110909238.png)
+![image-20220302110909238](View-others_imgs\wNWg3wIjrlR.png)
 
 或者FragmentPagerAdapter
 
-![image-20220302110930646](View-others_imgs\image-20220302110930646.png)
+![image-20220302110930646](View-others_imgs\jfGZS8gJSq4.png)
 
-![image-20220302110941927](View-others_imgs\image-20220302110941927.png)
+![image-20220302110941927](View-others_imgs\zD30MbUtVlA.png)
 
 Fragment中
 
-![image-20220302110958673](View-others_imgs\image-20220302110958673.png)
+![image-20220302110958673](View-others_imgs\NPnsPezO2Zh.png)
 
 **监听器**
 
 ①视图转换监听器
 
-![image-20220302111029409](View-others_imgs\image-20220302111029409.png)
+![image-20220302111029409](View-others_imgs\URJGNhP0dFn.png)
 
 ### RecyclerView
 
@@ -1241,7 +1241,7 @@ implementation 'com.android.support:recyclerview-V7:28.0.0'//版本需要和appc
 
 忽略警告的操作：
 
-![image-20220408172536624](View-others_imgs\image-20220408172536624.png)
+![image-20220408172536624](View-others_imgs\ZvG0QHty7Vg.png)
 
 **布局方式**
 

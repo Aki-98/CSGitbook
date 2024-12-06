@@ -1,8 +1,8 @@
 
 
-![这里写图片描述](Service-生命周期_imgs\20161004164521384.png)
+![这里写图片描述](Service-生命周期_imgs\RxrebVQgv5v.png)
 
-![image-20220310093313926](Service-生命周期_imgs\image-20220310093313926.png)
+![image-20220310093313926](Service-生命周期_imgs\U24F1k5BdRd.png)
 
 ## 1. 生命周期常用方法
 
@@ -39,7 +39,7 @@
 - 手动调用startService()后，自动调用内部方法：onCreate()、onStartCommand()
 - 调用逻辑如下：  
 
-![调用逻辑](Service-生命周期_imgs\1.png)
+![调用逻辑](Service-生命周期_imgs\CK5kIcM8Pgx.png)
 
 调用逻辑
 
@@ -49,7 +49,7 @@
 - 手动调用stopService()后，自动调用内部方法：onDestory()
 - 调用的逻辑：
 
-![调用逻辑](Service-生命周期_imgs\2.png)
+![调用逻辑](Service-生命周期_imgs\jd6Yy8fvSgD.png)
 
 调用逻辑
 
@@ -59,7 +59,7 @@
 - 手动调用bindService()后，自动调用内部方法：onCreate()、onBind()
 - 调用的逻辑：
 
-![调用的逻辑](Service-生命周期_imgs\3.png)
+![调用的逻辑](Service-生命周期_imgs\cnMEf8uVKvS.png)
 
 调用的逻辑
 
@@ -69,7 +69,7 @@
 - 手动调用unbindService()后，自动调用内部方法：onCreate()、onBind()、onDestory()
 - 调用的逻辑：  
 
-![调用的逻辑](Service-生命周期_imgs\4.png)
+![调用的逻辑](Service-生命周期_imgs\FcATVPPo13U.png)
 
 调用的逻辑
 
@@ -79,19 +79,19 @@
 
 #### 3.1 只使用startService启动服务的生命周期
 
-![startService启动服务的生命周期](Service-生命周期_imgs\5.png)
+![startService启动服务的生命周期](Service-生命周期_imgs\27LxXQ0Qv9r.png)
 
 startService启动服务的生命周期
 
 #### 3.2 只使用BindService绑定服务的生命周期
 
-![BindService绑定服务的生命周期](Service-生命周期_imgs\6.png)
+![BindService绑定服务的生命周期](Service-生命周期_imgs\kpbgMaGSCIG.png)
 
 BindService绑定服务的生命周期
 
 #### 3.3 同时使用startService()启动服务、BindService()绑定服务的生命周期
 
-![Paste_Image.png](Service-生命周期_imgs\7.png)
+![Paste_Image.png](Service-生命周期_imgs\DEdXf9qNbfA.png)
 
 Paste_Image.png
 

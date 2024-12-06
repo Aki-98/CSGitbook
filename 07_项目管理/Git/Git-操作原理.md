@@ -20,7 +20,7 @@ Git 有一个特殊指针HEAD， 总是指向当前分支的最近一次快照�
 
 合并拥有同一父节点的分支
 
-![image-20220315112026957](Git-操作原理_imgs\image-20220315112026957.png)
+![image-20220315112026957](Git-操作原理_imgs\fb6DldDEh0x.png)
 
 git merge –abort
 
@@ -30,14 +30,14 @@ There are changes in both branches, but they conflict. In this case, the conflic
 
 重定向分支指针
 
-![image-20220315111450866](Git-操作原理_imgs\image-20220315111450866.png)
+![image-20220315111450866](Git-操作原理_imgs\6DrzsaG1GiD.png)
 
 ## CherryPick
 
 选一个分支中一个或者几个commit来应用提交到另外一个分支
 
-![image-20220315112009109](Git-操作原理_imgs\image-20220315112009109.png)
+![image-20220315112009109](Git-操作原理_imgs\gBpbP9aNSdg.png)
 
 # Revert
 
-![image-20220315112501885](Git-操作原理_imgs\image-20220315112501885.png)
+![image-20220315112501885](Git-操作原理_imgs\2jK72FmCSkr.png)

@@ -122,7 +122,7 @@ Robolectric will attempt to create an instance of your Application class as spec
     }
 ```
 
-![img_674031cac8514b75d5e936861a3f4ac4.png](Robolectric_imgs\img_674031cac8514b75d5e936861a3f4ac4.png)
+![img_674031cac8514b75d5e936861a3f4ac4.png](Robolectric_imgs\7sLvJMuklMH.png)
 
 自定义manifest目录示意图
 
@@ -587,7 +587,7 @@ public class MainActivityTest {
 
 如果要指定sdk版本的话，可以在src/test/resources目录下创建一个名为robolectric.properties的文件在你所要生效的包名下。其中更深的包中的值覆盖更浅的包中的值。当测试类或方法有@Config注释，这些注释覆盖属性文件中的任何配置。具体如下图所示：
 
-![在这里插入图片描述](Robolectric_imgs\74.png)
+![在这里插入图片描述](Robolectric_imgs\jOLFrSx8X6Y.png)
 
 
 这样相比之前的方式确实友好很多。详细配置及其他用法可以参看官方文档。
@@ -797,7 +797,7 @@ RobolectricTestRunner and add rule PowerMockRule to implement
 
 Robolectric + PowerMock
 
-![image-20230329141308184](Robolectric_imgs\image-20230329141308184.png)
+![image-20230329141308184](Robolectric_imgs\vinjYK3fBXI.png)
 
 ## Espresso & Robolectric
 

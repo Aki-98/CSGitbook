@@ -79,7 +79,7 @@ apply from: "../config.gradle"
 
 # ?Gradle 自定义插件
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_gradle](Gradle-插件_imgs\48.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_gradle](Gradle-插件_imgs\eqQYcklbjPo.png)
 
 ##  **方式一：Build script脚本方式**
 
@@ -93,12 +93,12 @@ class MyPlugin implements Plugin<Project>{
 }
 ```
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_android_02](Gradle-插件_imgs\49.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_android_02](Gradle-插件_imgs\c4ZyfvKFpeP.png)
 
 
 运行结果：
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_android_02](Gradle-插件_imgs\50.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_android_02](Gradle-插件_imgs\TdCt6gaLgA3.png)
 
 ### 详细介绍？
 
@@ -198,7 +198,7 @@ class MyPlugin implements Plugin<Project>{
 
 2、新建一个 build.gradle 文件，里面添加如下代码，然后点击 sync now，你就会发现 buildSrc 文件夹多了一个绿标
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_解决方法_04](Gradle-插件_imgs\51.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_解决方法_04](Gradle-插件_imgs\nqSHUyyKm6n.png)
 
 ```groovy
 apply plugin: "java"
@@ -221,19 +221,19 @@ public class MyPlugin implements Plugin<Project> {
 
 4、在app下的build.gradle里面应用
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_java_05](Gradle-插件_imgs\52.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_java_05](Gradle-插件_imgs\nxdZ3ycMIK4.png)
 
 运行结果展示：
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_android_06](Gradle-插件_imgs\53.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_android_06](Gradle-插件_imgs\ocg7c0nKBEn.png)
 
 ## 方式三：独立项目
 
 1、新建一个独立的module，不要选错了！！！，
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_解决方法_07](Gradle-插件_imgs\54.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_解决方法_07](Gradle-插件_imgs\PMUng64E37e.png)
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_ide_08](Gradle-插件_imgs\55.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_ide_08](Gradle-插件_imgs\yC0H5Yd0gMB.png)
 
 2、在该模块下的build.gradle里添加依赖
 
@@ -248,7 +248,7 @@ dependencies {
 
 解决方法：
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_gradle_10](Gradle-插件_imgs\56.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_gradle_10](Gradle-插件_imgs\PJqdNA8PXUR.png)
 
  3、编写插件类
 
@@ -270,34 +270,34 @@ public class MyClass implements Plugin<Project> {
 
 层级结构不能错
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_android_11](Gradle-插件_imgs\57.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_android_11](Gradle-插件_imgs\6v0JolKCKLQ.png)
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_java_12](Gradle-插件_imgs\58.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_java_12](Gradle-插件_imgs\IlhxZWMtxxP.png)
 
 5、发布插件任务代码的编写
 
 groupId、artifactId、version根据自己实际情况来写
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_ide_13](Gradle-自定义插件_imgs\59.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_ide_13](Gradle-插件_imgs\ziPuKK3wuDL.png)
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_android_14](Gradle-自定义插件_imgs\60.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_android_14](Gradle-插件_imgs\DdTEwzCp5yt.png)
 
 如果有小伙伴没找到task视图，解决方法如下：
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_ide_15](Gradle-自定义插件_imgs\61.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_ide_15](Gradle-插件_imgs\Sd0VEdBuz0A.png)
 
 6、点击如下按钮，发布到本地仓库
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_gradle_16](Gradle-插件_imgs\62.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_gradle_16](Gradle-插件_imgs\DevBvnrRNB2.png)
 
 7、使用
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_gradle_17](Gradle-插件_imgs\63.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_gradle_17](Gradle-插件_imgs\W1z8seKqngp.png)
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_android_18](Gradle-插件_imgs\64.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_android_18](Gradle-插件_imgs\GtONNqmdR4e.png)
 
 运行效果：
 
-![Android Gradle三种自定义插件方式详解（含报错解决方案）_android_19](Gradle-插件_imgs\65.png)
+![Android Gradle三种自定义插件方式详解（含报错解决方案）_android_19](Gradle-插件_imgs\Z0cTHE5yOI7.png)
 
  

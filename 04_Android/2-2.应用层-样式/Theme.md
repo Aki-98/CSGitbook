@@ -98,9 +98,9 @@ EditText 的 text color,等等文本颜色。
 
 返回按钮的图片
 
-![](Theme_imgs\2022-02-19-15-34-59-image.png)
+![](Theme_imgs\7wODaeyOPKK.png)
 
-![](Theme_imgs\2022-02-19-15-35-18-image.png)
+![](Theme_imgs\hgZwZADvWDK.png)
 
 # 常见的主题与风格
 
@@ -136,7 +136,7 @@ android:theme="Theme.Panel"
 
 android:theme="Theme.Light.Panel"
 
-![](Theme_imgs\2022-02-19-15-36-30-image.png)
+![](Theme_imgs\gbLmtjRbttq.png)
 
 # AOSP中的主题列表
 

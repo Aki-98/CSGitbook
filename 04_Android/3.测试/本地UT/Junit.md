@@ -664,7 +664,7 @@ public class MyRule implements TestRule {
 
 我们使用一下我们自定义的MyRule，效果如图：
 
-![这里写图片描述](Junit_imgs\SouthEast.png)
+![这里写图片描述](Junit_imgs\lEMchf5oMF3.png)
 
 
 

@@ -308,7 +308,7 @@ Activity通过bindService()绑定到LocalService后，ServiceConnection#onServic
 
 我们运行程序，点击绑定服务并多次点击绑定服务接着多次调用LocalService中的getCount()获取数据，最后调用解除绑定的方法移除服务，其结果如下：
 
-![这里写图片描述](Service-绑定方法_imgs\20161003123125076.png)
+![这里写图片描述](Service-绑定方法-Binder&Messager&AIDL_imgs\vqz29WISIfF.png)
 
 通过Log可知，当我们第一次点击绑定服务时，LocalService服务端的onCreate()、onBind方法会依次被调用，此时客户端的ServiceConnection#onServiceConnected()被调用并返回LocalBinder对象，接着调用LocalBinder#getService方法返回LocalService实例对象，此时客户端便持有了LocalService的实例对象，也就可以任意调用LocalService类中的声明公共方法了。
 
@@ -504,7 +504,7 @@ public class ActivityMessenger extends Activity {
 
 接着多次点击绑定服务，然后发送信息给服务端，最后解除绑定，Log打印如下：
 
-![这里写图片描述](Service-绑定方法_imgs\20161003162626563.png)
+![这里写图片描述](Service-绑定方法-Binder&Messager&AIDL_imgs\w1mYcNAGzyv.png)
 
 通过上述例子可知Service服务端确实收到了客户端发送的信息，而且在Messenger中进行数据传递必须将数据封装到Message中，因为Message和Messenger都实现了Parcelable接口，可以轻松跨进程传递数据，而Message可以传递的信息载体有，what,arg1,arg2,Bundle以及replyTo，至于object字段，对于同一进程中的数据传递确实很实用，但对于进程间的通信，则显得相当尴尬，在android2.2前，object不支持跨进程传输，但即便是android2.2之后也只能传递android系统提供的实现了Parcelable接口的对象，也就是说我们通过自定义实现Parcelable接口的对象无法通过object字段来传递，因此object字段的实用性在跨进程中也变得相当低了。不过所幸我们还有Bundle对象，Bundle可以支持大量的数据类型。接着从Log我们也看出无论是使用拓展Binder类的实现方式还是使用Messenger的实现方式，它们的生命周期方法的调用顺序基本是一样的，即onCreate()、onBind、onUnBind、onDestroy，而且多次绑定中也只有第一次时才调用onBind()。
 
@@ -587,11 +587,11 @@ public class ActivityMessenger extends Activity {
     }
 ```
 
-![这里写图片描述](Service-绑定方法_imgs\20161003173153947.png)
+![这里写图片描述](Service-绑定方法-Binder&Messager&AIDL_imgs\aUNg8ujeP5b.png)
 
 原理图：
 
-![这里写图片描述](Service-绑定方法_imgs\20161004221152656.png)
+![这里写图片描述](Service-绑定方法-Binder&Messager&AIDL_imgs\e8ScX3XqNJe.png)
 
 ## 使用AIDL
 
@@ -603,13 +603,13 @@ Code&Step：https://blog.csdn.net/weixin_37749732/article/details/124271111
 
    1.创建AIDL文件
 
-   ![image-20220524160206554](Service-绑定方法_imgs\image-20220524160206554.png)
+   ![image-20220524160206554](Service-绑定方法-Binder&Messager&AIDL_imgs\IPfHCIuXcUN.png)
 
    2.自动生成对应的Java文件
 
-   ![image-20220524161459959](Service-绑定方法_imgs\image-20220524161459959.png)
+   ![image-20220524161459959](Service-绑定方法-Binder&Messager&AIDL_imgs\Z0yiQg7MjWP.png)
 
-   ![image-20220524210518733](Service-绑定方法_imgs\image-20220524210518733.png)
+   ![image-20220524210518733](Service-绑定方法-Binder&Messager&AIDL_imgs\JkHS6jOhlhp.png)
 
 2. Server中创建一个继承自IAidl.Stub的类，并于onBind()时return
 
@@ -634,7 +634,7 @@ public class MyRemoteService extends Service {
 
 2. Client中的aidl文件放置层级应完全复制自Server
 
-![在这里插入图片描述](Service-绑定方法_imgs\watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAN3p3YW5n,size_20,color_FFFFFF,t_70,g_se,x_16.png)
+![在这里插入图片描述](Service-绑定方法-Binder&Messager&AIDL_imgs\vcKXuOue0hR.png)
 
 3. 绑定到Service时应使用IAidl.Stub.asInterface(iBinder)得到Server的Binder
 

@@ -62,7 +62,7 @@ About the samples please refer to the p20,p21
 
 following is on the fly mode jacoco config:
 
-![image-20230329142814075](Jacoco_imgs\image-20230329142814075.png)
+![image-20230329142814075](Jacoco_imgs\JoYNJ42izdt.png)
 
 
 
@@ -70,7 +70,7 @@ following is on the offline mode jacoco config:
 
 the mainSrc,javDebugTree,kotlinDebugTree is same as on the fly mode config
 
-![image-20230329142829931](Jacoco_imgs\image-20230329142829931.png)
+![image-20230329142829931](Jacoco_imgs\BR4JNEcxDpB.png)
 
 
 

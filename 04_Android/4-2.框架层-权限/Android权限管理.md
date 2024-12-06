@@ -25,11 +25,11 @@ Android Permission权限机制是对Android安全机制的一个重要补充，�
 
 ## 权限信息
 
-![img](Android权限管理_imgs\23.png)
+![img](Android权限管理_imgs\n8zjOolRCB3.png)
 
 可以使用adb shell pm list permissions -f 命令详细查看 Android 预定义的权限详细信息(危险权限组未在此列表中), 例如下所示：
 
-![img](Android权限管理_imgs\24.png)
+![img](Android权限管理_imgs\xDUlNWkg8Ym.png)
 
 系统目录下查看声明的权限信息路径：
 
@@ -53,11 +53,11 @@ pm list permissions [options] [GROUP]
 
 例如：pm list permissions –g -d (危险权限组信息)
 
-![img](Android权限管理_imgs\25.png)
+![img](Android权限管理_imgs\P5eYX91q01y.png)
 
 **其它常用参数：**
 
-![img](Android权限管理_imgs\26.png)
+![img](Android权限管理_imgs\xfHUKMExPL8.png)
 
 ## 权限级别
 
@@ -75,7 +75,7 @@ int permissionFlags = permissionInfo.getProtectionFlags(); --- 附加权限标�
 
 **基本权限类型：**
 
-![img](Android权限管理_imgs\27.png)
+![img](Android权限管理_imgs\wEVyYs6sqwE.png)
 
 **其它附加权限标志,见如下google官网说明:**
 
@@ -85,7 +85,7 @@ int permissionFlags = permissionInfo.getProtectionFlags(); --- 附加权限标�
 
 应用安装时，就给权限赋予了对应的状态，系统是使用PMS来管理权限。PMS维护管理权限状态数据，Android6.0之前，保存在data/system/packages.xml中；6.0之后增加了data/*../runtime-permissions.xml,数据持久化存储文件，用于记录着运行时权限的授予和拒绝状态，当权限状态变更时，申请的结果会动态更新 granted 值和flags状态。
 
-![img](Android权限管理_imgs\28.png)
+![img](Android权限管理_imgs\k8Ns52pZ3wO.png)
 
 查看：
 
@@ -105,27 +105,27 @@ Android6.0 此版本引入了一种新的权限模式，用户可直接在运行
 
 step1 检查是否具有权限
 
-![image-20220302164439886](Android权限管理_imgs\image-20220302164439886.png)
+![image-20220302164439886](Android权限管理_imgs\VJ44SMajz1r.png)
 
 step2 请求权限（可以一次性请求多个）
 
-![image-20220302164501240](Android权限管理_imgs\image-20220302164501240.png)
+![image-20220302164501240](Android权限管理_imgs\NRoGQxXsvXW.png)
 
-![image-20220302164844493](Android权限管理_imgs\image-20220302164844493.png)
+![image-20220302164844493](Android权限管理_imgs\PrdgOmt4HMt.png)
 
 step3 检查权限请求返回代码
 
-![image-20220302164916295](Android权限管理_imgs\image-20220302164916295.png)
+![image-20220302164916295](Android权限管理_imgs\3HMdCAZa5X8.png)
 
 **权限申请:**
 
-![img](Android权限管理_imgs\29.png)
+![img](Android权限管理_imgs\URerSBS1Dvz.png)
 
 ## 权限检查
 
 检查用户是否已向您的应用授予特定权限，将该权限传入checkSelfPermission() 方法。根据您的应用是否具有相应权限，此方法会返回PackageManager.PERMISSION_GRANTED(0)或PackageManager.PERMISSION_DENIED(-1)。
 
-![img](Android权限管理_imgs\30.png)
+![img](Android权限管理_imgs\fFyXAV2HBnv.png)
 
 检查权限方法：
 
@@ -148,17 +148,17 @@ Android的权限模型是多方面的，有API权限、文件系统权限和IPC�
 
 内置权限到GID的映射定义在/etc/permissions/platform.xml 中
 
-![img](Android权限管理_imgs\31.png)
+![img](Android权限管理_imgs\dJ1KuDUrXHe.png)
 
 包管理器在启动时读取 platform.xml，并维护「permission-GID」对应的列表。当它给安装中的包授权时，会把权限对应的 GID 加入到该应用进程的补充 GID 中。
 
 权限对应的 GID 加入到该应用进程的补充 GID 中，可以通过adb shell--cd proc--cd PID--cat status查看：
 
-![img](Android权限管理_imgs\32.png)
+![img](Android权限管理_imgs\NcTR3MOoSAj.png)
 
 system/core/libcutils/include/private/android_filesystem_config.h
 
-![img](Android权限管理_imgs\33.png)
+![img](Android权限管理_imgs\dTPBeBJCgEN.png)
 
 
 
@@ -210,20 +210,20 @@ Android从1.0开始其根基Linux继承了已经深入人心的类Unix进程隔�
 | ----: | ------------------------------------------------------------ |
 |   1.6 | 新增[WRITE_EXTERNAL_STORAGE](https://links.jianshu.com/go?to=https%3A%2F%2Fdeveloper.android.com%2Freference%2Fandroid%2FManifest.permission%23WRITE_EXTERNAL_STORAGE)权限，允许程序写入外部存储 |
 |   2.2 | android.permission.KILL_BACKGROUND_PROCESSES— 允许应用程序调用[killBackgroundProcesses(String)](https://links.jianshu.com/go?to=https%3A%2F%2Fdeveloper.android.com%2Freference%2Fandroid%2Fapp%2FActivityManager%23killBackgroundProcesses(java.lang.String)) |
-|   2.3 | ![img](Android权限管理_imgs\34.png)             |
-|   3.0 | ![img](Android权限管理_imgs\35.png)             |
-|   4.0 | ![img](Android权限管理_imgs\36.png)             |
-| 4.0.3 | ![img](Android权限管理_imgs\37.png)             |
-|   4.1 | ![img](Android权限管理_imgs\38.png)             |
+|   2.3 | ![img](Android权限管理_imgs\a2WLN1NGcuN.png)             |
+|   3.0 | ![img](Android权限管理_imgs\gX1SykrbR9V.png)             |
+|   4.0 | ![img](Android权限管理_imgs\dowDUJjQPYM.png)             |
+| 4.0.3 | ![img](Android权限管理_imgs\IZ83PeN2DLx.png)             |
+|   4.1 | ![img](Android权限管理_imgs\pUUK8exklgq.png)             |
 |   4.2 | 精细化区分[ACCESS_COARSE_LOCATION](https://links.jianshu.com/go?to=https%3A%2F%2Fdeveloper.android.com%2Freference%2Fandroid%2FManifest.permission%23ACCESS_COARSE_LOCATION)权限和[ACCESS_FINE_LOCATION](https://links.jianshu.com/go?to=https%3A%2F%2Fdeveloper.android.com%2Freference%2Fandroid%2FManifest.permission%23ACCESS_FINE_LOCATION),不请求FINE_LOCATION获取的位置结果可能不太准确 |
 |   4.3 | BIND_NOTIFICATION_LISTENER_SERVICE：需要使用新的 NotificationListenerService API |
 |   4.4 | 从 Android 4.4 开始，当您仅访问您的应用特定外部存储区域时，此平台不再要求您的应用获取 WRITE_EXTERNAL_STORAGE 或 READ_EXTERNAL_STORAGE。不过，如果您要访问 getExternalStoragePublicDirectory() 提供的外部存储空间的可共享区域，则需要这些权限 |
-|   5.0 | ![img](Android权限管理_imgs\39.png)             |
+|   5.0 | ![img](Android权限管理_imgs\9yNgiLnutpL.png)             |
 |   6.0 | 此版本引入了一种新的权限模式，如今，用户可直接在运行时管理应用权限。这种模式让用户能够更好地了解和控制权限，同时为应用开发者精简了安装和自动更新过程。用户可为所安装的各个应用分别授予或撤销权限。对于以 Android 6.0（API 级别 23）或更高版本为目标平台的应用，请务必在运行时检查和请求权限。要确定您的应用是否已被授予权限，请调用新增的 checkSelfPermission() 方法。要请求权限，请调用新增的 requestPermissions() 方法。即使您的应用并不以 Android 6.0（API 级别 23）为目标平台，您也应该在新权限模式下测试您的应用。 |
 |   7.0 | 文件系统权限更改：为了提高隐私文件的安全性，Android 7.0 或更高版本的应用程序的隐私目录已限制访问。 |
 |   8.0 | 在 Android 8.0 之前，如果应用在运行时请求权限并且被授予该权限，系统会错误地将属于同一权限组并且在清单中注册的其他权限也一起授予应用。对于针对 Android 8.0 的应用，此行为已被纠正。系统只会授予应用明确请求的权限。然而，一旦用户为应用授予某个权限，则所有后续对该权限组中权限的请求都将被自动批准。 |
 |   9.0 | 为了增强用户隐私，Android 9 引入了若干行为变更，如限制后台应用访问设备传感器、限制通过 Wi-Fi 扫描检索到的信息，以及与通话、手机状态和 Wi-Fi 扫描相关的新权限规则和权限组。无论采用哪一种目标 SDK 版本，这些变更都会影响运行于 Android 9 上的所有应用。 |
-|    10 | ![img](Android权限管理_imgs\40.png)             |
+|    10 | ![img](Android权限管理_imgs\IHhYEJD8G7O.png)             |
 |    11 | Android 11 对应用授予权限的方式进行了多项更改。这些更改旨在通过更加有意地授予权限来保护用户。强制执行分区存储、单次授权、自动重置权限、后台位置信息访问权限、软件包可见性、前台服务等的调整。 |
 |    12 | 在搭载 Android 12 或更高版本的设备上，[用户可以要求](https://links.jianshu.com/go?to=https%3A%2F%2Fdeveloper.android.com%2Ftraining%2Flocation%2Fpermissions%23approximate-request)您的应用只能访问[大致位置](https://links.jianshu.com/go?to=https%3A%2F%2Fdeveloper.android.com%2Ftraining%2Flocation%2Fpermissions%23accuracy)信息。 |
 |    13 | 存储权限变更、新增通知权限、后台使用身体传感器权限。         |
@@ -244,7 +244,7 @@ Android从1.0开始其根基Linux继承了已经深入人心的类Unix进程隔�
 
 .要声明您的应用中的某个服务的前台服务类型，请将应用的 targetSdkVersion 或 compileSdkVersion 设置为 29 或更高版本。
 
-![img](Android权限管理_imgs\41.png)
+![img](Android权限管理_imgs\J7HSTAT6SqK.png)
 
 定位权限状态
 
@@ -270,7 +270,7 @@ android:foregroundServiceType="location" />
  </manifest>
 ```
 
-![img](Android权限管理_imgs\42.png)
+![img](Android权限管理_imgs\y7HkQ3mlrUN.png)
 
 定位权限授权对比
 
@@ -299,7 +299,7 @@ android:foregroundServiceType="location" />
 
 为了让用户更好地控制自己的文件并减少混乱，Android 10 针对应用推出了一种新的存储范例，称为分区存储。分区存储改变了应用在设备的外部存储设备中存储和访问文件的方式。
 
-![img](Android权限管理_imgs\43.png)
+![img](Android权限管理_imgs\yg1Zs0jq3vN.png)
 
 受影响的文件接口
 
@@ -369,7 +369,7 @@ Android 11 更改了应用查询用户已在设备上安装的其他应用以及
 
 如果监听安装/卸载的应用不符合可见性原则，或者未声明QUERY_ALL_PACKAGES权限, onReceive将不会回调。
 
-![img](Android权限管理_imgs\26874665-11c5e2f673f96e2d.png)
+![img](Android权限管理_imgs\YAgL4brAeTM.png)
 
 广播回调接口受影响
 
@@ -379,7 +379,7 @@ Android 11 更改了应用查询用户已在设备上安装的其他应用以及
 
 系统预置的默认授权机制，在Pms systemReady里面会根据Build.FINGERPRINT来判断是不是第一次开机，来做默认授权。
 
-![img](Android权限管理_imgs\44.png)
+![img](Android权限管理_imgs\GIxKBAFdfDt.png)
 
 1. share systemuid默认授权权限(一般是在Manifest中配置类似的
     android:sharedUserId=”android.uid.system”)
@@ -397,7 +397,7 @@ public  void grantDefaultPermissions(int userId)  {
 }
 ```
 
-![img](Android权限管理_imgs\45.png)
+![img](Android权限管理_imgs\a4FS6pXVee2.png)
 
 系统默认授权应用
 
@@ -429,13 +429,13 @@ appops.xml位于/data/system/目录下，存储各个app的权限设置和操作
 
 Android提供了命令行的方式来更改某个应用的某个权限，进入adb shell可以查看**相应用法：**
 
-![img](Android权限管理_imgs\46.png)
+![img](Android权限管理_imgs\6lsiVq9andF.png)
 
 appops命令
 
 **AppOps权限检查流程:**
 
-![img](Android权限管理_imgs\47.png)
+![img](Android权限管理_imgs\g9yeZlQHjdt.png)
 
 appops检查权限流程
 

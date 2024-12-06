@@ -284,7 +284,7 @@ public class MockitoSpyTest {
 
 2.inOrder使用代码及测试结果：
 
-![这里写图片描述](Mockito_imgs\72.png)
+![这里写图片描述](Mockito_imgs\gR21zLJxMAJ.png)
 
 3.@InjectMocks: 创建一个实例，这个实例需要的参数用@Mock（或@Spy）注解创建的注入到该实例中。
 
@@ -303,4 +303,4 @@ public class Home {
 }
 ```
 
-![这里写图片描述](Mockito_imgs\73.png)
+![这里写图片描述](Mockito_imgs\59uSNNKe2zt.png)

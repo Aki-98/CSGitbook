@@ -1,8 +1,8 @@
 # 模式切换
 
-![image-20230323181017135](Vi编辑器_imgs\image-20230323181017135.png)
+![image-20230323181017135](Vi编辑器_imgs\PqDnpyrtDIn.png)
 
-![image-20230323181052498](Vi编辑器_imgs\image-20230323181052498.png)
+![image-20230323181052498](Vi编辑器_imgs\gMywPbNeDX9.png)
 
 # 插入模式
 
@@ -28,20 +28,20 @@
 
 :wq! 强行保存文件并退出vi编辑器
 
-![image-20230323180844911](Vi编辑器_imgs\image-20230323180844911.png)
+![image-20230323180844911](Vi编辑器_imgs\hZKQvYgReML.png)
 
 
 
 # 命令模式
 
-![image-20230323180602955](Vi编辑器_imgs\image-20230323180602955.png)
+![image-20230323180602955](Vi编辑器_imgs\K4TBWmc9nWQ.png)
 
-![image-20230323180630351](Vi编辑器_imgs\image-20230323180630351.png)
+![image-20230323180630351](Vi编辑器_imgs\rLHWVsrTjlf.png)
 
-![image-20230323180641310](Vi编辑器_imgs\image-20230323180641310.png)
+![image-20230323180641310](Vi编辑器_imgs\eM028u7b0aD.png)
 
-![image-20230323180658446](Vi编辑器_imgs\image-20230323180658446.png)
+![image-20230323180658446](Vi编辑器_imgs\9zEQfD9Yf6R.png)
 
 # 设置vi编辑器
 
-![image-20230323181122929](Vi编辑器_imgs\image-20230323181122929.png)
+![image-20230323181122929](Vi编辑器_imgs\0QcYopEDAmF.png)

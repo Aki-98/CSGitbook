@@ -2,29 +2,29 @@
 
 ## 头文件
 
-![image-20220701105233918](C++_imgs\image-20220701105233918.png)
+![image-20220701105233918](C++_imgs\xHQXSDu7U4O.png)
 
 ## 编译和执行过程
 
-![image-20220701105321412](C++_imgs\image-20220701105321412.png)
+![image-20220701105321412](C++_imgs\q4X5BqgdRnD.png)
 
 # 基本语法
 
 ## 关键字
 
-![image-20220701105347930](C++_imgs\image-20220701105347930.png)
+![image-20220701105347930](C++_imgs\6gdcGasYZCj.png)
 
 ## 数据类型
 
 ### 整型
 
-![image-20220701105440709](C++_imgs\image-20220701105440709.png)
+![image-20220701105440709](C++_imgs\bT5WTteFmmn.png)
 
 sizeof()函数，传入变量，返回变量占用空间字节大小
 
 ### 实型（浮点型）
 
-![image-20220701105711825](C++_imgs\image-20220701105711825.png)
+![image-20220701105711825](C++_imgs\EF6HvnBCYuk.png)
 
 3.14默认为双精度 float f1=3.14 系统需要转换 建议写成float f1 = 3.14f
 
@@ -40,7 +40,7 @@ A 65
 
 #### 转义字符
 
-![image-20220701105857770](C++_imgs\image-20220701105857770.png)
+![image-20220701105857770](C++_imgs\M2t4o8aHRdb.png)
 
 #### 字符串
 
@@ -136,6 +136,6 @@ cin >> 变量
 
 向量容器vector
 
-![image-20220701110429000](C++_imgs\image-20220701110429000.png)
+![image-20220701110429000](C++_imgs\EOPuMNL5TK6.png)
 
-![image-20220701110439851](C++_imgs\image-20220701110439851.png)
+![image-20220701110439851](C++_imgs\Rb31gJD2XCL.png)

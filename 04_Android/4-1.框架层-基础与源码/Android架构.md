@@ -1,6 +1,6 @@
 # Android架构
 
-![img](Android架构_imgs\14.png)
+![img](Android架构_imgs\a3iXjfG1vLk.png)
 
 ## **LINUX KERNEL**
 

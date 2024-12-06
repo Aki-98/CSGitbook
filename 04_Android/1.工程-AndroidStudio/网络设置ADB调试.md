@@ -32,7 +32,7 @@
 
 ## 6. 如图的第一个adb devices,是使用usb线连接设置调试端口号
 
-![img](网络设置ADB调试_imgs\adb_net_config.png)
+![img](网络设置ADB调试_imgs\0oGolOB2yUt.png)
 
 ## 7. 在使用adb tcpip 5555设置好调试端口号，使用adb connect 192.168.1.5连接安卓屏，连接成功会显示下面的conenct to xxx.xxx.x.xxx:5555
 

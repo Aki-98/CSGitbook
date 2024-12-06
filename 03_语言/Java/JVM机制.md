@@ -34,13 +34,13 @@ JRE是Java的运行环境，是面向所有Java程序的使用者，包括开发
 
 JVM是包含在JRE里面的。
 
-![img](JVM机制_imgs\31.png)
+![img](JVM机制_imgs\QX8XBdfxAJy.png)
 
 
 
 ## **JVM的结构体系**
 
-![img](JVM机制_imgs\32.png)
+![img](JVM机制_imgs\ZG3iesDxQFC.png)
 
 ### **Class文件**
 

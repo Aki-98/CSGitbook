@@ -298,7 +298,7 @@ SELECT EMP_ID, NAME, DEPT FROM COMPANY CROSS JOIN DEPARTMENT;
 
 2. **内连接** inner join: 满足条件的记录才会出现在结果集中。
 
-![sqlite内连接](SQLite基础_imgs\sqlite内连接.png)
+![sqlite内连接](SQLite基础_imgs\YmYckD2tvio.png)
 
 ```sql
 SELECT EMP_ID, NAME, DEPT FROM COMPANY INNER JOIN DEPARTMENT
@@ -307,7 +307,7 @@ SELECT EMP_ID, NAME, DEPT FROM COMPANY INNER JOIN DEPARTMENT
 
 3. **左外连接** left outer join: 左表全部出现在结果集中，若右表无对应记录，则相应字段为null
 
-![sqlite左外连接](SQLite基础_imgs\sqlite左外连接.png)
+![sqlite左外连接](SQLite基础_imgs\9GUxSRj6FMS.png)
 
 ```sql
 SELECT EMP_ID, NAME, DEPT FROM COMPANY LEFT OUTER JOIN DEPARTMEN ON COMPANY.ID = DEPARTMENT.EMP_ID;

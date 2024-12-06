@@ -339,7 +339,7 @@ Hierarchy  Viewer（层次结构查看器）能够很便捷地以可视化方式
 
 在ART中有许多新的垃圾回收算法，其中一个：当一个App不在前台时，它将是一个半空间垃圾回收器，没有被引用的对象被移除之后，被用过的控件将被复制到内存的一块自由空间内，这样内存将会没有碎片。
 
-![image-20221028171019487](【高性能Android应用开发】读书笔记_imgs\【高性能Android应用开发】-1.png)
+![image-20221028171019487](【高性能Android应用开发】读书笔记_imgs\aU2HNIfYvKL.png)
 
 > 15年AOSP有一个压缩垃圾回收器项目，可以实现对象在内存中移动位置从而消除碎片。
 
@@ -761,7 +761,7 @@ connectionCloseProperly.disconnect();
 
 ## 7.4 全球移动网络覆盖范围
 
-![【高性能Android应用开发】-2](【高性能Android应用开发】读书笔记_imgs\【高性能Android应用开发】-2.png)
+![【高性能Android应用开发】-2](【高性能Android应用开发】读书笔记_imgs\BvjDOa3yAPi.png)
 
 全球数据仅供参考
 

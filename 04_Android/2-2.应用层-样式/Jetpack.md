@@ -22,7 +22,7 @@ Jetpack 是 Google 为解决 Android 开发碎片化，打造成熟健康生态�
 
 ## **Jetpack构成**
 
-![img](E:\.personal\CSGitbook\04_Android\4-1.框架层-基础与源码\Android架构_imgs\15.png)
+![img](Jetpack_imgs\JNg619iy0lo.png)
 
 如上图：Jetpack 主要包括 4 个部分，分别是【Architecture：架构】、【UI：界面】、【Behavior：行为】和【Foundation：基础】。
 
@@ -104,7 +104,7 @@ Jetpack 是 Google 为解决 Android 开发碎片化，打造成熟健康生态�
 
 ## Jetpack应用架构
 
-![img](E:\.personal\CSGitbook\04_Android\4-1.框架层-基础与源码\Android架构_imgs\16.png)
+![img](Jetpack_imgs\qq2nnl7poRS.png)
 
 ViewModel 类旨在以注重生命周期的方式存储和管理界面相关的数据。ViewModel 类让数据可在发生屏幕旋转等配置更改后继续留存。
 

@@ -18,7 +18,7 @@ Calculator.exe
 
 dotnet Calculator.dll
 
-![image-20220411174041656](C_hashtag_Winform_imgs\image-20220411174041656.png)
+![image-20220411174041656](C_hashtag_Winform_imgs\rSoMazySXv6.png)
 
 
 
@@ -82,25 +82,25 @@ vs2022的下载和安装教程
 
 2、选择winform模板（注意是.NET Core）
 
-![image-20220413100358796](C_hashtag_Winform_imgs\image-20220413100358796.png)
+![image-20220413100358796](C_hashtag_Winform_imgs\Rile4Su4T1l.png)
 
 3、配置新项目
 
-![image-20220413100512573](C_hashtag_Winform_imgs\image-20220413100512573.png)
+![image-20220413100512573](C_hashtag_Winform_imgs\mXPmIKHADzZ.png)
 
 4、选择框架  .NET6.0
 
-![image-20220413100551039](C_hashtag_Winform_imgs\image-20220413100551039.png)
+![image-20220413100551039](C_hashtag_Winform_imgs\ut6HkEgXKvZ.png)
 
 5、点击创建出现这个界面就表示创建成功！
 
-![image-20220413100642490](C_hashtag_Winform_imgs\image-20220413100642490.png)
+![image-20220413100642490](C_hashtag_Winform_imgs\fqJTieiKCpX.png)
 
 
 
 # 四、项目文件讲解
 
-![image-20220413101134042](C_hashtag_Winform_imgs\image-20220413101134042.png)
+![image-20220413101134042](C_hashtag_Winform_imgs\Uc1slscPrOr.png)
 
 解决方案：一个大文件夹，里面可以包含多个项目
 
@@ -179,7 +179,7 @@ Main()方法就相当于汽车的电瓶，在生产汽车时，将各个零件�
 
 > 在我们的vs中，绿色表示该单词是我们的注释
 
-![image-20220413105841524](C_hashtag_Winform_imgs\image-20220413105841524.png)
+![image-20220413105841524](C_hashtag_Winform_imgs\beNea9OPddr.png)
 
 1. 单行注释
 
@@ -331,7 +331,7 @@ const int number=10;
 | ulong  | float、 double、 decimal                                     |
 | long   | float、 double、 decimal                                     |
 
-![image-20220413144549197](C_hashtag_Winform_imgs\image-20220413144549197.png)
+![image-20220413144549197](C_hashtag_Winform_imgs\L7IsL2FfZOd.png)
 
 不能隐式转换的，vs会有智能提示，这个时候是无法编译项目的。
 
@@ -364,7 +364,7 @@ const int number=10;
 
 
 
-![image-20220413152929694](C_hashtag_Winform_imgs\image-20220413152929694.png)
+![image-20220413152929694](C_hashtag_Winform_imgs\X2HSg5sWbD2.png)
 
 ## if
 
@@ -409,7 +409,7 @@ else{
 
 
 
-![image-20220413153021155](C_hashtag_Winform_imgs\image-20220413153021155.png)
+![image-20220413153021155](C_hashtag_Winform_imgs\jGKFbG5oyid.png)
 
 ## switch(结合enum)
 
@@ -619,7 +619,7 @@ int result = Test(b)//调用这个函数得到的结果是2
 
 
 
-![image-20220412173100465](C_hashtag_Winform_imgs\image-20220412173100465.png)
+![image-20220412173100465](C_hashtag_Winform_imgs\ShOoY8ullnV.png)
 
 
 
@@ -633,7 +633,7 @@ int result = Test(b)//调用这个函数得到的结果是2
 
 # 二四、Button控件的使用
 
-![image-20220412173112194](C_hashtag_Winform_imgs\image-20220412173112194.png)
+![image-20220412173112194](C_hashtag_Winform_imgs\tuAcATDZ8P8.png)
 
 
 
@@ -647,7 +647,7 @@ int result = Test(b)//调用这个函数得到的结果是2
 
 # 二五、计算器页面的布局
 
-![image-20220412172716946](C_hashtag_Winform_imgs\image-20220412172716946.png)
+![image-20220412172716946](C_hashtag_Winform_imgs\lIvXgvKSgkL.png)
 
 
 

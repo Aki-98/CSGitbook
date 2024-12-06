@@ -18,7 +18,7 @@ Zygote是一个C/S模型，Zygote进程作为服务端，它主要负责创建ja
 
 
 
-![img](Zygote_imgs\12.png)
+![img](Zygote_imgs\dhpR6DQdUMa.png)
 
 ## **init.rc**
 

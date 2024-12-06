@@ -2,7 +2,7 @@
 
 ## Gradle生命周期
 
-![img](E:\.personal\CSGitbook\04_Android\1.工程-构建\v2-8b3c702d268b20f71a90afde7271f605_720w.jpg)
+![img](AndroidGradle插件构建流程_imgs\GdPRE1c8Ckb.jpg)
 
 1. **Initialization（初始化阶段）**：Gradle支持单项目和多项目构建。在初始化阶段，Gradle确定将要参与构建的项目，并为每个项目创建一个Project对象。通俗的说就是执行上述**settings.gradle**文件。
 2. **Configuration（配置阶段）**：在此阶段，解析每个Project中的**build.gradle**文件，并生成将要执行的task。
@@ -12,7 +12,7 @@
 
 **构建流程涉及许多将项目转换成 Android 应用软件包 (APK)的工具和流程**，具体如下图所示：
 
-![img](E:\.personal\CSGitbook\04_Android\1.工程-构建\v2-8294a02772391fb87af12be6965c5f37_720w.jpg)
+![img](AndroidGradle插件构建流程_imgs\z04ixQqVkmJ.jpg)
 
 Android 应用模块的构建流程通常按照以下步骤执行：
 

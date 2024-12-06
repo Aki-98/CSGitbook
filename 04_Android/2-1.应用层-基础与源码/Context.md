@@ -27,7 +27,7 @@ Context最重要的作用就是获取全局消息、访问系统资源、调用�
 
 # Context的继承关系
 
-![image.png](E:\.personal\CSGitbook\04_Android\2-1.应用层-基础与源码\Context_imgs\1.png)
+![image.png](Context_imgs\VrDlfDjdJhS.png)
 
 最顶层是Context抽象类，他定义了一系列与系统交汇的接口。ContextWrapper继承自Context，但是并没有真正实现Context中的接口，而是把接口的实现都托管给ContextImpl，ContextImpl是Context接口的真正实现者，从AMS拿来的“凭证”也是封装到了ContextImpl中，然后赋值给ContextWrapper，这里运用到了一种模式：装饰者模式。Application和Service都继承自ContextWrapper，那么他们也就拥有Context的接口方法且本身即是context，方便开发者的使用。Activity比较特殊，因为它是有界面的，所以他需要一个主题：Theme，ContextThemeWrapper在ContextWrapper的基础上增加与主题相关的操作
 

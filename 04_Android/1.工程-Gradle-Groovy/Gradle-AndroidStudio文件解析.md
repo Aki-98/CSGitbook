@@ -18,7 +18,7 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-4.1-allzip
 
 ## 相关文件目录
 
-![img](Gradle-AndroidStudio文件解析_imgs\v2-3793ac4a94fa116585701a8da301b48c_720w.jpg)
+![img](Gradle-AndroidStudio文件解析_imgs\nbkLBw6HIpw.jpg)
 
 我们先来看看Android Gradle项目中那些涉及到gradle的文件分别是什么意思。
 
@@ -68,7 +68,7 @@ project(':common').projectDir = new File('存放目录')
 
 每个工程都会有**build.gradle**文件，该文件是该工程的构建入口，在此文件中可以对该工程进行配置，如配置版本，插件，依赖库等。 既然每个工程都有一个build文件，那么根工程也不例外，在根工程中可以对子Module进行统一配置，**全局管理版本号或依赖库**。 build文件分为Project和Module两种，如下图所示：
 
-![img](gradle-AndroidStudio文件解析_imgs\v2-f1162bda6d75478b4c2e8205444508e0_720w.jpg)
+![img](Gradle-AndroidStudio文件解析_imgs\MBeQPp0WAjb.jpg)
 
 1. **Project的build.gradle**：整个Project的共有属性，包括配置版本、插件、依赖库等信息
 2. **Module的build.gradle**：各个module私有的配置文件

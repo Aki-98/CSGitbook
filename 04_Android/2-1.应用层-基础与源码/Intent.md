@@ -30,15 +30,15 @@ Android官方定义Intent 是用于通过描述某个"意图"对象中执行的�
 
 静态注册：broadcast receiver广播接收者的注册分静态注册（在AndroidManifest文件中进行配置）
 
-![image-20220310172539667](Intent_imgs\image-20220310172759002.png)
+![image-20220310172539667](Intent_imgs\xZeLt6NKmf7.png)
 
-![image-20220310172917650](Intent_imgs\image-20220310172917650.png)
+![image-20220310172917650](Intent_imgs\vTtRSvuXHfR.png)
 
 动态注册：通过代码动态创建并以调用Context.registerReceiver()的方式注册至系统
 
-![image-20220310173433554](Intent_imgs\image-20220310173433554.png)
+![image-20220310173433554](Intent_imgs\RCnpJIzB7Oy.png)
 
-![image-20220310173511770](Intent_imgs\image-20220310173511770.png)
+![image-20220310173511770](Intent_imgs\RXhRCSiL8FA.png)
 
 
 
