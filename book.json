@@ -5,9 +5,9 @@
     "page": {
         "title": "CS Note"
     },
-    "author": "leah",
+    "author": "Aki",
     "variables": {
-        "authorName": "leah"
+        "authorName": "Aki"
     },
     "plugins": [
         "accordion",
@@ -17,7 +17,7 @@
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
-            "copyright": "Copyright &copy Leah 2024",
+            "copyright": "No Copyright",
             "modify_label": "modified time:",
             "modift_format": "YYYY-MM-DD HH:mm:ss"
         }
