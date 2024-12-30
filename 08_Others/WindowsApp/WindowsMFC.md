@@ -27,7 +27,7 @@ MFC使Windows程序员能够利用C++面象对象的特性进行编程
 
 ## Windows编程模型
 
-![image-20220301084146831](windows_imgs\YKPz3Jbmz9I.png)
+![image-20220301084146831](WindowsMFC_imgs\VLI8y5Knm15.png)
 
 **编写windows应用程序的要素**
 
@@ -445,7 +445,7 @@ LRESULT CALLBACK MyWndProc(
 
 (3)一旦引用被初始化，就不能改变引用的关系;指针则可以随时改变所指的对象。
 
-![image-20220628174109763](windows_imgs\3JkRwORGN7A.png)
+![image-20220628174109763](WindowsMFC_imgs\wKzLkqBC8uA.png)
 
 ## const
 
@@ -585,7 +585,7 @@ WPARAM wParam, LPARAM IParam)
 
 **消息映射宏**
 
-![image-20240412105105746](windows_imgs\UUOP3j5RYLQ.png)
+![image-20240412105105746](WindowsMFC_imgs\OrBUFw3zV6U.png)
 
 其中BEGIN_MESSAGE_MAP和END_MESSAGE_MAP这两个宏之间定义了CTestView类的消息映射表，即前面所讲的_messageEntries[]数组;而ON_WM_LBUTTONDOWNO这个宏的作用是在_messageEntries[]数组中添加一个消息映射元素，把WM_LBUTTONDOWN消息与
 OnButtonDown函数关联起来。
@@ -594,7 +594,7 @@ OnButtonDown函数关联起来。
 
 ## MFC类层次结构
 
-![image-20220628181500283](windows_imgs\do52SN42YUC.png)
+![image-20220628181500283](WindowsMFC_imgs\IEdByzdu0SP.png)
 
 # 设备描述表DC
 
@@ -667,7 +667,7 @@ void CDrawView::OnLButtonUp(UINT nFlags, CPoint point){
 
 **客户区与非客户区**
 
-![image-20220628135859155](windows_imgs\YKPz3Jbmz9I.png)
+![image-20220628135859155](WindowsMFC_imgs\VLI8y5Knm15.png)
 
 这种类型的窗口叫做应用程序窗口（application window）或者主窗口（ main window）。典型的主窗口框架通常包括标题栏、最小化按钮和最大化按钮以及一些其它的 UI 组件。这个框架本身叫做窗口的非客户区（non-client area）。
 
@@ -818,7 +818,7 @@ int CDrawView::OnCreate(LPCREATESTRUCT lpCreateStruct){
 
 BOOL GetTextMetrics(LPTEXTMETRIC lpMetrics) const//详见MSDN
 
-![image-20220628185946602](windows_imgs\Uor16fm8zDR.png)
+![image-20220628185946602](WindowsMFC_imgs\6vmtfeGFFvz.png)
 
 ## 5.根据当前所选字号设置插入符大小
 
@@ -1037,7 +1037,7 @@ MFC中，设置为Pop-up类型的菜单称为弹出式菜单,VC++默认顶层菜
 
 ## 菜单的结构
 
-![image-20220628194143760](windows_imgs\Sh7QA2dtbDO.png)
+![image-20220628194143760](WindowsMFC_imgs\XkEKgCk4pE8.png)
 
 ## 标记菜单
 
@@ -1244,11 +1244,11 @@ Step3:调用Create或CreateEx函数创建Window工具栏(工具栏也是窗口)
 
 Step4:调用LoadToolBar函数加载工具栏资源。
 
-![image-20220629014238167](windows_imgs\F1CXP11l6j4.png)
+![image-20220629014238167](WindowsMFC_imgs\7pv2vjxFKsR.png)
 
-![image-20220629014249501](windows_imgs\fZg2WrF7pGT.png)
+![image-20220629014249501](WindowsMFC_imgs\lAg6rdtPGpP.png)
 
-![image-20220629014301253](windows_imgs\KO2GXFmoPkz.png)
+![image-20220629014301253](WindowsMFC_imgs\UrnpfYSKBzb.png)
 
 # 状态栏编程
 
@@ -1261,17 +1261,17 @@ Step4:调用LoadToolBar函数加载工具栏资源。
 框架程序专门提供了一个indicators数组来管理提示行与指示器。如果要修改状态栏的外观,则只需在
 indicators数组中添加或减少相应的字符串资源ID即可。
 
-![image-20220629014418872](windows_imgs\LeNZ5VUDGxt.png)
+![image-20220629014418872](WindowsMFC_imgs\cPioEJsSkqK.png)
 
-![image-20220629014430176](windows_imgs\sRd6zBrxEdM.png)
+![image-20220629014430176](WindowsMFC_imgs\PAac4RQayeM.png)
 
-![image-20220629014451311](windows_imgs\AdbZ1aotagD.png)
+![image-20220629014451311](WindowsMFC_imgs\xzLK1gzYilK.png)
 
-![image-20220629014507572](windows_imgs\8DWECVt1sZ8.png)
+![image-20220629014507572](WindowsMFC_imgs\hxNdz2krPW0.png)
 
-![image-20220629014517454](windows_imgs\7ZMX2DekOXg.png)
+![image-20220629014517454](WindowsMFC_imgs\4PtQOPoBn0u.png)
 
-![image-20220629014531530](windows_imgs\6oI16Z4v6ua.png)
+![image-20220629014531530](WindowsMFC_imgs\tv3vVvHtxkz.png)
 
 # 对话框
 
@@ -1848,13 +1848,13 @@ Windows操作系统和应用程序使用内核对象来管理各种各样的重�
 
 ## 简单多线程实例
 
-![image-20220629062336780](windows_imgs\kMcalNgIJHH.png)
+![image-20220629062336780](WindowsMFC_imgs\2s1cwFHFjvb.png)
 
-![image-20220629062404761](windows_imgs\ltUlTzoUdMF.png)
+![image-20220629062404761](WindowsMFC_imgs\yCrmVtelfam.png)
 
-![image-20220629062532312](windows_imgs\d5KRvWoqewb.png)
+![image-20220629062532312](WindowsMFC_imgs\clkGApfOxyz.png)
 
-![image-20220629062548782](windows_imgs\Q7CGiEtRDpZ.png)
+![image-20220629062548782](WindowsMFC_imgs\xy4aZnBucmt.png)
 
 注意1:
 
@@ -1878,13 +1878,13 @@ Main函数中调用CloseHandle语句没有终止新创建的线程，只是表�
 
 让主线程睡眠10ms,使其放弃执行的权利,操作系统就会选择新创建的线程让其运行。当10ms时间一过,主线程睡醒恢复运行，main函数退出，进程结束。
 
-![image-20220629063522614](windows_imgs\9WOh7Glw4kc.png)
+![image-20220629063522614](WindowsMFC_imgs\aILIGNNs7eq.png)
 
 ## **利用互斥对象实现线程同步**
 
 **互斥对象**
 
-![image-20220629063936393](windows_imgs\v30aLq4uq7g.png)
+![image-20220629063936393](WindowsMFC_imgs\QZvAWMMGujn.png)
 
 **获得互斥对象的所有权**
 
@@ -1993,11 +1993,11 @@ void DeleteCriticalSection(LPCRITICAL_SECTIONlpCriticalSetion);
 
 **实例**
 
-![image-20220629064426710](windows_imgs\Bujm2rnrgZH.png)
+![image-20220629064426710](WindowsMFC_imgs\qSKB7C4V5Gb.png)
 
-![image-20220629064440794](windows_imgs\OW0wFGgzqyN.png)
+![image-20220629064440794](WindowsMFC_imgs\DjXvVGCk8qw.png)
 
-![image-20220629064451828](windows_imgs\kQRWoQlXLk3.png)
+![image-20220629064451828](WindowsMFC_imgs\tjXBEUGiGOJ.png)
 
 ## 互斥对象与临界区的比较
 
@@ -2036,7 +2036,7 @@ Windows API中的所有函数都包含在DLL中。其中有3个最重要的DLL�
 
 ## 创建DLL文件
 
-![image-20220629065011665](windows_imgs\opuqcLXphKV.png)
+![image-20220629065011665](WindowsMFC_imgs\7EomtNDfhWn.png)
 
 ## 导出DLL中的函数
 
@@ -2078,23 +2078,23 @@ Build后，在Debug目录下会产生一个动态库DII1.dIl文件和一个引�
 
 ## 隐式链接方式加载DLL
 
-![image-20220629065211907](windows_imgs\hOXpEiN5O1i.png)
+![image-20220629065211907](WindowsMFC_imgs\9Hz9wNsEhG1.png)
 
-![image-20220629065228668](windows_imgs\R5xKQJDlBIB.png)
+![image-20220629065228668](WindowsMFC_imgs\lHZ4eTLyYti.png)
 
-![image-20220629065310475](windows_imgs\WmJoIOo5OQB.png)
+![image-20220629065310475](WindowsMFC_imgs\ob8Fh7ozrxB.png)
 
-![image-20220629065327102](windows_imgs\hGdsLTdIaFb.png)
+![image-20220629065327102](WindowsMFC_imgs\immyASOTC5L.png)
 
 ## 显式加载方式加载DLL
 
-![image-20220629065404533](windows_imgs\rbQrsoB97DV.png)
+![image-20220629065404533](WindowsMFC_imgs\pRo2SB0ENYV.png)
 
-![image-20220629065425940](windows_imgs\hufxZmtjvfT.png)
+![image-20220629065425940](WindowsMFC_imgs\y6ctc1jU6BR.png)
 
 **实例**
 
-![image-20220629065455026](windows_imgs\gtgmNEMLXdO.png)
+![image-20220629065455026](WindowsMFC_imgs\JiupyvPWPoD.png)
 
 ## 名字改编问题
 

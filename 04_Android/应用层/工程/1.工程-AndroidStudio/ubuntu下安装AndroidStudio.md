@@ -1,4 +1,4 @@
-![img](https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg)
+![img](ubuntu下安装AndroidStudio_imgs\7pyhaLmHxrL.svg)
 
 ## 在Ubuntu上安装Android Studio详细指南
 
