@@ -1,0 +1,5276 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Kotlin-standardlibrary · CS Note</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Aki">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../" />
+    
+    
+    <link rel="prev" href="Kotlin-Basics.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    01_计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../01_计算机基础/">
+            
+                <a href="../../01_计算机基础/">
+            
+                    
+                    Ebook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.1" data-path="../../01_计算机基础/ebook/REFERS.html">
+            
+                <a href="../../01_计算机基础/ebook/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../01_计算机基础/">
+            
+                <a href="../../01_计算机基础/">
+            
+                    
+                    操作系统原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.1" data-path="../../01_计算机基础/操作系统原理/假唤醒.html">
+            
+                <a href="../../01_计算机基础/操作系统原理/假唤醒.html">
+            
+                    
+                    假唤醒
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2" data-path="../../01_计算机基础/操作系统原理/操作系统原理.html">
+            
+                <a href="../../01_计算机基础/操作系统原理/操作系统原理.html">
+            
+                    
+                    操作系统原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../../01_计算机基础/">
+            
+                <a href="../../01_计算机基础/">
+            
+                    
+                    数学
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1" data-path="../../01_计算机基础/数学/排列组合.html">
+            
+                <a href="../../01_计算机基础/数学/排列组合.html">
+            
+                    
+                    排列组合
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../../01_计算机基础/栈与堆.html">
+            
+                <a href="../../01_计算机基础/栈与堆.html">
+            
+                    
+                    栈与堆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="../../01_计算机基础/编码.html">
+            
+                <a href="../../01_计算机基础/编码.html">
+            
+                    
+                    编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="../../01_计算机基础/">
+            
+                <a href="../../01_计算机基础/">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.6.1" data-path="../../01_计算机基础/计算机网络/HTTPS基础.html">
+            
+                <a href="../../01_计算机基础/计算机网络/HTTPS基础.html">
+            
+                    
+                    Https基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.2" data-path="../../01_计算机基础/计算机网络/HTTP基础.html">
+            
+                <a href="../../01_计算机基础/计算机网络/HTTP基础.html">
+            
+                    
+                    Http基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.3" data-path="../../01_计算机基础/计算机网络/SSL.html">
+            
+                <a href="../../01_计算机基础/计算机网络/SSL.html">
+            
+                    
+                    Ssl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.4" data-path="../../01_计算机基础/计算机网络/TCP,IP协议族.html">
+            
+                <a href="../../01_计算机基础/计算机网络/TCP,IP协议族.html">
+            
+                    
+                    Tcp,ip协议族
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.5" data-path="../../01_计算机基础/计算机网络/URL和URI的区别.html">
+            
+                <a href="../../01_计算机基础/计算机网络/URL和URI的区别.html">
+            
+                    
+                    Url和uri的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.6" data-path="../../01_计算机基础/计算机网络/登录和第三方授权.html">
+            
+                <a href="../../01_计算机基础/计算机网络/登录和第三方授权.html">
+            
+                    
+                    登录和第三方授权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.7" data-path="../../01_计算机基础/计算机网络/编码,加密,Hash,序列化和字符集.html">
+            
+                <a href="../../01_计算机基础/计算机网络/编码,加密,Hash,序列化和字符集.html">
+            
+                    
+                    编码,加密,hash,序列化和字符集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.8" data-path="../../01_计算机基础/计算机网络/网络错误代码.html">
+            
+                <a href="../../01_计算机基础/计算机网络/网络错误代码.html">
+            
+                    
+                    网络错误代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    02_数据结构与算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../02_数据结构与算法/REFERS.html">
+            
+                <a href="../../02_数据结构与算法/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../02_数据结构与算法/算法.html">
+            
+                <a href="../../02_数据结构与算法/算法.html">
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../02_数据结构与算法/算法2.html">
+            
+                <a href="../../02_数据结构与算法/算法2.html">
+            
+                    
+                    算法2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../02_数据结构与算法/红黑树.html">
+            
+                <a href="../../02_数据结构与算法/红黑树.html">
+            
+                    
+                    红黑树
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    03_语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../C++/argc和argv.html">
+            
+                <a href="../C++/argc和argv.html">
+            
+                    
+                    Argc和argv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../C++/C++.html">
+            
+                <a href="../C++/C++.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../C++/">
+            
+                <a href="../C++/">
+            
+                    
+                    Ebook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="../C++/ebook/REFERS.html">
+            
+                <a href="../C++/ebook/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../C++/REFERS.html">
+            
+                <a href="../C++/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../Java/ArrayList源码解析.html">
+            
+                <a href="../Java/ArrayList源码解析.html">
+            
+                    
+                    Arraylist源码解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../Java/">
+            
+                <a href="../Java/">
+            
+                    
+                    Ebook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.2.1" data-path="../Java/ebook/REFERS.html">
+            
+                <a href="../Java/ebook/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2.2" data-path="../Java/ebook/Thinking in Java 读书笔记.html">
+            
+                <a href="../Java/ebook/Thinking in Java 读书笔记.html">
+            
+                    
+                    Thinking in java 读书笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../Java/java.html">
+            
+                <a href="../Java/java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../Java/JNI.html">
+            
+                <a href="../Java/JNI.html">
+            
+                    
+                    Jni
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../Java/JVM机制.html">
+            
+                <a href="../Java/JVM机制.html">
+            
+                    
+                    Jvm机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../Java/lambda.html">
+            
+                <a href="../Java/lambda.html">
+            
+                    
+                    Lambda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.7" data-path="../Java/note.html">
+            
+                <a href="../Java/note.html">
+            
+                    
+                    Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.8" data-path="../Java/内存管理+GC.html">
+            
+                <a href="../Java/内存管理+GC.html">
+            
+                    
+                    内存管理+gc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.9" data-path="../Java/反射机制.html">
+            
+                <a href="../Java/反射机制.html">
+            
+                    
+                    反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.10" data-path="../Java/变量作用域.html">
+            
+                <a href="../Java/变量作用域.html">
+            
+                    
+                    变量作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.11" data-path="../Java/并发与多线程.html">
+            
+                <a href="../Java/并发与多线程.html">
+            
+                    
+                    并发与多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.12" data-path="../Java/异常处理.html">
+            
+                <a href="../Java/异常处理.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.13" data-path="../Java/泛型.html">
+            
+                <a href="../Java/泛型.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.14" data-path="../Java/注解.html">
+            
+                <a href="../Java/注解.html">
+            
+                    
+                    注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.15" data-path="../Java/浅拷贝与深拷贝.html">
+            
+                <a href="../Java/浅拷贝与深拷贝.html">
+            
+                    
+                    浅拷贝与深拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.16" data-path="../Java/集合框架.html">
+            
+                <a href="../Java/集合框架.html">
+            
+                    
+                    集合框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.17" data-path="../Java/面试题.html">
+            
+                <a href="../Java/面试题.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../Javascript/REFERS.html">
+            
+                <a href="../Javascript/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Kotlin
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="Kotlin-Basics.html">
+            
+                <a href="Kotlin-Basics.html">
+            
+                    
+                    Kotlin-basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4.2" data-path="Kotlin-StandardLibrary.html">
+            
+                <a href="Kotlin-StandardLibrary.html">
+            
+                    
+                    Kotlin-standardlibrary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../Python/datetime的使用.html">
+            
+                <a href="../Python/datetime的使用.html">
+            
+                    
+                    Datetime的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../Python/Playwright.html">
+            
+                <a href="../Python/Playwright.html">
+            
+                    
+                    Playwright
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../Python/Python使用中遇到的问题解决.html">
+            
+                <a href="../Python/Python使用中遇到的问题解决.html">
+            
+                    
+                    Python使用中遇到的问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../Python/Python打包.html">
+            
+                <a href="../Python/Python打包.html">
+            
+                    
+                    Python打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../Python/Python方法注释.html">
+            
+                <a href="../Python/Python方法注释.html">
+            
+                    
+                    Python方法注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../Python/Python简明教程.html">
+            
+                <a href="../Python/Python简明教程.html">
+            
+                    
+                    Python简明教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="../Python/python装饰器.html">
+            
+                <a href="../Python/python装饰器.html">
+            
+                    
+                    Python装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" data-path="../Python/Python详细教程.html">
+            
+                <a href="../Python/Python详细教程.html">
+            
+                    
+                    Python详细教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.9" data-path="../Python/添加路径到sys.path.html">
+            
+                <a href="../Python/添加路径到sys.path.html">
+            
+                    
+                    添加路径到sys.path
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Rust
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../Rust/Rust.html">
+            
+                <a href="../Rust/Rust.html">
+            
+                    
+                    Rust
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../为什么汇编语言不可移植，但C可以.html">
+            
+                <a href="../为什么汇编语言不可移植，但C可以.html">
+            
+                    
+                    为什么汇编语言不可移植，但c可以
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../琐碎的Coding规则.html">
+            
+                <a href="../琐碎的Coding规则.html">
+            
+                    
+                    琐碎的coding规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    04_android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../04_Android/">
+            
+                <a href="../../04_Android/">
+            
+                    
+                    代码测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../04_Android/代码测试/Airtest.html">
+            
+                <a href="../../04_Android/代码测试/Airtest.html">
+            
+                    
+                    Airtest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../04_Android/代码测试/Calabash的功能和特点.html">
+            
+                <a href="../../04_Android/代码测试/Calabash的功能和特点.html">
+            
+                    
+                    Calabash的功能和特点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../04_Android/代码测试/RanoreX.html">
+            
+                <a href="../../04_Android/代码测试/RanoreX.html">
+            
+                    
+                    Ranorex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../../04_Android/代码测试/Robotium介绍.html">
+            
+                <a href="../../04_Android/代码测试/Robotium介绍.html">
+            
+                    
+                    Robotium介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5" data-path="../../04_Android/代码测试/">
+            
+                <a href="../../04_Android/代码测试/">
+            
+                    
+                    Ui测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.5.1" data-path="../../04_Android/代码测试/UI测试/Appium.html">
+            
+                <a href="../../04_Android/代码测试/UI测试/Appium.html">
+            
+                    
+                    Appium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5.2" data-path="../../04_Android/代码测试/UI测试/Espresso.html">
+            
+                <a href="../../04_Android/代码测试/UI测试/Espresso.html">
+            
+                    
+                    Espresso
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.6" data-path="../../04_Android/代码测试/">
+            
+                <a href="../../04_Android/代码测试/">
+            
+                    
+                    压力测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.6.1" data-path="../../04_Android/代码测试/压力测试/Monkey.html">
+            
+                <a href="../../04_Android/代码测试/压力测试/Monkey.html">
+            
+                    
+                    Monkey
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7" data-path="../../04_Android/代码测试/">
+            
+                <a href="../../04_Android/代码测试/">
+            
+                    
+                    本地ut
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.7.1" data-path="../../04_Android/代码测试/本地UT/Jacoco.html">
+            
+                <a href="../../04_Android/代码测试/本地UT/Jacoco.html">
+            
+                    
+                    Jacoco
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7.2" data-path="../../04_Android/代码测试/本地UT/Junit.html">
+            
+                <a href="../../04_Android/代码测试/本地UT/Junit.html">
+            
+                    
+                    Junit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7.3" data-path="../../04_Android/代码测试/本地UT/Mockito.html">
+            
+                <a href="../../04_Android/代码测试/本地UT/Mockito.html">
+            
+                    
+                    Mockito
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7.4" data-path="../../04_Android/代码测试/本地UT/PowerMock.html">
+            
+                <a href="../../04_Android/代码测试/本地UT/PowerMock.html">
+            
+                    
+                    Powermock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7.5" data-path="../../04_Android/代码测试/本地UT/Robolectric.html">
+            
+                <a href="../../04_Android/代码测试/本地UT/Robolectric.html">
+            
+                    
+                    Robolectric
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7.6" data-path="../../04_Android/代码测试/本地UT/RulesOfUnitTests.html">
+            
+                <a href="../../04_Android/代码测试/本地UT/RulesOfUnitTests.html">
+            
+                    
+                    Rulesofunittests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7.7" data-path="../../04_Android/代码测试/本地UT/ut-问题解决.html">
+            
+                <a href="../../04_Android/代码测试/本地UT/ut-问题解决.html">
+            
+                    
+                    Ut-问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.8" data-path="../../04_Android/代码测试/">
+            
+                <a href="../../04_Android/代码测试/">
+            
+                    
+                    概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.8.1" data-path="../../04_Android/代码测试/概念/Android本地测试.html">
+            
+                <a href="../../04_Android/代码测试/概念/Android本地测试.html">
+            
+                    
+                    Android本地测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.8.2" data-path="../../04_Android/代码测试/概念/Android测试基本概念.html">
+            
+                <a href="../../04_Android/代码测试/概念/Android测试基本概念.html">
+            
+                    
+                    Android测试基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.9" data-path="../../04_Android/代码测试/踩坑记录.html">
+            
+                <a href="../../04_Android/代码测试/踩坑记录.html">
+            
+                    
+                    踩坑记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../04_Android/">
+            
+                <a href="../../04_Android/">
+            
+                    
+                    应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../04_Android/应用层/Android问题.html">
+            
+                <a href="../../04_Android/应用层/Android问题.html">
+            
+                    
+                    Android问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../04_Android/应用层/">
+            
+                <a href="../../04_Android/应用层/">
+            
+                    
+                    Sdk
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.1" data-path="../../04_Android/应用层/SDK/">
+            
+                <a href="../../04_Android/应用层/SDK/">
+            
+                    
+                    2-1.应用层-基础与源码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.1.1" data-path="../../04_Android/应用层/SDK/2-1.应用层-基础与源码/Activity.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-1.应用层-基础与源码/Activity.html">
+            
+                    
+                    Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.1.2" data-path="../../04_Android/应用层/SDK/2-1.应用层-基础与源码/AndroidManifest.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-1.应用层-基础与源码/AndroidManifest.html">
+            
+                    
+                    Androidmanifest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.1.3" data-path="../../04_Android/应用层/SDK/2-1.应用层-基础与源码/Application.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-1.应用层-基础与源码/Application.html">
+            
+                    
+                    Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.1.4" data-path="../../04_Android/应用层/SDK/2-1.应用层-基础与源码/Broadcast.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-1.应用层-基础与源码/Broadcast.html">
+            
+                    
+                    Broadcast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.1.5" data-path="../../04_Android/应用层/SDK/2-1.应用层-基础与源码/Context.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-1.应用层-基础与源码/Context.html">
+            
+                    
+                    Context
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.1.6" data-path="../../04_Android/应用层/SDK/2-1.应用层-基础与源码/Fragment.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-1.应用层-基础与源码/Fragment.html">
+            
+                    
+                    Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.1.7" data-path="../../04_Android/应用层/SDK/2-1.应用层-基础与源码/Intent.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-1.应用层-基础与源码/Intent.html">
+            
+                    
+                    Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2" data-path="../../04_Android/应用层/SDK/">
+            
+                <a href="../../04_Android/应用层/SDK/">
+            
+                    
+                    2-2.应用层-样式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.2.1" data-path="../../04_Android/应用层/SDK/2-2.应用层-样式/Dialog.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-2.应用层-样式/Dialog.html">
+            
+                    
+                    Dialog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.2" data-path="../../04_Android/应用层/SDK/2-2.应用层-样式/Jetpack.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-2.应用层-样式/Jetpack.html">
+            
+                    
+                    Jetpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.3" data-path="../../04_Android/应用层/SDK/2-2.应用层-样式/MaterialDesign.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-2.应用层-样式/MaterialDesign.html">
+            
+                    
+                    Materialdesign
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.4" data-path="../../04_Android/应用层/SDK/2-2.应用层-样式/Menu.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-2.应用层-样式/Menu.html">
+            
+                    
+                    Menu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.5" data-path="../../04_Android/应用层/SDK/2-2.应用层-样式/Style.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-2.应用层-样式/Style.html">
+            
+                    
+                    Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.6" data-path="../../04_Android/应用层/SDK/2-2.应用层-样式/Theme.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-2.应用层-样式/Theme.html">
+            
+                    
+                    Theme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.7" data-path="../../04_Android/应用层/SDK/2-2.应用层-样式/View-others.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-2.应用层-样式/View-others.html">
+            
+                    
+                    View-others
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.8" data-path="../../04_Android/应用层/SDK/2-2.应用层-样式/View.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-2.应用层-样式/View.html">
+            
+                    
+                    View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.9" data-path="../../04_Android/应用层/SDK/2-2.应用层-样式/事件分发机制.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-2.应用层-样式/事件分发机制.html">
+            
+                    
+                    事件分发机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.10" data-path="../../04_Android/应用层/SDK/2-2.应用层-样式/如何检测UI卡顿.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-2.应用层-样式/如何检测UI卡顿.html">
+            
+                    
+                    如何检测ui卡顿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.11" data-path="../../04_Android/应用层/SDK/2-2.应用层-样式/屏幕适配.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-2.应用层-样式/屏幕适配.html">
+            
+                    
+                    屏幕适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.12" data-path="../../04_Android/应用层/SDK/2-2.应用层-样式/设计规范.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-2.应用层-样式/设计规范.html">
+            
+                    
+                    设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.13" data-path="../../04_Android/应用层/SDK/2-2.应用层-样式/键盘.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-2.应用层-样式/键盘.html">
+            
+                    
+                    键盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3" data-path="../../04_Android/应用层/SDK/">
+            
+                <a href="../../04_Android/应用层/SDK/">
+            
+                    
+                    2-3.应用层-数据持久化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.3.1" data-path="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/Android中Serializable和Parcelable有什么区别.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/Android中Serializable和Parcelable有什么区别.html">
+            
+                    
+                    Android中serializable和parcelable有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.2" data-path="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/ContentProvider.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/ContentProvider.html">
+            
+                    
+                    Contentprovider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.3" data-path="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/GreenDao基本使用.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/GreenDao基本使用.html">
+            
+                    
+                    Greendao基本使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.4" data-path="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/okio框架.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/okio框架.html">
+            
+                    
+                    Okio框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.5" data-path="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/Room Persistent Library基本介绍.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/Room Persistent Library基本介绍.html">
+            
+                    
+                    Room persistent library基本介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.6" data-path="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/ScopeStorage.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/ScopeStorage.html">
+            
+                    
+                    Scopestorage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.7" data-path="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/SharedPreferences.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/SharedPreferences.html">
+            
+                    
+                    Sharedpreferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.8" data-path="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/SQLite基本使用.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/SQLite基本使用.html">
+            
+                    
+                    Sqlite基本使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.9" data-path="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/文件.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-3.应用层-数据持久化/文件.html">
+            
+                    
+                    文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4" data-path="../../04_Android/应用层/SDK/">
+            
+                <a href="../../04_Android/应用层/SDK/">
+            
+                    
+                    2-4.应用层-功能模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.4.1" data-path="../../04_Android/应用层/SDK/2-4.应用层-功能模块/AndroidX.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-4.应用层-功能模块/AndroidX.html">
+            
+                    
+                    Androidx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4.2" data-path="../../04_Android/应用层/SDK/2-4.应用层-功能模块/MediaSession框架.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-4.应用层-功能模块/MediaSession框架.html">
+            
+                    
+                    Mediasession框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4.3" data-path="../../04_Android/应用层/SDK/2-4.应用层-功能模块/动画.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-4.应用层-功能模块/动画.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4.4" data-path="../../04_Android/应用层/SDK/2-4.应用层-功能模块/图片处理.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-4.应用层-功能模块/图片处理.html">
+            
+                    
+                    图片处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4.5" data-path="../../04_Android/应用层/SDK/2-4.应用层-功能模块/推送.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-4.应用层-功能模块/推送.html">
+            
+                    
+                    推送
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4.6" data-path="../../04_Android/应用层/SDK/2-4.应用层-功能模块/时间.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-4.应用层-功能模块/时间.html">
+            
+                    
+                    时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4.7" data-path="../../04_Android/应用层/SDK/2-4.应用层-功能模块/蓝牙.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-4.应用层-功能模块/蓝牙.html">
+            
+                    
+                    蓝牙
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4.8" data-path="../../04_Android/应用层/SDK/2-4.应用层-功能模块/音视频.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-4.应用层-功能模块/音视频.html">
+            
+                    
+                    音视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.5" data-path="../../04_Android/应用层/SDK/">
+            
+                <a href="../../04_Android/应用层/SDK/">
+            
+                    
+                    2-5.应用层-网络通信
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.5.1" data-path="../../04_Android/应用层/SDK/2-5.应用层-网络通信/HttpClient和UriConnection的区别.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-5.应用层-网络通信/HttpClient和UriConnection的区别.html">
+            
+                    
+                    Httpclient和uriconnection的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.5.2" data-path="../../04_Android/应用层/SDK/2-5.应用层-网络通信/网络通信.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-5.应用层-网络通信/网络通信.html">
+            
+                    
+                    网络通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6" data-path="../../04_Android/应用层/SDK/">
+            
+                <a href="../../04_Android/应用层/SDK/">
+            
+                    
+                    2-6.应用层-应用通信
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.6.1" data-path="../../04_Android/应用层/SDK/2-6.应用层-应用通信/AIDL-RemoteCallbackList.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-6.应用层-应用通信/AIDL-RemoteCallbackList.html">
+            
+                    
+                    Aidl-remotecallbacklist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.2" data-path="../../04_Android/应用层/SDK/2-6.应用层-应用通信/AIDL.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-6.应用层-应用通信/AIDL.html">
+            
+                    
+                    Aidl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.3" data-path="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Binder-onTransact.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Binder-onTransact.html">
+            
+                    
+                    Binder-ontransact
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.4" data-path="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Binder.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Binder.html">
+            
+                    
+                    Binder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.5" data-path="../../04_Android/应用层/SDK/2-6.应用层-应用通信/EventBus.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-6.应用层-应用通信/EventBus.html">
+            
+                    
+                    Eventbus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.6" data-path="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Handler.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Handler.html">
+            
+                    
+                    Handler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.7" data-path="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Service-IntentService.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Service-IntentService.html">
+            
+                    
+                    Service-intentservice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.8" data-path="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Service-JobService.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Service-JobService.html">
+            
+                    
+                    Service-jobservice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.9" data-path="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Service-manifest.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Service-manifest.html">
+            
+                    
+                    Service-manifest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.10" data-path="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Service-保活方案.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Service-保活方案.html">
+            
+                    
+                    Service-保活方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.11" data-path="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Service-生命周期.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Service-生命周期.html">
+            
+                    
+                    Service-生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.12" data-path="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Service-绑定方法-Binder&Messager&AIDL.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Service-绑定方法-Binder&Messager&AIDL.html">
+            
+                    
+                    Service-绑定方法-binder&messager&aidl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.13" data-path="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Service-问题解决.html">
+            
+                <a href="../../04_Android/应用层/SDK/2-6.应用层-应用通信/Service-问题解决.html">
+            
+                    
+                    Service-问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../04_Android/应用层/">
+            
+                <a href="../../04_Android/应用层/">
+            
+                    
+                    Tv
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.3.1" data-path="../../04_Android/应用层/TV/AndroidTV.html">
+            
+                <a href="../../04_Android/应用层/TV/AndroidTV.html">
+            
+                    
+                    Androidtv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3.2" data-path="../../04_Android/应用层/TV/DayDream互动屏保.html">
+            
+                <a href="../../04_Android/应用层/TV/DayDream互动屏保.html">
+            
+                    
+                    Daydream互动屏保
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3.3" data-path="../../04_Android/应用层/TV/KEYCODE.html">
+            
+                <a href="../../04_Android/应用层/TV/KEYCODE.html">
+            
+                    
+                    Keycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3.4" data-path="../../04_Android/应用层/TV/VoiceInteractionServiceAPI.html">
+            
+                <a href="../../04_Android/应用层/TV/VoiceInteractionServiceAPI.html">
+            
+                    
+                    Voiceinteractionserviceapi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../../04_Android/应用层/">
+            
+                <a href="../../04_Android/应用层/">
+            
+                    
+                    反编译
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.4.1" data-path="../../04_Android/应用层/反编译/Android反编译.html">
+            
+                <a href="../../04_Android/应用层/反编译/Android反编译.html">
+            
+                    
+                    Android反编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="../../04_Android/应用层/名词解释.html">
+            
+                <a href="../../04_Android/应用层/名词解释.html">
+            
+                    
+                    名词解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="../../04_Android/应用层/">
+            
+                <a href="../../04_Android/应用层/">
+            
+                    
+                    工程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.6.1" data-path="../../04_Android/应用层/工程/">
+            
+                <a href="../../04_Android/应用层/工程/">
+            
+                    
+                    1.工程-androidstudio
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.6.1.1" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/ADB-命令.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/ADB-命令.html">
+            
+                    
+                    Adb-命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.2" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/AndroidStudio-快捷键.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/AndroidStudio-快捷键.html">
+            
+                    
+                    Androidstudio-快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.3" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/AndroidStudio-插件.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/AndroidStudio-插件.html">
+            
+                    
+                    Androidstudio-插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.4" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/AndroidStudio-问题解决.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/AndroidStudio-问题解决.html">
+            
+                    
+                    Androidstudio-问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.5" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/AndroidStudio-项目文件与目录.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/AndroidStudio-项目文件与目录.html">
+            
+                    
+                    Androidstudio-项目文件与目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.6" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/AndroidStudio与IntelliJIDEA.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/AndroidStudio与IntelliJIDEA.html">
+            
+                    
+                    Androidstudio与intellijidea
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.7" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/Android中的混淆.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/Android中的混淆.html">
+            
+                    
+                    Android中的混淆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.8" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/Android热修复.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/Android热修复.html">
+            
+                    
+                    Android热修复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.9" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/Android项目构建流程.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/Android项目构建流程.html">
+            
+                    
+                    Android项目构建流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.10" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/APK&JAR&AAR处理.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/APK&JAR&AAR处理.html">
+            
+                    
+                    Apk&jar&aar处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.11" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/Maven.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/Maven.html">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.12" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/ubuntu下安装AndroidStudio.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/ubuntu下安装AndroidStudio.html">
+            
+                    
+                    Ubuntu下安装androidstudio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.13" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/内存占用分析.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/内存占用分析.html">
+            
+                    
+                    内存占用分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.14" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/打包.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/打包.html">
+            
+                    
+                    打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.15" data-path="../../04_Android/应用层/工程/1.工程-AndroidStudio/网络设置ADB调试.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-AndroidStudio/网络设置ADB调试.html">
+            
+                    
+                    网络设置adb调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2" data-path="../../04_Android/应用层/工程/">
+            
+                <a href="../../04_Android/应用层/工程/">
+            
+                    
+                    1.工程-gradle-groovy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.6.2.1" data-path="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Gradle-AndroidDSL语言.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Gradle-AndroidDSL语言.html">
+            
+                    
+                    Gradle-androiddsl语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2.2" data-path="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Gradle-AndroidStudio文件解析.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Gradle-AndroidStudio文件解析.html">
+            
+                    
+                    Gradle-androidstudio文件解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2.3" data-path="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Gradle-Android插件.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Gradle-Android插件.html">
+            
+                    
+                    Gradle-android插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2.4" data-path="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Gradle-DSL语言.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Gradle-DSL语言.html">
+            
+                    
+                    Gradle-dsl语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2.5" data-path="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Gradle-Gradlew命令.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Gradle-Gradlew命令.html">
+            
+                    
+                    Gradle-gradlew命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2.6" data-path="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Gradle-插件.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Gradle-插件.html">
+            
+                    
+                    Gradle-插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2.7" data-path="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Gradle-问题解决.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Gradle-问题解决.html">
+            
+                    
+                    Gradle-问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2.8" data-path="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Groovy基础.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-Gradle-Groovy/Groovy基础.html">
+            
+                    
+                    Groovy基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.3" data-path="../../04_Android/应用层/工程/">
+            
+                <a href="../../04_Android/应用层/工程/">
+            
+                    
+                    1.工程-构建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.6.3.1" data-path="../../04_Android/应用层/工程/1.工程-构建/AndroidGradle插件构建流程.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-构建/AndroidGradle插件构建流程.html">
+            
+                    
+                    Androidgradle插件构建流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.3.2" data-path="../../04_Android/应用层/工程/1.工程-构建/pk8&pem签名.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-构建/pk8&pem签名.html">
+            
+                    
+                    Pk8&pem签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.3.3" data-path="../../04_Android/应用层/工程/1.工程-构建/基于编译时注解的项目.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-构建/基于编译时注解的项目.html">
+            
+                    
+                    基于编译时注解的项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.3.4" data-path="../../04_Android/应用层/工程/1.工程-构建/签名-问题解决.html">
+            
+                <a href="../../04_Android/应用层/工程/1.工程-构建/签名-问题解决.html">
+            
+                    
+                    签名-问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="../../04_Android/应用层/常用代码.html">
+            
+                <a href="../../04_Android/应用层/常用代码.html">
+            
+                    
+                    常用代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8" data-path="../../04_Android/应用层/">
+            
+                <a href="../../04_Android/应用层/">
+            
+                    
+                    应用架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.8.1" data-path="../../04_Android/应用层/应用架构/Android单例模式.html">
+            
+                <a href="../../04_Android/应用层/应用架构/Android单例模式.html">
+            
+                    
+                    Android单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8.2" data-path="../../04_Android/应用层/应用架构/App的几种架构.html">
+            
+                <a href="../../04_Android/应用层/应用架构/App的几种架构.html">
+            
+                    
+                    App的几种架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8.3" data-path="../../04_Android/应用层/应用架构/MVVM和MVP.html">
+            
+                <a href="../../04_Android/应用层/应用架构/MVVM和MVP.html">
+            
+                    
+                    Mvvm和mvp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8.4" data-path="../../04_Android/应用层/应用架构/REFERS.html">
+            
+                <a href="../../04_Android/应用层/应用架构/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../04_Android/">
+            
+                <a href="../../04_Android/">
+            
+                    
+                    框架层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../04_Android/框架层/">
+            
+                <a href="../../04_Android/框架层/">
+            
+                    
+                    4-1.框架层-基础与源码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1.1" data-path="../../04_Android/框架层/4-1.框架层-基础与源码/1-1.Android系统流程.html">
+            
+                <a href="../../04_Android/框架层/4-1.框架层-基础与源码/1-1.Android系统流程.html">
+            
+                    
+                    1-1.android系统流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.2" data-path="../../04_Android/框架层/4-1.框架层-基础与源码/1-2.init.c.html">
+            
+                <a href="../../04_Android/框架层/4-1.框架层-基础与源码/1-2.init.c.html">
+            
+                    
+                    1-2.init.c
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.3" data-path="../../04_Android/框架层/4-1.框架层-基础与源码/1-3.init.rc.html">
+            
+                <a href="../../04_Android/框架层/4-1.框架层-基础与源码/1-3.init.rc.html">
+            
+                    
+                    1-3.init.rc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.4" data-path="../../04_Android/框架层/4-1.框架层-基础与源码/1-4.Zygote.html">
+            
+                <a href="../../04_Android/框架层/4-1.框架层-基础与源码/1-4.Zygote.html">
+            
+                    
+                    1-4.zygote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.5" data-path="../../04_Android/框架层/4-1.框架层-基础与源码/Android架构.html">
+            
+                <a href="../../04_Android/框架层/4-1.框架层-基础与源码/Android架构.html">
+            
+                    
+                    Android架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.6" data-path="../../04_Android/框架层/4-1.框架层-基础与源码/Android目录.html">
+            
+                <a href="../../04_Android/框架层/4-1.框架层-基础与源码/Android目录.html">
+            
+                    
+                    Android目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.7" data-path="../../04_Android/框架层/4-1.框架层-基础与源码/Android结构.html">
+            
+                <a href="../../04_Android/框架层/4-1.框架层-基础与源码/Android结构.html">
+            
+                    
+                    Android结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.8" data-path="../../04_Android/框架层/4-1.框架层-基础与源码/PhoneWindowManager-Power键的处理.html">
+            
+                <a href="../../04_Android/框架层/4-1.框架层-基础与源码/PhoneWindowManager-Power键的处理.html">
+            
+                    
+                    Phonewindowmanager-power键的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.9" data-path="../../04_Android/框架层/4-1.框架层-基础与源码/PhoneWindowManager.html">
+            
+                <a href="../../04_Android/框架层/4-1.框架层-基础与源码/PhoneWindowManager.html">
+            
+                    
+                    Phonewindowmanager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.10" data-path="../../04_Android/框架层/4-1.框架层-基础与源码/REFERS.html">
+            
+                <a href="../../04_Android/框架层/4-1.框架层-基础与源码/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.11" data-path="../../04_Android/框架层/4-1.框架层-基础与源码/ueventd.html">
+            
+                <a href="../../04_Android/框架层/4-1.框架层-基础与源码/ueventd.html">
+            
+                    
+                    Ueventd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.12" data-path="../../04_Android/框架层/4-1.框架层-基础与源码/屏保在系统的相关处理.html">
+            
+                <a href="../../04_Android/框架层/4-1.框架层-基础与源码/屏保在系统的相关处理.html">
+            
+                    
+                    屏保在系统的相关处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../../04_Android/框架层/">
+            
+                <a href="../../04_Android/框架层/">
+            
+                    
+                    4-2.框架层-权限
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.2.1" data-path="../../04_Android/框架层/4-2.框架层-权限/Android权限管理-SELinux.html">
+            
+                <a href="../../04_Android/框架层/4-2.框架层-权限/Android权限管理-SELinux.html">
+            
+                    
+                    Android权限管理-selinux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2.2" data-path="../../04_Android/框架层/4-2.框架层-权限/Android权限管理.html">
+            
+                <a href="../../04_Android/框架层/4-2.框架层-权限/Android权限管理.html">
+            
+                    
+                    Android权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2.3" data-path="../../04_Android/框架层/4-2.框架层-权限/Android运行时权限.html">
+            
+                <a href="../../04_Android/框架层/4-2.框架层-权限/Android运行时权限.html">
+            
+                    
+                    Android运行时权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2.4" data-path="../../04_Android/框架层/4-2.框架层-权限/REFERS.html">
+            
+                <a href="../../04_Android/框架层/4-2.框架层-权限/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2.5" data-path="../../04_Android/框架层/4-2.框架层-权限/白名单和权限.html">
+            
+                <a href="../../04_Android/框架层/4-2.框架层-权限/白名单和权限.html">
+            
+                    
+                    白名单和权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="../../04_Android/框架层/">
+            
+                <a href="../../04_Android/框架层/">
+            
+                    
+                    4-2.框架层-编译
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.3.1" data-path="../../04_Android/框架层/4-2.框架层-编译/Android.mk和Android.bp.html">
+            
+                <a href="../../04_Android/框架层/4-2.框架层-编译/Android.mk和Android.bp.html">
+            
+                    
+                    Android.mk和android.bp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3.2" data-path="../../04_Android/框架层/4-2.框架层-编译/Repo工具的使用.html">
+            
+                <a href="../../04_Android/框架层/4-2.框架层-编译/Repo工具的使用.html">
+            
+                    
+                    Repo工具的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3.3" data-path="../../04_Android/框架层/4-2.框架层-编译/准备编译环境.html">
+            
+                <a href="../../04_Android/框架层/4-2.框架层-编译/准备编译环境.html">
+            
+                    
+                    准备编译环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3.4" data-path="../../04_Android/框架层/4-2.框架层-编译/几种不同解锁的区别.html">
+            
+                <a href="../../04_Android/框架层/4-2.框架层-编译/几种不同解锁的区别.html">
+            
+                    
+                    几种不同解锁的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3.5" data-path="../../04_Android/框架层/4-2.框架层-编译/启动模拟器.html">
+            
+                <a href="../../04_Android/框架层/4-2.框架层-编译/启动模拟器.html">
+            
+                    
+                    启动模拟器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3.6" data-path="../../04_Android/框架层/4-2.框架层-编译/编译aosp源码.html">
+            
+                <a href="../../04_Android/框架层/4-2.框架层-编译/编译aosp源码.html">
+            
+                    
+                    编译aosp源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3.7" data-path="../../04_Android/框架层/4-2.框架层-编译/获取aosp源码.html">
+            
+                <a href="../../04_Android/框架层/4-2.框架层-编译/获取aosp源码.html">
+            
+                    
+                    获取aosp源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="../../04_Android/框架层/">
+            
+                <a href="../../04_Android/框架层/">
+            
+                    
+                    4-3.框架层-性能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.4.1" data-path="../../04_Android/框架层/4-3.框架层-性能/REFERS.html">
+            
+                <a href="../../04_Android/框架层/4-3.框架层-性能/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4.2" data-path="../../04_Android/框架层/4-3.框架层-性能/【高性能Android应用开发】读书笔记.html">
+            
+                <a href="../../04_Android/框架层/4-3.框架层-性能/【高性能Android应用开发】读书笔记.html">
+            
+                    
+                    【高性能android应用开发】读书笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="../../04_Android/框架层/">
+            
+                <a href="../../04_Android/框架层/">
+            
+                    
+                    4-4.框架层-运行时
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.5.1" data-path="../../04_Android/框架层/4-4.框架层-运行时/Android后台任务.html">
+            
+                <a href="../../04_Android/框架层/4-4.框架层-运行时/Android后台任务.html">
+            
+                    
+                    Android后台任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5.2" data-path="../../04_Android/框架层/4-4.框架层-运行时/ANR问题.html">
+            
+                <a href="../../04_Android/框架层/4-4.框架层-运行时/ANR问题.html">
+            
+                    
+                    Anr问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    05_linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../05_Linux/fork.html">
+            
+                <a href="../../05_Linux/fork.html">
+            
+                    
+                    Fork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../05_Linux/Linux - Others -用户与用户组管理（命令&原理）.html">
+            
+                <a href="../../05_Linux/Linux - Others -用户与用户组管理（命令&原理）.html">
+            
+                    
+                    Linux - others -用户与用户组管理（命令&原理）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../05_Linux/Linux - Others.html">
+            
+                <a href="../../05_Linux/Linux - Others.html">
+            
+                    
+                    Linux - others
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../05_Linux/Linux - 命令 - 其它.html">
+            
+                <a href="../../05_Linux/Linux - 命令 - 其它.html">
+            
+                    
+                    Linux - 命令 - 其它
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../05_Linux/Linux - 工具 - GCC编辑器.html">
+            
+                <a href="../../05_Linux/Linux - 工具 - GCC编辑器.html">
+            
+                    
+                    Linux - 工具 - gcc编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../05_Linux/Linux - 工具 - GDB调试工具.html">
+            
+                <a href="../../05_Linux/Linux - 工具 - GDB调试工具.html">
+            
+                    
+                    Linux - 工具 - gdb调试工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../../05_Linux/Linux - 文件系统（原理&命令&编程）.html">
+            
+                <a href="../../05_Linux/Linux - 文件系统（原理&命令&编程）.html">
+            
+                    
+                    Linux - 文件系统（原理&命令&编程）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../../05_Linux/Linux - 服务器（原理&编程）.html">
+            
+                <a href="../../05_Linux/Linux - 服务器（原理&编程）.html">
+            
+                    
+                    Linux - 服务器（原理&编程）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../../05_Linux/Linux - 管道操作.html">
+            
+                <a href="../../05_Linux/Linux - 管道操作.html">
+            
+                    
+                    Linux - 管道操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../../05_Linux/Linux - 进程管理（原理&命令&编程）.html">
+            
+                <a href="../../05_Linux/Linux - 进程管理（原理&命令&编程）.html">
+            
+                    
+                    Linux - 进程管理（原理&命令&编程）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../../05_Linux/REFERS.html">
+            
+                <a href="../../05_Linux/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../../05_Linux/Vi编辑器.html">
+            
+                <a href="../../05_Linux/Vi编辑器.html">
+            
+                    
+                    Vi编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    06_数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../06_数据库/MySQL.html">
+            
+                <a href="../../06_数据库/MySQL.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../06_数据库/SQLite基础.html">
+            
+                <a href="../../06_数据库/SQLite基础.html">
+            
+                    
+                    Sqlite基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../06_数据库/SQL注入.html">
+            
+                <a href="../../06_数据库/SQL注入.html">
+            
+                    
+                    Sql注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    07_项目管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../07_项目管理/">
+            
+                <a href="../../07_项目管理/">
+            
+                    
+                    Cicd
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../../07_项目管理/CICD/CICD.html">
+            
+                <a href="../../07_项目管理/CICD/CICD.html">
+            
+                    
+                    Cicd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../07_项目管理/">
+            
+                <a href="../../07_项目管理/">
+            
+                    
+                    Coding
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../../07_项目管理/Coding/REFERS.html">
+            
+                <a href="../../07_项目管理/Coding/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../../07_项目管理/Coding/SOLID原则.html">
+            
+                <a href="../../07_项目管理/Coding/SOLID原则.html">
+            
+                    
+                    Solid原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="../../07_项目管理/Coding/【CleanCode】阅读笔记.html">
+            
+                <a href="../../07_项目管理/Coding/【CleanCode】阅读笔记.html">
+            
+                    
+                    【cleancode】阅读笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="../../07_项目管理/Coding/【Refractoring - Improving the existing code】阅读笔记.html">
+            
+                <a href="../../07_项目管理/Coding/【Refractoring - Improving the existing code】阅读笔记.html">
+            
+                    
+                    【refractoring - improving the existing code】阅读笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="../../07_项目管理/Coding/【代码大全】阅读笔记.html">
+            
+                <a href="../../07_项目管理/Coding/【代码大全】阅读笔记.html">
+            
+                    
+                    【代码大全】阅读笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.6" data-path="../../07_项目管理/Coding/【设计模式-可复用面向对象软件的基础】阅读笔记.html">
+            
+                <a href="../../07_项目管理/Coding/【设计模式-可复用面向对象软件的基础】阅读笔记.html">
+            
+                    
+                    【设计模式-可复用面向对象软件的基础】阅读笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.7" data-path="../../07_项目管理/Coding/设计模式六大原则.html">
+            
+                <a href="../../07_项目管理/Coding/设计模式六大原则.html">
+            
+                    
+                    设计模式六大原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../07_项目管理/">
+            
+                <a href="../../07_项目管理/">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../../07_项目管理/Git/">
+            
+                <a href="../../07_项目管理/Git/">
+            
+                    
+                    Ebook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1.1" data-path="../../07_项目管理/Git/ebook/REFERS.html">
+            
+                <a href="../../07_项目管理/Git/ebook/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.2" data-path="../../07_项目管理/Git/Git-命令.html">
+            
+                <a href="../../07_项目管理/Git/Git-命令.html">
+            
+                    
+                    Git-命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.3" data-path="../../07_项目管理/Git/Git-四个工作区原理及命令.html">
+            
+                <a href="../../07_项目管理/Git/Git-四个工作区原理及命令.html">
+            
+                    
+                    Git-四个工作区原理及命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.4" data-path="../../07_项目管理/Git/Git-操作原理.html">
+            
+                <a href="../../07_项目管理/Git/Git-操作原理.html">
+            
+                    
+                    Git-操作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.5" data-path="../../07_项目管理/Git/Git-环境.html">
+            
+                <a href="../../07_项目管理/Git/Git-环境.html">
+            
+                    
+                    Git-环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.6" data-path="../../07_项目管理/Git/Git-问题及处理.html">
+            
+                <a href="../../07_项目管理/Git/Git-问题及处理.html">
+            
+                    
+                    Git-问题及处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.7" data-path="../../07_项目管理/Git/git_submodule.html">
+            
+                <a href="../../07_项目管理/Git/git_submodule.html">
+            
+                    
+                    Git submodule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.8" data-path="../../07_项目管理/Git/">
+            
+                <a href="../../07_项目管理/Git/">
+            
+                    
+                    Imgs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.8.1" data-path="../../07_项目管理/Git/imgs/REFERS.html">
+            
+                <a href="../../07_项目管理/Git/imgs/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.9" data-path="../../07_项目管理/Git/REFERS.html">
+            
+                <a href="../../07_项目管理/Git/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../07_项目管理/">
+            
+                <a href="../../07_项目管理/">
+            
+                    
+                    Jira
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.1" data-path="../../07_项目管理/Jira/Jira（一）核心概念.html">
+            
+                <a href="../../07_项目管理/Jira/Jira（一）核心概念.html">
+            
+                    
+                    Jira（一）核心概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.2" data-path="../../07_项目管理/Jira/REFERS.html">
+            
+                <a href="../../07_项目管理/Jira/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../07_项目管理/">
+            
+                <a href="../../07_项目管理/">
+            
+                    
+                    Uml
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.5.1" data-path="../../07_项目管理/Uml/UML.html">
+            
+                <a href="../../07_项目管理/Uml/UML.html">
+            
+                    
+                    Uml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.2" data-path="../../07_项目管理/Uml/时序图.html">
+            
+                <a href="../../07_项目管理/Uml/时序图.html">
+            
+                    
+                    时序图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.3" data-path="../../07_项目管理/Uml/类图.html">
+            
+                <a href="../../07_项目管理/Uml/类图.html">
+            
+                    
+                    类图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    08_others
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../08_Others/">
+            
+                <a href="../../08_Others/">
+            
+                    
+                    Backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="../../08_Others/BackEnd/backEnd.html">
+            
+                <a href="../../08_Others/BackEnd/backEnd.html">
+            
+                    
+                    Backend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="../../08_Others/BackEnd/后端相关.html">
+            
+                <a href="../../08_Others/BackEnd/后端相关.html">
+            
+                    
+                    后端相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../08_Others/">
+            
+                <a href="../../08_Others/">
+            
+                    
+                    Hardware
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="../../08_Others/Hardware/HDMI的逻辑输入和物理输入.html">
+            
+                <a href="../../08_Others/Hardware/HDMI的逻辑输入和物理输入.html">
+            
+                    
+                    Hdmi的逻辑输入和物理输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="../../08_Others/Hardware/REFERS.html">
+            
+                <a href="../../08_Others/Hardware/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.3" data-path="../../08_Others/Hardware/U盘相关.html">
+            
+                <a href="../../08_Others/Hardware/U盘相关.html">
+            
+                    
+                    U盘相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../08_Others/">
+            
+                <a href="../../08_Others/">
+            
+                    
+                    Know
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="../../08_Others/Know/REFERS.html">
+            
+                <a href="../../08_Others/Know/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="../../08_Others/Know/大语言模型简介和前景预估.html">
+            
+                <a href="../../08_Others/Know/大语言模型简介和前景预估.html">
+            
+                    
+                    大语言模型简介和前景预估
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../08_Others/">
+            
+                <a href="../../08_Others/">
+            
+                    
+                    Script
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.1" data-path="../../08_Others/script/REFERS.html">
+            
+                <a href="../../08_Others/script/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../08_Others/">
+            
+                <a href="../../08_Others/">
+            
+                    
+                    Shortcutkey
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.5.1" data-path="../../08_Others/ShortcutKey/Cmd.html">
+            
+                <a href="../../08_Others/ShortcutKey/Cmd.html">
+            
+                    
+                    Cmd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.2" data-path="../../08_Others/ShortcutKey/VsCode.html">
+            
+                <a href="../../08_Others/ShortcutKey/VsCode.html">
+            
+                    
+                    Vscode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.3" data-path="../../08_Others/ShortcutKey/Windows.html">
+            
+                <a href="../../08_Others/ShortcutKey/Windows.html">
+            
+                    
+                    Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../08_Others/">
+            
+                <a href="../../08_Others/">
+            
+                    
+                    Ui_ux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.6.1" data-path="../../08_Others/Ui_Ux/点石成金-Web设计原则.html">
+            
+                <a href="../../08_Others/Ui_Ux/点石成金-Web设计原则.html">
+            
+                    
+                    点石成金-web设计原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../../08_Others/Utils_Know&Use.html">
+            
+                <a href="../../08_Others/Utils_Know&Use.html">
+            
+                    
+                    Utils know&use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../../08_Others/">
+            
+                <a href="../../08_Others/">
+            
+                    
+                    Webapp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.1" data-path="../../08_Others/WebApp/">
+            
+                <a href="../../08_Others/WebApp/">
+            
+                    
+                    Css
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.1.1" data-path="../../08_Others/WebApp/css/">
+            
+                <a href="../../08_Others/WebApp/css/">
+            
+                    
+                    Css3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.1.1.1" data-path="../../08_Others/WebApp/css/css3/REFERS.html">
+            
+                <a href="../../08_Others/WebApp/css/css3/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8.1.2" data-path="../../08_Others/WebApp/css/Float设计的初衷.html">
+            
+                <a href="../../08_Others/WebApp/css/Float设计的初衷.html">
+            
+                    
+                    Float设计的初衷
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8.2" data-path="../../08_Others/WebApp/">
+            
+                <a href="../../08_Others/WebApp/">
+            
+                    
+                    Html
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.2.1" data-path="../../08_Others/WebApp/html/">
+            
+                <a href="../../08_Others/WebApp/html/">
+            
+                    
+                    Html&css
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.2.1.1" data-path="../../08_Others/WebApp/html/html&css/REFERS.html">
+            
+                <a href="../../08_Others/WebApp/html/html&css/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8.2.2" data-path="../../08_Others/WebApp/html/">
+            
+                <a href="../../08_Others/WebApp/html/">
+            
+                    
+                    Html5
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.2.2.1" data-path="../../08_Others/WebApp/html/html5/REFERS.html">
+            
+                <a href="../../08_Others/WebApp/html/html5/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8.2.3" data-path="../../08_Others/WebApp/html/">
+            
+                <a href="../../08_Others/WebApp/html/">
+            
+                    
+                    Html_w3c
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.2.3.1" data-path="../../08_Others/WebApp/html/html_w3c/REFERS.html">
+            
+                <a href="../../08_Others/WebApp/html/html_w3c/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8.3" data-path="../../08_Others/WebApp/">
+            
+                <a href="../../08_Others/WebApp/">
+            
+                    
+                    Layout
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.3.1" data-path="../../08_Others/WebApp/layout/REFERS.html">
+            
+                <a href="../../08_Others/WebApp/layout/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../../08_Others/">
+            
+                <a href="../../08_Others/">
+            
+                    
+                    Windowsapp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.9.1" data-path="../../08_Others/WindowsApp/C_hashtag_Winform.html">
+            
+                <a href="../../08_Others/WindowsApp/C_hashtag_Winform.html">
+            
+                    
+                    C hashtag winform
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9.2" data-path="../../08_Others/WindowsApp/WindowsMFC.html">
+            
+                <a href="../../08_Others/WindowsApp/WindowsMFC.html">
+            
+                    
+                    Windowsmfc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../../08_Others/正则表达式.html">
+            
+                <a href="../../08_Others/正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../../08_Others/远程连接主机方案.html">
+            
+                <a href="../../08_Others/远程连接主机方案.html">
+            
+                    
+                    远程连接主机方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Kotlin-standardlibrary</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="collections">Collections</h1>
+<h2 id="overview">Overview</h2>
+<p>The Kotlin Standard Library provides a comprehensive set of tools for managing <em>collections</em> &#x2013; groups of a variable number of items (possibly zero) that are significant to the problem being solved and are commonly operated on.</p>
+<p>Collections are a common concept for most programming languages, so if you&apos;re familiar with, for example, Java or Python collections, you can skip this introduction and proceed to the detailed sections.</p>
+<p>A collection usually contains a number of objects (this number may also be zero) of the same type. Objects in a collection are called <em>elements</em> or <em>items</em>. For example, all the students in a department form a collection that can be used to calculate their average age.</p>
+<p>The following collection types are relevant for Kotlin:</p>
+<ul>
+<li><em>List</em> is an ordered collection with access to elements by indices &#x2013; integer numbers that reflect their position. Elements can occur more than once in a list. An example of a list is a telephone number: it&apos;s a group of digits, their order is important, and they can repeat.</li>
+<li><em>Set</em> is a collection of unique elements. It reflects the mathematical abstraction of set: a group of objects without repetitions. Generally, the order of set elements has no significance. For example, the numbers on lottery tickets form a set: they are unique, and their order is not important.</li>
+<li><em>Map</em> (or <em>dictionary</em>) is a set of key-value pairs. Keys are unique, and each of them maps to exactly one value. The values can be duplicates. Maps are useful for storing logical connections between objects, for example, an employee&apos;s ID and their position.</li>
+</ul>
+<p>Kotlin lets you manipulate collections independently of the exact type of objects stored in them. In other words, you add a <code>String</code> to a list of <code>String</code>s the same way as you would do with <code>Int</code>s or a user-defined class. So, the Kotlin Standard Library offers generic interfaces, classes, and functions for creating, populating, and managing collections of any type.</p>
+<p>The collection interfaces and related functions are located in the <code>kotlin.collections</code> package. Let&apos;s get an overview of its contents.</p>
+<h3 id="collection-types&#xFEFF;">Collection types&#xFEFF;</h3>
+<p>The Kotlin Standard Library provides implementations for basic collection types: sets, lists, and maps. A pair of interfaces represent each collection type:</p>
+<ul>
+<li>A <em>read-only</em> interface that provides operations for accessing collection elements.</li>
+<li>A <em>mutable</em> interface that extends the corresponding read-only interface with write operations: adding, removing, and updating its elements.</li>
+</ul>
+<p>Note that altering a mutable collection doesn&apos;t require it to be a <a href="https://kotlinlang.org/docs/basic-syntax.html#variables" target="_blank"><code>var</code></a>: write operations modify the same mutable collection object, so the reference doesn&apos;t change. Although, if you try to reassign a <code>val</code> collection, you&apos;ll get a compilation error.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = mutableListOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+numbers.add(<span class="hljs-string">&quot;five&quot;</span>)   <span class="hljs-comment">// this is OK</span>
+println(numbers)
+<span class="hljs-comment">//numbers = mutableListOf(&quot;six&quot;, &quot;seven&quot;)      // compilation error</span>
+</code></pre>
+<p>The read-only collection types are <a href="https://kotlinlang.org/docs/generics.html#variance" target="_blank">covariant</a>. This means that, if a <code>Rectangle</code> class inherits from <code>Shape</code>, you can use a <code>List&lt;Rectangle&gt;</code> anywhere the <code>List&lt;Shape&gt;</code> is required. In other words, the collection types have the same subtyping relationship as the element types. Maps are covariant on the value type, but not on the key type.</p>
+<p>In turn, mutable collections aren&apos;t covariant; otherwise, this would lead to runtime failures. If <code>MutableList&lt;Rectangle&gt;</code> was a subtype of <code>MutableList&lt;Shape&gt;</code>, you could insert other <code>Shape</code> inheritors (for example, <code>Circle</code>) into it, thus violating its <code>Rectangle</code> type argument.</p>
+<p>Below is a diagram of the Kotlin collection interfaces:</p>
+<p><img src="Kotlin-StandardLibrary_imgs/dwTVGQn1CIR.png" alt="Collection interfaces hierarchy"></p>
+<p>Let&apos;s walk through the interfaces and their implementations. To learn about <code>Collection</code>, read the section below. To learn about <code>List</code>, <code>Set</code>, and <code>Map</code>, you can either read the corresponding sections or watch a video by Sebastian Aigner, Kotlin Developer Advocate:</p>
+<h4 id="collection&#xFEFF;">Collection&#xFEFF;</h4>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html" target="_blank"><code>Collection</code></a> is the root of the collection hierarchy. This interface represents the common behavior of a read-only collection: retrieving size, checking item membership, and so on. <code>Collection</code> inherits from the <code>Iterable&lt;T&gt;</code> interface that defines the operations for iterating elements. You can use <code>Collection</code> as a parameter of a function that applies to different collection types. For more specific cases, use the <code>Collection</code>&apos;s inheritors: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html" target="_blank"><code>List</code></a> and <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html" target="_blank"><code>Set</code></a>.</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">printAll</span><span class="hljs-params">(strings: <span class="hljs-type">Collection&lt;String&gt;</span>)</span> {</span>
+    <span class="hljs-keyword">for</span>(s <span class="hljs-keyword">in</span> strings) print(<span class="hljs-string">&quot;$s &quot;</span>)
+    println()
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> stringList</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;one&quot;</span>)
+    printAll(stringList)
+
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> stringSet</span> = setOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>)
+    printAll(stringSet)
+}
+</code></pre>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html" target="_blank"><code>MutableCollection</code></a> is a <code>Collection</code> with write operations, such as <code>add</code> and <code>remove</code>.</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> List<span class="hljs-type">&lt;String&gt;</span>.<span class="hljs-title">getShortWordsTo</span><span class="hljs-params">(shortWords: <span class="hljs-type">MutableList&lt;String&gt;, maxLength: Int</span>)</span> {</span>
+    this.filterTo(shortWords) { it.length <span class="hljs-type">&lt;= maxLength }
+    // throwing away the articles
+    val articles = setOf(&quot;a&quot;, &quot;A&quot;, &quot;an&quot;, &quot;An&quot;, &quot;the&quot;, &quot;The&quot;)
+    shortWords -= articles
+}
+
+fun main() {
+    val words = &quot;A long time ago in a galaxy far far away&quot;.split(&quot; &quot;)
+    val shortWords = mutableListOf&lt;String&gt;</span>()
+    words.getShortWordsTo(shortWords, <span class="hljs-number">3</span>)
+    println(shortWords)
+}
+</code></pre>
+<h4 id="list&#xFEFF;">List&#xFEFF;</h4>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html" target="_blank"><code>List</code></a> stores elements in a specified order and provides indexed access to them. Indices start from zero &#x2013; the index of the first element &#x2013; and go to <code>lastIndex</code> which is the <code>(list.size - 1)</code>.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+println(<span class="hljs-string">&quot;Number of elements: ${numbers.size}&quot;</span>)
+println(<span class="hljs-string">&quot;Third element: ${numbers.get(2)}&quot;</span>)
+println(<span class="hljs-string">&quot;Fourth element: ${numbers[3]}&quot;</span>)
+println(<span class="hljs-string">&quot;Index of element \&quot;two\&quot; ${numbers.indexOf(&quot;</span>two<span class="hljs-string">&quot;)}&quot;</span>)
+</code></pre>
+<p>List elements (including nulls) can duplicate: a list can contain any number of equal objects or occurrences of a single object. Two lists are considered equal if they have the same sizes and <a href="https://kotlinlang.org/docs/equality.html#structural-equality" target="_blank">structurally equal</a> elements at the same positions.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> bob</span> = Person(<span class="hljs-string">&quot;Bob&quot;</span>, <span class="hljs-number">31</span>)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> people</span> = listOf(Person(<span class="hljs-string">&quot;Adam&quot;</span>, <span class="hljs-number">20</span>), bob, bob)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> people2</span> = listOf(Person(<span class="hljs-string">&quot;Adam&quot;</span>, <span class="hljs-number">20</span>), Person(<span class="hljs-string">&quot;Bob&quot;</span>, <span class="hljs-number">31</span>), bob)
+println(people == people2)
+bob.age = <span class="hljs-number">32</span>
+println(people == people2)
+</code></pre>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html" target="_blank"><code>MutableList</code></a> is a <code>List</code> with list-specific write operations, for example, to add or remove an element at a specific position.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = mutableListOf(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
+numbers.add(<span class="hljs-number">5</span>)
+numbers.removeAt(<span class="hljs-number">1</span>)
+numbers[<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>
+numbers.shuffle()
+println(numbers)
+</code></pre>
+<p>As you see, in some aspects lists are very similar to arrays. However, there is one important difference: an array&apos;s size is defined upon initialization and is never changed; in turn, a list doesn&apos;t have a predefined size; a list&apos;s size can be changed as a result of write operations: adding, updating, or removing elements.</p>
+<p>In Kotlin, the default implementation of <code>MutableList</code> is <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html" target="_blank"><code>ArrayList</code></a> which you can think of as a resizable array.</p>
+<h4 id="set&#xFEFF;">Set&#xFEFF;</h4>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html" target="_blank"><code>Set</code></a> stores unique elements; their order is generally undefined. <code>null</code> elements are unique as well: a <code>Set</code> can contain only one <code>null</code>. Two sets are equal if they have the same size, and for each element of a set there is an equal element in the other set.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = setOf(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
+println(<span class="hljs-string">&quot;Number of elements: ${numbers.size}&quot;</span>)
+<span class="hljs-keyword">if</span> (numbers.contains(<span class="hljs-number">1</span>)) println(<span class="hljs-string">&quot;1 is in the set&quot;</span>)
+
+<span class="hljs-variable"><span class="hljs-keyword">val</span> numbersBackwards</span> = setOf(<span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>)
+println(<span class="hljs-string">&quot;The sets are equal: ${numbers == numbersBackwards}&quot;</span>)
+</code></pre>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html" target="_blank"><code>MutableSet</code></a> is a <code>Set</code> with write operations from <code>MutableCollection</code>.</p>
+<p>The default implementation of <code>MutableSet</code> &#x2013; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-linked-hash-set/index.html" target="_blank"><code>LinkedHashSet</code></a> &#x2013; preserves the order of elements insertion. Hence, the functions that rely on the order, such as <code>first()</code> or <code>last()</code>, return predictable results on such sets.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = setOf(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)  <span class="hljs-comment">// LinkedHashSet is the default implementation</span>
+<span class="hljs-variable"><span class="hljs-keyword">val</span> numbersBackwards</span> = setOf(<span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>)
+
+println(numbers.first() == numbersBackwards.first())
+println(numbers.first() == numbersBackwards.last())
+</code></pre>
+<p>An alternative implementation &#x2013; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-set/index.html" target="_blank"><code>HashSet</code></a> &#x2013; says nothing about the elements order, so calling such functions on it returns unpredictable results. However, <code>HashSet</code> requires less memory to store the same number of elements.</p>
+<h4 id="map&#xFEFF;">Map&#xFEFF;</h4>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html" target="_blank"><code>Map</code></a> is not an inheritor of the <code>Collection</code> interface; however, it&apos;s a Kotlin collection type as well. A <code>Map</code> stores <em>key-value</em> pairs (or <em>entries</em>); keys are unique, but different keys can be paired with equal values. The <code>Map</code> interface provides specific functions, such as access to value by key, searching keys and values, and so on.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbersMap</span> = mapOf(<span class="hljs-string">&quot;key1&quot;</span> to <span class="hljs-number">1</span>, <span class="hljs-string">&quot;key2&quot;</span> to <span class="hljs-number">2</span>, <span class="hljs-string">&quot;key3&quot;</span> to <span class="hljs-number">3</span>, <span class="hljs-string">&quot;key4&quot;</span> to <span class="hljs-number">1</span>)
+
+println(<span class="hljs-string">&quot;All keys: ${numbersMap.keys}&quot;</span>)
+println(<span class="hljs-string">&quot;All values: ${numbersMap.values}&quot;</span>)
+<span class="hljs-keyword">if</span> (<span class="hljs-string">&quot;key2&quot;</span> <span class="hljs-keyword">in</span> numbersMap) println(<span class="hljs-string">&quot;Value by key \&quot;key2\&quot;: ${numbersMap[&quot;</span>key2<span class="hljs-string">&quot;]}&quot;</span>)    
+<span class="hljs-keyword">if</span> (<span class="hljs-number">1</span> <span class="hljs-keyword">in</span> numbersMap.values) println(<span class="hljs-string">&quot;The value 1 is in the map&quot;</span>)
+<span class="hljs-keyword">if</span> (numbersMap.containsValue(<span class="hljs-number">1</span>)) println(<span class="hljs-string">&quot;The value 1 is in the map&quot;</span>) <span class="hljs-comment">// same as previous</span>
+</code></pre>
+<p>Two maps containing the equal pairs are equal regardless of the pair order.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbersMap</span> = mapOf(<span class="hljs-string">&quot;key1&quot;</span> to <span class="hljs-number">1</span>, <span class="hljs-string">&quot;key2&quot;</span> to <span class="hljs-number">2</span>, <span class="hljs-string">&quot;key3&quot;</span> to <span class="hljs-number">3</span>, <span class="hljs-string">&quot;key4&quot;</span> to <span class="hljs-number">1</span>)    
+<span class="hljs-variable"><span class="hljs-keyword">val</span> anotherMap</span> = mapOf(<span class="hljs-string">&quot;key2&quot;</span> to <span class="hljs-number">2</span>, <span class="hljs-string">&quot;key1&quot;</span> to <span class="hljs-number">1</span>, <span class="hljs-string">&quot;key4&quot;</span> to <span class="hljs-number">1</span>, <span class="hljs-string">&quot;key3&quot;</span> to <span class="hljs-number">3</span>)
+
+println(<span class="hljs-string">&quot;The maps are equal: ${numbersMap == anotherMap}&quot;</span>)
+</code></pre>
+<p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html" target="_blank"><code>MutableMap</code></a> is a <code>Map</code> with map write operations, for example, you can add a new key-value pair or update the value associated with the given key.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbersMap</span> = mutableMapOf(<span class="hljs-string">&quot;one&quot;</span> to <span class="hljs-number">1</span>, <span class="hljs-string">&quot;two&quot;</span> to <span class="hljs-number">2</span>)
+numbersMap.put(<span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-number">3</span>)
+numbersMap[<span class="hljs-string">&quot;one&quot;</span>] = <span class="hljs-number">11</span>
+
+println(numbersMap)
+</code></pre>
+<p>The default implementation of <code>MutableMap</code> &#x2013; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-linked-hash-map/index.html" target="_blank"><code>LinkedHashMap</code></a> &#x2013; preserves the order of elements insertion when iterating the map. In turn, an alternative implementation &#x2013; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-map/index.html" target="_blank"><code>HashMap</code></a> &#x2013; says nothing about the elements order.</p>
+<h3 id="collection-operations-overview&#xFEFF;">Collection operations overview&#xFEFF;</h3>
+<p>The Kotlin standard library offers a broad variety of functions for performing operations on collections. This includes simple operations, such as getting or adding elements, as well as more complex ones including search, sorting, filtering, transformations, and so on.</p>
+<h4 id="extension-and-member-functions&#xFEFF;">Extension and member functions&#xFEFF;</h4>
+<p>Collection operations are declared in the standard library in two ways: <a href="https://kotlinlang.org/docs/classes.html#class-members" target="_blank">member functions</a> of collection interfaces and <a href="https://kotlinlang.org/docs/extensions.html#extension-functions" target="_blank">extension functions</a>.</p>
+<p>Member functions define operations that are essential for a collection type. For example, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html" target="_blank"><code>Collection</code></a> contains the function <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/is-empty.html" target="_blank"><code>isEmpty()</code></a> for checking its emptiness; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html" target="_blank"><code>List</code></a> contains <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/get.html" target="_blank"><code>get()</code></a> for index access to elements, and so on.</p>
+<p>When you create your own implementations of collection interfaces, you must implement their member functions. To make the creation of new implementations easier, use the skeletal implementations of collection interfaces from the standard library: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-abstract-collection/index.html" target="_blank"><code>AbstractCollection</code></a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-abstract-list/index.html" target="_blank"><code>AbstractList</code></a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-abstract-set/index.html" target="_blank"><code>AbstractSet</code></a>, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-abstract-map/index.html" target="_blank"><code>AbstractMap</code></a>, and their mutable counterparts.</p>
+<p>Other collection operations are declared as extension functions. These are filtering, transformation, ordering, and other collection processing functions.</p>
+<h4 id="common-operations&#xFEFF;">Common operations&#xFEFF;</h4>
+<p>Common operations are available for both <a href="https://kotlinlang.org/docs/collections-overview.html#collection-types" target="_blank">read-only and mutable collections</a>. Common operations fall into these groups:</p>
+<ul>
+<li><a href="https://kotlinlang.org/docs/collection-transformations.html" target="_blank">Transformations</a></li>
+<li><a href="https://kotlinlang.org/docs/collection-filtering.html" target="_blank">Filtering</a></li>
+<li><a href="https://kotlinlang.org/docs/collection-plus-minus.html" target="_blank"><code>plus</code> and <code>minus</code> operators</a></li>
+<li><a href="https://kotlinlang.org/docs/collection-grouping.html" target="_blank">Grouping</a></li>
+<li><a href="https://kotlinlang.org/docs/collection-parts.html" target="_blank">Retrieving collection parts</a></li>
+<li><a href="https://kotlinlang.org/docs/collection-elements.html" target="_blank">Retrieving single elements</a></li>
+<li><a href="https://kotlinlang.org/docs/collection-ordering.html" target="_blank">Ordering</a></li>
+<li><a href="https://kotlinlang.org/docs/collection-aggregate.html" target="_blank">Aggregate operations</a></li>
+</ul>
+<p>Operations described on these pages return their results without affecting the original collection. For example, a filtering operation produces a <em>new collection</em> that contains all the elements matching the filtering predicate. Results of such operations should be either stored in variables, or used in some other way, for example, passed in other functions.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)  
+numbers.filter { it.length &gt; <span class="hljs-number">3</span> }  <span class="hljs-comment">// nothing happens with `numbers`, result is lost</span>
+println(<span class="hljs-string">&quot;numbers are still $numbers&quot;</span>)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> longerThan3</span> = numbers.filter { it.length &gt; <span class="hljs-number">3</span> } <span class="hljs-comment">// result is stored in `longerThan3`</span>
+println(<span class="hljs-string">&quot;numbers longer than 3 chars are $longerThan3&quot;</span>)
+</code></pre>
+<p>For certain collection operations, there is an option to specify the <em>destination</em> object. Destination is a mutable collection to which the function appends its resulting items instead of returning them in a new object. For performing operations with destinations, there are separate functions with the <code>To</code> postfix in their names, for example, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/filter-to.html" target="_blank"><code>filterTo()</code></a> instead of <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/filter.html" target="_blank"><code>filter()</code></a> or <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/associate-to.html" target="_blank"><code>associateTo()</code></a> instead of <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/associate.html" target="_blank"><code>associate()</code></a>. These functions take the destination collection as an additional parameter.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> filterResults</span> = mutableListOf<span class="hljs-type">&lt;String&gt;</span>()  <span class="hljs-comment">//destination object</span>
+numbers.filterTo(filterResults) { it.length &gt; <span class="hljs-number">3</span> }
+numbers.filterIndexedTo(filterResults) { index, _ -&gt; index == <span class="hljs-number">0</span> }
+println(filterResults) <span class="hljs-comment">// contains results of both operations</span>
+</code></pre>
+<p>For convenience, these functions return the destination collection back, so you can create it right in the corresponding argument of the function call:</p>
+<pre><code class="lang-kotlin"><span class="hljs-comment">// filter numbers right into a new hash set, </span>
+<span class="hljs-comment">// thus eliminating duplicates in the result</span>
+<span class="hljs-variable"><span class="hljs-keyword">val</span> result</span> = numbers.mapTo(HashSet()) { it.length }
+println(<span class="hljs-string">&quot;distinct item lengths are $result&quot;</span>)
+</code></pre>
+<p>Functions with destination are available for filtering, association, grouping, flattening, and other operations. For the complete list of destination operations see the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/index.html" target="_blank">Kotlin collections reference</a>.</p>
+<h4 id="write-operations&#xFEFF;">Write operations&#xFEFF;</h4>
+<p>For mutable collections, there are also <em>write operations</em> that change the collection state. Such operations include adding, removing, and updating elements. Write operations are listed in the <a href="https://kotlinlang.org/docs/collection-write.html" target="_blank">Write operations</a> and corresponding sections of <a href="https://kotlinlang.org/docs/list-operations.html#list-write-operations" target="_blank">List-specific operations</a> and <a href="https://kotlinlang.org/docs/map-operations.html#map-write-operations" target="_blank">Map specific operations</a>.</p>
+<p>For certain operations, there are pairs of functions for performing the same operation: one applies the operation in-place and the other returns the result as a separate collection. For example, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/sort.html" target="_blank"><code>sort()</code></a> sorts a mutable collection in-place, so its state changes; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/sorted.html" target="_blank"><code>sorted()</code></a> creates a new collection that contains the same elements in the sorted order.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = mutableListOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> sortedNumbers</span> = numbers.sorted()
+println(numbers == sortedNumbers)  <span class="hljs-comment">// false</span>
+numbers.sort()
+println(numbers == sortedNumbers)  <span class="hljs-comment">// true</span>
+</code></pre>
+<h3 id="collection-transformation-operations&#xFEFF;">Collection transformation operations&#xFEFF;</h3>
+<p>The Kotlin standard library provides a set of extension functions for collection <em>transformations</em>. These functions build new collections from existing ones based on the transformation rules provided. In this page, we&apos;ll give an overview of the available collection transformation functions.</p>
+<h4 id="map&#xFEFF;">Map&#xFEFF;</h4>
+<p>The <em>mapping</em> transformation creates a collection from the results of a function on the elements of another collection. The basic mapping function is <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/map.html" target="_blank"><code>map()</code></a>. It applies the given lambda function to each subsequent element and returns the list of the lambda results. The order of results is the same as the original order of elements. To apply a transformation that additionally uses the element index as an argument, use <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/map-indexed.html" target="_blank"><code>mapIndexed()</code></a>.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = setOf(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+println(numbers.map { it * <span class="hljs-number">3</span> })
+println(numbers.mapIndexed { idx, value -&gt; value * idx })
+</code></pre>
+<p>If the transformation produces <code>null</code> on certain elements, you can filter out the <code>null</code>s from the result collection by calling the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/map-not-null.html" target="_blank"><code>mapNotNull()</code></a> function instead of <code>map()</code>, or <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/map-indexed-not-null.html" target="_blank"><code>mapIndexedNotNull()</code></a> instead of <code>mapIndexed()</code>.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = setOf(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+println(numbers.mapNotNull { <span class="hljs-keyword">if</span> ( it == <span class="hljs-number">2</span>) <span class="hljs-literal">null</span> <span class="hljs-keyword">else</span> it * <span class="hljs-number">3</span> })
+println(numbers.mapIndexedNotNull { idx, value -&gt; <span class="hljs-keyword">if</span> (idx == <span class="hljs-number">0</span>) <span class="hljs-literal">null</span> <span class="hljs-keyword">else</span> value * idx })
+</code></pre>
+<p>When transforming maps, you have two options: transform keys leaving values unchanged and vice versa. To apply a given transformation to keys, use <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/map-keys.html" target="_blank"><code>mapKeys()</code></a>; in turn, <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/map-values.html" target="_blank"><code>mapValues()</code></a> transforms values. Both functions use the transformations that take a map entry as an argument, so you can operate both its key and value.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbersMap</span> = mapOf(<span class="hljs-string">&quot;key1&quot;</span> to <span class="hljs-number">1</span>, <span class="hljs-string">&quot;key2&quot;</span> to <span class="hljs-number">2</span>, <span class="hljs-string">&quot;key3&quot;</span> to <span class="hljs-number">3</span>, <span class="hljs-string">&quot;key11&quot;</span> to <span class="hljs-number">11</span>)
+println(numbersMap.mapKeys { it.key.uppercase() })
+println(numbersMap.mapValues { it.value + it.key.length })
+</code></pre>
+<h4 id="zip&#xFEFF;">Zip&#xFEFF;</h4>
+<p><em>Zipping</em> transformation is building pairs from elements with the same positions in both collections. In the Kotlin standard library, this is done by the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/zip.html" target="_blank"><code>zip()</code></a> extension function.</p>
+<p>When called on a collection or an array with another collection (or array) as an argument, <code>zip()</code> returns the <code>List</code> of <code>Pair</code> objects. The elements of the receiver collection are the first elements in these pairs.</p>
+<p>If the collections have different sizes, the result of the <code>zip()</code> is the smaller size; the last elements of the larger collection are not included in the result.</p>
+<p><code>zip()</code> can also be called in the infix form <code>a zip b</code>.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> colors</span> = listOf(<span class="hljs-string">&quot;red&quot;</span>, <span class="hljs-string">&quot;brown&quot;</span>, <span class="hljs-string">&quot;grey&quot;</span>)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> animals</span> = listOf(<span class="hljs-string">&quot;fox&quot;</span>, <span class="hljs-string">&quot;bear&quot;</span>, <span class="hljs-string">&quot;wolf&quot;</span>)
+println(colors zip animals)
+
+<span class="hljs-variable"><span class="hljs-keyword">val</span> twoAnimals</span> = listOf(<span class="hljs-string">&quot;fox&quot;</span>, <span class="hljs-string">&quot;bear&quot;</span>)
+println(colors.zip(twoAnimals))
+
+--------------------------------------------------------------------
+
+[(red, fox), (brown, bear), (grey, wolf)]
+[(red, fox), (brown, bear)]
+</code></pre>
+<p>You can also call <code>zip()</code> with a transformation function that takes two parameters: the receiver element and the argument element. In this case, the result <code>List</code> contains the return values of the transformation function called on pairs of the receiver and the argument elements with the same positions.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> colors</span> = listOf(<span class="hljs-string">&quot;red&quot;</span>, <span class="hljs-string">&quot;brown&quot;</span>, <span class="hljs-string">&quot;grey&quot;</span>)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> animals</span> = listOf(<span class="hljs-string">&quot;fox&quot;</span>, <span class="hljs-string">&quot;bear&quot;</span>, <span class="hljs-string">&quot;wolf&quot;</span>)
+
+println(colors.zip(animals) { color, animal -&gt; <span class="hljs-string">&quot;The ${animal.replaceFirstChar { it.uppercase() }} is $color&quot;</span>})
+
+-----------------------------------------------------------------
+
+[The Fox <span class="hljs-keyword">is</span> red, The Bear <span class="hljs-keyword">is</span> brown, The Wolf <span class="hljs-keyword">is</span> grey]
+</code></pre>
+<p>When you have a <code>List</code> of <code>Pair</code>s, you can do the reverse transformation &#x2013; <em>unzipping</em> &#x2013; that builds two lists from these pairs:</p>
+<ul>
+<li>The first list contains the first elements of each <code>Pair</code> in the original list.</li>
+<li>The second list contains the second elements.</li>
+</ul>
+<p>To unzip a list of pairs, call <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/unzip.html" target="_blank"><code>unzip()</code></a>.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numberPairs</span> = listOf(<span class="hljs-string">&quot;one&quot;</span> to <span class="hljs-number">1</span>, <span class="hljs-string">&quot;two&quot;</span> to <span class="hljs-number">2</span>, <span class="hljs-string">&quot;three&quot;</span> to <span class="hljs-number">3</span>, <span class="hljs-string">&quot;four&quot;</span> to <span class="hljs-number">4</span>)
+println(numberPairs.unzip())
+
+---------------------------------------------------------------
+
+([one, two, three, four], [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+</code></pre>
+<h4 id="associate&#xFEFF;">Associate&#xFEFF;</h4>
+<p><em>Association</em> transformations allow building maps from the collection elements and certain values associated with them. In different association types, the elements can be either keys or values in the association map.</p>
+<p>The basic association function <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/associate-with.html" target="_blank"><code>associateWith()</code></a> creates a <code>Map</code> in which the elements of the original collection are keys, and values are produced from them by the given transformation function. If two elements are equal, only the last one remains in the map.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+println(numbers.associateWith { it.length })
+
+---------------------------------------------------
+{one=<span class="hljs-number">3</span>, two=<span class="hljs-number">3</span>, three=<span class="hljs-number">5</span>, four=<span class="hljs-number">4</span>}
+</code></pre>
+<p>For building maps with collection elements as values, there is the function <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/associate-by.html" target="_blank"><code>associateBy()</code></a>. It takes a function that returns a key based on an element&apos;s value. If two elements&apos; keys are equal, only the last one remains in the map.</p>
+<p><code>associateBy()</code> can also be called with a value transformation function.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+
+println(numbers.associateBy { it.first().uppercaseChar() })
+println(numbers.associateBy(keySelector = { it.first().uppercaseChar() }, valueTransform = { it.length }))
+
+-------------------------------------------------------------
+{O=one, T=three, F=four}
+{O=<span class="hljs-number">3</span>, T=<span class="hljs-number">5</span>, F=<span class="hljs-number">4</span>}
+</code></pre>
+<p>Another way to build maps in which both keys and values are somehow produced from collection elements is the function <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/associate.html" target="_blank"><code>associate()</code></a>. It takes a lambda function that returns a <code>Pair</code>: the key and the value of the corresponding map entry.</p>
+<p>Note that <code>associate()</code> produces short-living <code>Pair</code> objects which may affect the performance. Thus, <code>associate()</code> should be used when the performance isn&apos;t critical or it&apos;s more preferable than other options.</p>
+<p>An example of the latter is when a key and the corresponding value are produced from an element together.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> names</span> = listOf(<span class="hljs-string">&quot;Alice Adams&quot;</span>, <span class="hljs-string">&quot;Brian Brown&quot;</span>, <span class="hljs-string">&quot;Clara Campbell&quot;</span>)
+println(names.associate { name -&gt; parseFullName(name).let { it.lastName to it.firstName } })  
+
+-----------------------------------------------------------------
+{Adams=Alice, Brown=Brian, Campbell=Clara}
+</code></pre>
+<p>Here we call a transform function on an element first, and then build a pair from the properties of that function&apos;s result.</p>
+<h4 id="flatten&#xFEFF;">Flatten&#xFEFF;</h4>
+<p>If you operate nested collections, you may find the standard library functions that provide flat access to nested collection elements useful.</p>
+<p>The first function is <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/flatten.html" target="_blank"><code>flatten()</code></a>. You can call it on a collection of collections, for example, a <code>List</code> of <code>Set</code>s. The function returns a single <code>List</code> of all the elements of the nested collections.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numberSets</span> = listOf(setOf(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>), setOf(<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>), setOf(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>))
+println(numberSets.flatten())
+
+----------------------------------------
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>]
+</code></pre>
+<p>Another function &#x2013; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/flat-map.html" target="_blank"><code>flatMap()</code></a> provides a flexible way to process nested collections. It takes a function that maps a collection element to another collection. As a result, <code>flatMap()</code> returns a single list of its return values on all the elements. So, <code>flatMap()</code> behaves as a subsequent call of <code>map()</code> (with a collection as a mapping result) and <code>flatten()</code>.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> containers</span> = listOf(
+    StringContainer(listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>)),
+    StringContainer(listOf(<span class="hljs-string">&quot;four&quot;</span>, <span class="hljs-string">&quot;five&quot;</span>, <span class="hljs-string">&quot;six&quot;</span>)),
+    StringContainer(listOf(<span class="hljs-string">&quot;seven&quot;</span>, <span class="hljs-string">&quot;eight&quot;</span>))
+)
+println(containers.flatMap { it.values })
+-----------------------------------------------
+[one, two, three, four, five, six, seven, eight]
+</code></pre>
+<h4 id="string-representation&#xFEFF;">String representation&#xFEFF;</h4>
+<p>If you need to retrieve the collection content in a readable format, use functions that transform the collections to strings: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/join-to-string.html" target="_blank"><code>joinToString()</code></a> and <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/join-to.html" target="_blank"><code>joinTo()</code></a>.</p>
+<p><code>joinToString()</code> builds a single <code>String</code> from the collection elements based on the provided arguments. <code>joinTo()</code> does the same but appends the result to the given <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-appendable/index.html" target="_blank"><code>Appendable</code></a> object.</p>
+<p>When called with the default arguments, the functions return the result similar to calling <code>toString()</code> on the collection: a <code>String</code> of elements&apos; string representations separated by commas with spaces.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+
+println(numbers)         
+println(numbers.joinToString())
+
+<span class="hljs-variable"><span class="hljs-keyword">val</span> listString</span> = StringBuffer(<span class="hljs-string">&quot;The list of numbers: &quot;</span>)
+numbers.joinTo(listString)
+println(listString)
+
+------------------------------------------------------------
+[one, two, three, four]
+one, two, three, four
+The list of numbers: one, two, three, four
+</code></pre>
+<p>To build a custom string representation, you can specify its parameters in function arguments <code>separator</code>, <code>prefix</code>, and <code>postfix</code>. The resulting string will start with the <code>prefix</code> and end with the <code>postfix</code>. The <code>separator</code> will come after each element except the last.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)    
+println(numbers.joinToString(separator = <span class="hljs-string">&quot; | &quot;</span>, prefix = <span class="hljs-string">&quot;start: &quot;</span>, postfix = <span class="hljs-string">&quot;: end&quot;</span>))
+
+-----------------------------------------------
+start: one | two | three | four: end
+</code></pre>
+<p>For bigger collections, you may want to specify the <code>limit</code> &#x2013; a number of elements that will be included into result. If the collection size exceeds the <code>limit</code>, all the other elements will be replaced with a single value of the <code>truncated</code> argument.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = (<span class="hljs-number">1.</span><span class="hljs-number">.100</span>).toList()
+println(numbers.joinToString(limit = <span class="hljs-number">10</span>, truncated = <span class="hljs-string">&quot;&lt;...&gt;&quot;</span>))
+
+----------------------------------------------------------
+<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-type">&lt;...&gt;</span>
+</code></pre>
+<p>Finally, to customize the representation of elements themselves, provide the <code>transform</code> function.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+println(numbers.joinToString { <span class="hljs-string">&quot;Element: ${it.uppercase()}&quot;</span>})
+
+--------------------------------------------------------------
+Element: ONE, Element: TWO, Element: THREE, Element: FOUR
+</code></pre>
+<h1 id="filtering-collections&#xFEFF;">Filtering collections&#xFEFF;</h1>
+<p><a href="https://github.com/JetBrains/kotlin-web-site/edit/master/docs/topics/collection-filtering.md" target="_blank">Edit page</a></p>
+<p>Last modified: 15 February 2023</p>
+<p>Filtering is one of the most popular tasks in collection processing. In Kotlin, filtering conditions are defined by <em>predicates</em> &#x2013; lambda functions that take a collection element and return a boolean value: <code>true</code> means that the given element matches the predicate, <code>false</code> means the opposite.</p>
+<p>The standard library contains a group of extension functions that let you filter collections in a single call. These functions leave the original collection unchanged, so they are available for both <a href="https://kotlinlang.org/docs/collections-overview.html#collection-types" target="_blank">mutable and read-only</a> collections. To operate the filtering result, you should assign it to a variable or chain the functions after filtering.</p>
+<h2 id="filter-by-predicate&#xFEFF;">Filter by predicate&#xFEFF;</h2>
+<p>The basic filtering function is <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/filter.html" target="_blank"><code>filter()</code></a>. When called with a predicate, <code>filter()</code> returns the collection elements that match it. For both <code>List</code> and <code>Set</code>, the resulting collection is a <code>List</code>, for <code>Map</code> it&apos;s a <code>Map</code> as well.</p>
+<pre><code>val numbers = listOf(&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;)  
+val longerThan3 = numbers.filter { it.length &gt; 3 }
+println(longerThan3)
+
+val numbersMap = mapOf(&quot;key1&quot; to 1, &quot;key2&quot; to 2, &quot;key3&quot; to 3, &quot;key11&quot; to 11)
+val filteredMap = numbersMap.filter { (key, value) -&gt; key.endsWith(&quot;1&quot;) &amp;&amp; value &gt; 10}
+println(filteredMap)
+</code></pre><p><a href="https://play.kotlinlang.org/editor/v1/N4Igxg9gJgpiBcIBmBXAdgAgLYEMCWaAFAJQbAA6alGNGAbjgDYZopYBGMATgM4YC8GRnh4AXAPJJC5EBDQwZAGgwzRAdwhKVIUQAsuMBSGUykEFFxmkVmWg2aM5Ac24AVXTjQBmASzadeADokPEZRbjIMPFFAxhg0Jz0MAD4MHwBfaloABy4CUUYiRwS3D29iSiyaez8Obh4AWRxs31xsyWkQAGsYAE8ARhkMUQgMfpNuvoAmIZGMKYme3q9Z0a9Fvv7BkGHRrYrbaqYMELDuGCgmlsFWOt4r4NDwrkjCJeV7FBhSAFpUpcC8SgPAA6tFdJ1tqQAGTQ%2BhML4pMYABkyhwwuXyhUIp2eFyuB0o6WMOhwXBcogACowcKIzFwsAgQAArHAMEmQLDZULcABq9TwciZ%2FUCAA5Av1kSB0kA%3D%3D" target="_blank">Open in Playground &#x2192;</a></p>
+<p>Target: JVMRunning on v.1.8.10</p>
+<p>The predicates in <code>filter()</code> can only check the values of the elements. If you want to use element positions in the filter, use <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/filter-indexed.html" target="_blank"><code>filterIndexed()</code></a>. It takes a predicate with two arguments: the index and the value of an element.</p>
+<p>To filter collections by negative conditions, use <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/filter-not.html" target="_blank"><code>filterNot()</code></a>. It returns a list of elements for which the predicate yields <code>false</code>.</p>
+<pre><code>val numbers = listOf(&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;)
+
+val filteredIdx = numbers.filterIndexed { index, s -&gt; (index != 0) &amp;&amp; (s.length &lt; 5)  }
+val filteredNot = numbers.filterNot { it.length &lt;= 3 }
+
+println(filteredIdx)
+println(filteredNot)
+</code></pre><p><a href="https://play.kotlinlang.org/editor/v1/N4Igxg9gJgpiBcIBmBXAdgAgLYEMCWaAFAJQbAA6alGNGAbjgDYZopYBGMATgM4YC8GRnh4AXAPJJC5EBDQwZAGgwzRAdwhKVIUQAsuMBSGUykEFFxnFqtGzQbMkeRqO4woASSgAPASzacvAB0Ti7cHmiw3u5kGARRynwAtAB8GITxML4AhIIADKQAZIXpPEGMMGgA5noYADwYAKykGAC%2BdvRMGKGuBlAAchCifqwc3GU93IPDwHGi5ZU1uvWCAMxtlB0ADlwEooxEk31e3taYtDt7B4RH7tNnlK3GOjhcVTCiAAqMOKJmXFgECAAFY4BjPSBYLbObgANXGeDkQIAjEEABxBZF5ECtIA" target="_blank">Open in Playground &#x2192;</a></p>
+<p>Target: JVMRunning on v.1.8.10</p>
+<p>There are also functions that narrow the element type by filtering elements of a given type:</p>
+<ul>
+<li><p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/filter-is-instance.html" target="_blank"><code>filterIsInstance()</code></a> returns collection elements of a given type. Being called on a <code>List&lt;Any&gt;</code>, <code>filterIsInstance&lt;T&gt;()</code> returns a <code>List&lt;T&gt;</code>, thus allowing you to call functions of the <code>T</code> type on its items.</p>
+<pre><code>val numbers = listOf(null, 1, &quot;two&quot;, 3.0, &quot;four&quot;)
+</code></pre><pre><code>println(&quot;All String elements in upper case:&quot;)
+</code></pre><pre><code>numbers.filterIsInstance&lt;String&gt;().forEach {
+</code></pre><pre><code>    println(it.uppercase())
+</code></pre><pre><code>}
+</code></pre><p><a href="https://play.kotlinlang.org/editor/v1/N4Igxg9gJgpiBcIBmBXAdgAgLYEMCWaAFAJQbAA6alGNGAbjgDYZopYBGMATgM4YC8GRnh4AXAPJJCrRowA0GAIwLyIUQHcIqhQGYAdAAYVyCCi6ri1WgAcuBUYyKqAgrIwBlUXbQBzDDEYYLBg0UT4CDBRra24MMBweGHgLKxpWDm4ePSQ8RlFuAEkeArQxHDQwGAAeT28fAD4SbIguAFEcMAALMlTaGlt7R0I8UT0omK54xJJLTFoAX0pKeZA5NRwuHxhRAAVGHFEkFqwEEAArHAZV8Agsa1zuADVMvAg0U8U9AA49RQMQeZAA" target="_blank">Open in Playground &#x2192;</a></p>
+<p>Target: JVMRunning on v.1.8.10</p>
+</li>
+<li><p><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/filter-not-null.html" target="_blank"><code>filterNotNull()</code></a> returns all non-null elements. Being called on a <code>List&lt;T?&gt;</code>, <code>filterNotNull()</code> returns a <code>List&lt;T: Any&gt;</code>, thus allowing you to treat the elements as non-null objects.</p>
+<pre><code>val numbers = listOf(null, &quot;one&quot;, &quot;two&quot;, null)
+</code></pre><pre><code>numbers.filterNotNull().forEach {
+</code></pre><pre><code>    println(it.length)   // length is unavailable for nullable Strings
+</code></pre><pre><code>}
+</code></pre><p><a href="https://play.kotlinlang.org/editor/v1/N4Igxg9gJgpiBcIBmBXAdgAgLYEMCWaAFAJQbAA6alGNGAbjgDYZopYBGMATgM4YC8GRnh4AXAPJJCrRowA0GciAhoYShUtEB3COpYpZxarVYduPAHRI8jUdwByEUfYOMSViFwCiOMAAsyY1paAAcuAlFGIjxRC0YYNABzUT9SGgB6dKEE5ICRDHQcBhscdniMJE99WVLygGVRcKSeIIwAX0pKNpA5EFEcLkSYUQAFRhxRSq4sBBAAKyKcHvAILBCbbgA1czwVWYBGCwAOC32ABhA2oA" target="_blank">Open in Playground &#x2192;</a></p>
+<p>Target: JVMRunning on v.1.8.10</p>
+</li>
+</ul>
+<h2 id="partition&#xFEFF;">Partition&#xFEFF;</h2>
+<p>Another filtering function &#x2013; <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/partition.html" target="_blank"><code>partition()</code></a> &#x2013; filters a collection by a predicate and keeps the elements that don&apos;t match it in a separate list. So, you have a <code>Pair</code> of <code>List</code>s as a return value: the first list containing elements that match the predicate and the second one containing everything else from the original collection.</p>
+<pre><code>val numbers = listOf(&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;)
+val (match, rest) = numbers.partition { it.length &gt; 3 }
+
+println(match)
+println(rest)
+</code></pre><p><a href="https://play.kotlinlang.org/editor/v1/N4Igxg9gJgpiBcIBmBXAdgAgLYEMCWaAFAJQbAA6alGNGAbjgDYZopYBGMATgM4YC8GRnh4AXAPJJC5EBDQwZAGgwzRAdwhKVIUQAsuMBSGUykEFFxnFqtBs0K5RYXcoNjSg1h248AdAAccLlE8ELkyDFDfRhg0AHM9DAA%2BDABmDABfShsafy4CUUYiR2drTFo8gqLCN1EyygzjHSC4mFEABUYcUTMuLAQQACscBibILH88GK4ANR88OQGARl8ADl8lgAYQDKA%3D%3D" target="_blank">Open in Playground &#x2192;</a></p>
+<p>Target: JVMRunning on v.1.8.10</p>
+<h2 id="test-predicates&#xFEFF;">Test predicates&#xFEFF;</h2>
+<p>Finally, there are functions that simply test a predicate against collection elements:</p>
+<ul>
+<li><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/any.html" target="_blank"><code>any()</code></a> returns <code>true</code> if at least one element matches the given predicate.</li>
+<li><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/none.html" target="_blank"><code>none()</code></a> returns <code>true</code> if none of the elements match the given predicate.</li>
+<li><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/all.html" target="_blank"><code>all()</code></a> returns <code>true</code> if all elements match the given predicate. Note that <code>all()</code> returns <code>true</code> when called with any valid predicate on an empty collection. Such behavior is known in logic as <em><a href="https://en.wikipedia.org/wiki/Vacuous_truth" target="_blank">vacuous truth</a></em>.</li>
+</ul>
+<pre><code>val numbers = listOf(&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;)
+
+println(numbers.any { it.endsWith(&quot;e&quot;) })
+println(numbers.none { it.endsWith(&quot;a&quot;) })
+println(numbers.all { it.endsWith(&quot;e&quot;) })
+
+println(emptyList&lt;Int&gt;().all { it &gt; 5 })   // vacuous truth
+</code></pre><p><a href="https://play.kotlinlang.org/editor/v1/N4Igxg9gJgpiBcIBmBXAdgAgLYEMCWaAFAJQbAA6alGNGAbjgDYZopYBGMATgM4YC8GRnh4AXAPJJC5EBDQwZAGgwzRAdwhKVIUQAsuMBSGUykEFFxnFK1WgAcuBUYyKsO3HgDocaAJ5kMPFFPGDQoHgB1IN1pECNSAF9rTHtHNGdXNk5eTzQ5GACgkLDI6NicKwwk2xoHJxdCN2yvJmZgQODQ8Ki9WPiq5JqMOvSGmCw7UV8AGRFRAB4ASXSAPhJvRjaOjBWMAFYB2gB6I%2FocMBRzPlEuFD0bNATjHRwuAHMYUQAFRhxRMy4WAQIAAVjgGM9IBM8IxuAA1Dx4OTAgCMngAHJ4UQAGEAJIA%3D" target="_blank">Open in Playground &#x2192;</a></p>
+<p>Target: JVMRunning on v.1.8.10</p>
+<p><code>any()</code> and <code>none()</code> can also be used without a predicate: in this case they just check the collection emptiness. <code>any()</code> returns <code>true</code> if there are elements and <code>false</code> if there aren&apos;t; <code>none()</code> does the opposite.</p>
+<pre><code>val numbers = listOf(&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;)
+val empty = emptyList&lt;String&gt;()
+
+println(numbers.any())
+println(empty.any())
+
+println(numbers.none())
+println(empty.none())
+</code></pre><p><a href="https://play.kotlinlang.org/editor/v1/N4Igxg9gJgpiBcIBmBXAdgAgLYEMCWaAFAJQbAA6alGNGAbjgDYZopYBGMATgM4YC8GRnh4AXAPJJC5EBDQwZAGgwzRAdwhKVIUQAsuMBSGUykEFFxnFqtBsxhYADqICeAjA%2BcuAMiNEAeAGVRLgIAcwA%2BEkobGkdQtFFGIlYObh4AOhw0FxJrTFp4giSiT1csnLzYlQK4hJLCVM5eDLQ5GCrajCLE5MIyl1b2zsoAX2MdHC4wmFEABUYcUTMuLAQQACscBgnIJzxGbgA1dLw5dYBGDIAODIuABhBRoA" target="_blank">Open in Playground &#x2192;</a></p>
+<h3 id="ordering&#xFEFF;">Ordering&#xFEFF;</h3>
+<p>The order of elements is an important aspect of certain collection types. For example, two lists of the same elements are not equal if their elements are ordered differently.</p>
+<p>In Kotlin, the orders of objects can be defined in several ways.</p>
+<p>First, there is <em>natural</em> order. It is defined for implementations of the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-comparable/index.html" target="_blank"><code>Comparable</code></a> interface. Natural order is used for sorting them when no other order is specified.</p>
+<p>Most built-in types are comparable:</p>
+<ul>
+<li>Numeric types use the traditional numerical order: <code>1</code> is greater than <code>0</code>; <code>-3.4f</code> is greater than <code>-5f</code>, and so on.</li>
+<li><code>Char</code> and <code>String</code> use the <a href="https://en.wikipedia.org/wiki/Lexicographical_order" target="_blank">lexicographical order</a>: <code>b</code> is greater than <code>a</code>; <code>world</code> is greater than <code>hello</code>.</li>
+</ul>
+<p>To define a natural order for a user-defined type, make the type an implementer of <code>Comparable</code>. This requires implementing the <code>compareTo()</code> function. <code>compareTo()</code> must take another object of the same type as an argument and return an integer value showing which object is greater:</p>
+<ul>
+<li>Positive values show that the receiver object is greater.</li>
+<li>Negative values show that it&apos;s less than the argument.</li>
+<li>Zero shows that the objects are equal.</li>
+</ul>
+<p>Below is a class for ordering versions that consist of the major and the minor part.</p>
+<pre><code class="lang-kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Version</span></span>(<span class="hljs-variable"><span class="hljs-keyword">val</span> major</span>: <span class="hljs-keyword">Int</span>, <span class="hljs-variable"><span class="hljs-keyword">val</span> minor</span>: <span class="hljs-keyword">Int</span>): Comparable<span class="hljs-type">&lt;Version&gt;</span> {
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">compareTo</span><span class="hljs-params">(other: <span class="hljs-type">Version</span>)</span>: <span class="hljs-keyword">Int</span> = <span class="hljs-keyword">when</span> {</span>
+        this.major != other.major -&gt; this.major compareTo other.major <span class="hljs-comment">// compareTo() in the infix form </span>
+        this.minor != other.minor -&gt; this.minor compareTo other.minor
+        <span class="hljs-keyword">else</span> -&gt; <span class="hljs-number">0</span>
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {    </span>
+    println(Version(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>) &gt; Version(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>))
+    println(Version(<span class="hljs-number">2</span>, <span class="hljs-number">0</span>) &gt; Version(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>))
+}
+</code></pre>
+<p><em>Custom</em> orders let you sort instances of any type in a way you like. Particularly, you can define an order for non-comparable objects or define an order other than natural for a comparable type. To define a custom order for a type, create a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-comparator/index.html" target="_blank"><code>Comparator</code></a> for it. <code>Comparator</code> contains the <code>compare()</code> function: it takes two instances of a class and returns the integer result of the comparison between them. The result is interpreted in the same way as the result of a <code>compareTo()</code> as is described above.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> lengthComparator</span> = Comparator { str1: String, str2: String -&gt; str1.length - str2.length }
+println(listOf(<span class="hljs-string">&quot;aaa&quot;</span>, <span class="hljs-string">&quot;bb&quot;</span>, <span class="hljs-string">&quot;c&quot;</span>).sortedWith(lengthComparator))
+</code></pre>
+<p>Having the <code>lengthComparator</code>, you are able to arrange strings by their length instead of the default corder.</p>
+<p>A shorter way to define a <code>Comparator</code> is the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.comparisons/compare-by.html" target="_blank"><code>compareBy()</code></a> function from the standard library. <code>compareBy()</code> takes a lambda function that produces a <code>Comparable</code> value from an instance and defines the custom order as the natural order of the produced values.</p>
+<p>With <code>compareBy()</code>, the length comparator from the example above looks like this:</p>
+<pre><code class="lang-kotlin">println(listOf(<span class="hljs-string">&quot;aaa&quot;</span>, <span class="hljs-string">&quot;bb&quot;</span>, <span class="hljs-string">&quot;c&quot;</span>).sortedWith(compareBy { it.length }))
+</code></pre>
+<p>The Kotlin collections package provides functions for sorting collections in natural, custom, and even random orders. On this page, we&apos;ll describe sorting functions that apply to <a href="https://kotlinlang.org/docs/collections-overview.html#collection-types" target="_blank">read-only</a> collections. These functions return their result as a new collection containing the elements of the original collection in the requested order. To learn about functions for sorting <a href="https://kotlinlang.org/docs/collections-overview.html#collection-types" target="_blank">mutable</a> collections in place, see the <a href="https://kotlinlang.org/docs/list-operations.html#sort" target="_blank">List-specific operations</a>.</p>
+<h4 id="natural-order&#xFEFF;">Natural order&#xFEFF;</h4>
+<p>The basic functions <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/sorted.html" target="_blank"><code>sorted()</code></a> and <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/sorted-descending.html" target="_blank"><code>sortedDescending()</code></a> return elements of a collection sorted into ascending and descending sequence according to their natural order. These functions apply to collections of <code>Comparable</code> elements.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+
+println(<span class="hljs-string">&quot;Sorted ascending: ${numbers.sorted()}&quot;</span>)
+println(<span class="hljs-string">&quot;Sorted descending: ${numbers.sortedDescending()}&quot;</span>)
+</code></pre>
+<h4 id="custom-orders&#xFEFF;">Custom orders&#xFEFF;</h4>
+<p>For sorting in custom orders or sorting non-comparable objects, there are the functions <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/sorted-by.html" target="_blank"><code>sortedBy()</code></a> and <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/sorted-by-descending.html" target="_blank"><code>sortedByDescending()</code></a>. They take a selector function that maps collection elements to <code>Comparable</code> values and sort the collection in natural order of that values.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+
+<span class="hljs-variable"><span class="hljs-keyword">val</span> sortedNumbers</span> = numbers.sortedBy { it.length }
+println(<span class="hljs-string">&quot;Sorted by length ascending: $sortedNumbers&quot;</span>)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> sortedByLast</span> = numbers.sortedByDescending { it.last() }
+println(<span class="hljs-string">&quot;Sorted by the last letter descending: $sortedByLast&quot;</span>)
+</code></pre>
+<p>To define a custom order for the collection sorting, you can provide your own <code>Comparator</code>. To do this, call the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/sorted-with.html" target="_blank"><code>sortedWith()</code></a> function passing in your <code>Comparator</code>. With this function, sorting strings by their length looks like this:</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+println(<span class="hljs-string">&quot;Sorted by length ascending: ${numbers.sortedWith(compareBy { it.length })}&quot;</span>)
+</code></pre>
+<h4 id="reverse-order&#xFEFF;">Reverse order&#xFEFF;</h4>
+<p>You can retrieve the collection in the reversed order using the <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/reversed.html" target="_blank"><code>reversed()</code></a> function.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+println(numbers.reversed())
+</code></pre>
+<p><code>reversed()</code> returns a new collection with the copies of the elements. So, if you change the original collection later, this won&apos;t affect the previously obtained results of <code>reversed()</code>.</p>
+<p>Another reversing function - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/as-reversed.html" target="_blank"><code>asReversed()</code></a></p>
+<ul>
+<li>returns a reversed view of the same collection instance, so it may be more lightweight and preferable than <code>reversed()</code> if the original list is not going to change.</li>
+</ul>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> reversedNumbers</span> = numbers.asReversed()
+println(reversedNumbers)
+</code></pre>
+<p>If the original list is mutable, all its changes reflect in its reversed views and vice versa.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = mutableListOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+<span class="hljs-variable"><span class="hljs-keyword">val</span> reversedNumbers</span> = numbers.asReversed()
+println(reversedNumbers)
+numbers.add(<span class="hljs-string">&quot;five&quot;</span>)
+println(reversedNumbers)
+</code></pre>
+<p>However, if the mutability of the list is unknown or the source is not a list at all, <code>reversed()</code> is more preferable since its result is a copy that won&apos;t change in the future.</p>
+<h4 id="random-order&#xFEFF;">Random order&#xFEFF;</h4>
+<p>Finally, there is a function that returns a new <code>List</code> containing the collection elements in a random order - <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/shuffled.html" target="_blank"><code>shuffled()</code></a>. You can call it without arguments or with a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.random/-random/index.html" target="_blank"><code>Random</code></a> object.</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> numbers</span> = listOf(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-string">&quot;four&quot;</span>)
+println(numbers.shuffled())
+</code></pre>
+<footer class="page-footer"><span class="copyright">No Copyright all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">modified time:
+2024-12-31 05:21:51
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Kotlin-Basics.html" class="navigation navigation-prev " aria-label="Previous page: Kotlin-basics">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../" class="navigation navigation-next " aria-label="Next page: Python">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Kotlin-standardlibrary","level":"1.3.4.2","depth":3,"next":{"title":"Python","level":"1.3.5","depth":2,"path":"03_语言/README.md","ref":"03_语言/README.md","articles":[{"title":"Datetime的使用","level":"1.3.5.1","depth":3,"path":"03_语言/Python/datetime的使用.md","ref":"03_语言/Python/datetime的使用.md","articles":[]},{"title":"Playwright","level":"1.3.5.2","depth":3,"path":"03_语言/Python/Playwright.md","ref":"03_语言/Python/Playwright.md","articles":[]},{"title":"Python使用中遇到的问题解决","level":"1.3.5.3","depth":3,"path":"03_语言/Python/Python使用中遇到的问题解决.md","ref":"03_语言/Python/Python使用中遇到的问题解决.md","articles":[]},{"title":"Python打包","level":"1.3.5.4","depth":3,"path":"03_语言/Python/Python打包.md","ref":"03_语言/Python/Python打包.md","articles":[]},{"title":"Python方法注释","level":"1.3.5.5","depth":3,"path":"03_语言/Python/Python方法注释.md","ref":"03_语言/Python/Python方法注释.md","articles":[]},{"title":"Python简明教程","level":"1.3.5.6","depth":3,"path":"03_语言/Python/Python简明教程.md","ref":"03_语言/Python/Python简明教程.md","articles":[]},{"title":"Python装饰器","level":"1.3.5.7","depth":3,"path":"03_语言/Python/python装饰器.md","ref":"03_语言/Python/python装饰器.md","articles":[]},{"title":"Python详细教程","level":"1.3.5.8","depth":3,"path":"03_语言/Python/Python详细教程.md","ref":"03_语言/Python/Python详细教程.md","articles":[]},{"title":"添加路径到sys.path","level":"1.3.5.9","depth":3,"path":"03_语言/Python/添加路径到sys.path.md","ref":"03_语言/Python/添加路径到sys.path.md","articles":[]}]},"previous":{"title":"Kotlin-basics","level":"1.3.4.1","depth":3,"path":"03_语言/Kotlin/Kotlin-Basics.md","ref":"03_语言/Kotlin/Kotlin-Basics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["accordion","search-pro","-search","tbfed-pagefooter"],"root":"/","styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"No Copyright","modify_label":"modified time:","modift_format":"YYYY-MM-DD HH:mm:ss"},"accordion":{},"search-pro":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"theme":"default","author":"Aki","page":{"title":"CS Note"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"authorName":"Aki"},"title":"CS Note","gitbook":"3.2.3"},"file":{"path":"03_语言/Kotlin/Kotlin-StandardLibrary.md","mtime":"2024-12-31T05:21:51.514Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-31T05:22:32.548Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

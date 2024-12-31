@@ -1,0 +1,5261 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Phonewindowmanager-power键的处理 · CS Note</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Aki">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-accordion/accordion.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="PhoneWindowManager.html" />
+    
+    
+    <link rel="prev" href="Android结构.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    01_计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../../../01_计算机基础/">
+            
+                <a href="../../../01_计算机基础/">
+            
+                    
+                    Ebook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.1" data-path="../../../01_计算机基础/ebook/REFERS.html">
+            
+                <a href="../../../01_计算机基础/ebook/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../../../01_计算机基础/">
+            
+                <a href="../../../01_计算机基础/">
+            
+                    
+                    操作系统原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.1" data-path="../../../01_计算机基础/操作系统原理/假唤醒.html">
+            
+                <a href="../../../01_计算机基础/操作系统原理/假唤醒.html">
+            
+                    
+                    假唤醒
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2" data-path="../../../01_计算机基础/操作系统原理/操作系统原理.html">
+            
+                <a href="../../../01_计算机基础/操作系统原理/操作系统原理.html">
+            
+                    
+                    操作系统原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../../../01_计算机基础/">
+            
+                <a href="../../../01_计算机基础/">
+            
+                    
+                    数学
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1" data-path="../../../01_计算机基础/数学/排列组合.html">
+            
+                <a href="../../../01_计算机基础/数学/排列组合.html">
+            
+                    
+                    排列组合
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../../../01_计算机基础/栈与堆.html">
+            
+                <a href="../../../01_计算机基础/栈与堆.html">
+            
+                    
+                    栈与堆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="../../../01_计算机基础/编码.html">
+            
+                <a href="../../../01_计算机基础/编码.html">
+            
+                    
+                    编码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="../../../01_计算机基础/">
+            
+                <a href="../../../01_计算机基础/">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.6.1" data-path="../../../01_计算机基础/计算机网络/HTTPS基础.html">
+            
+                <a href="../../../01_计算机基础/计算机网络/HTTPS基础.html">
+            
+                    
+                    Https基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.2" data-path="../../../01_计算机基础/计算机网络/HTTP基础.html">
+            
+                <a href="../../../01_计算机基础/计算机网络/HTTP基础.html">
+            
+                    
+                    Http基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.3" data-path="../../../01_计算机基础/计算机网络/SSL.html">
+            
+                <a href="../../../01_计算机基础/计算机网络/SSL.html">
+            
+                    
+                    Ssl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.4" data-path="../../../01_计算机基础/计算机网络/TCP,IP协议族.html">
+            
+                <a href="../../../01_计算机基础/计算机网络/TCP,IP协议族.html">
+            
+                    
+                    Tcp,ip协议族
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.5" data-path="../../../01_计算机基础/计算机网络/URL和URI的区别.html">
+            
+                <a href="../../../01_计算机基础/计算机网络/URL和URI的区别.html">
+            
+                    
+                    Url和uri的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.6" data-path="../../../01_计算机基础/计算机网络/登录和第三方授权.html">
+            
+                <a href="../../../01_计算机基础/计算机网络/登录和第三方授权.html">
+            
+                    
+                    登录和第三方授权
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.7" data-path="../../../01_计算机基础/计算机网络/编码,加密,Hash,序列化和字符集.html">
+            
+                <a href="../../../01_计算机基础/计算机网络/编码,加密,Hash,序列化和字符集.html">
+            
+                    
+                    编码,加密,hash,序列化和字符集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6.8" data-path="../../../01_计算机基础/计算机网络/网络错误代码.html">
+            
+                <a href="../../../01_计算机基础/计算机网络/网络错误代码.html">
+            
+                    
+                    网络错误代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    02_数据结构与算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../02_数据结构与算法/REFERS.html">
+            
+                <a href="../../../02_数据结构与算法/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../02_数据结构与算法/算法.html">
+            
+                <a href="../../../02_数据结构与算法/算法.html">
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../02_数据结构与算法/算法2.html">
+            
+                <a href="../../../02_数据结构与算法/算法2.html">
+            
+                    
+                    算法2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../../02_数据结构与算法/红黑树.html">
+            
+                <a href="../../../02_数据结构与算法/红黑树.html">
+            
+                    
+                    红黑树
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    03_语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../03_语言/">
+            
+                <a href="../../../03_语言/">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../../03_语言/C++/argc和argv.html">
+            
+                <a href="../../../03_语言/C++/argc和argv.html">
+            
+                    
+                    Argc和argv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../../03_语言/C++/C++.html">
+            
+                <a href="../../../03_语言/C++/C++.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../../03_语言/C++/">
+            
+                <a href="../../../03_语言/C++/">
+            
+                    
+                    Ebook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="../../../03_语言/C++/ebook/REFERS.html">
+            
+                <a href="../../../03_语言/C++/ebook/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../../../03_语言/C++/REFERS.html">
+            
+                <a href="../../../03_语言/C++/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../03_语言/">
+            
+                <a href="../../../03_语言/">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../../03_语言/Java/ArrayList源码解析.html">
+            
+                <a href="../../../03_语言/Java/ArrayList源码解析.html">
+            
+                    
+                    Arraylist源码解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../../03_语言/Java/">
+            
+                <a href="../../../03_语言/Java/">
+            
+                    
+                    Ebook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.2.1" data-path="../../../03_语言/Java/ebook/REFERS.html">
+            
+                <a href="../../../03_语言/Java/ebook/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2.2" data-path="../../../03_语言/Java/ebook/Thinking in Java 读书笔记.html">
+            
+                <a href="../../../03_语言/Java/ebook/Thinking in Java 读书笔记.html">
+            
+                    
+                    Thinking in java 读书笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../../../03_语言/Java/java.html">
+            
+                <a href="../../../03_语言/Java/java.html">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../../../03_语言/Java/JNI.html">
+            
+                <a href="../../../03_语言/Java/JNI.html">
+            
+                    
+                    Jni
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../../../03_语言/Java/JVM机制.html">
+            
+                <a href="../../../03_语言/Java/JVM机制.html">
+            
+                    
+                    Jvm机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="../../../03_语言/Java/lambda.html">
+            
+                <a href="../../../03_语言/Java/lambda.html">
+            
+                    
+                    Lambda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.7" data-path="../../../03_语言/Java/note.html">
+            
+                <a href="../../../03_语言/Java/note.html">
+            
+                    
+                    Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.8" data-path="../../../03_语言/Java/内存管理+GC.html">
+            
+                <a href="../../../03_语言/Java/内存管理+GC.html">
+            
+                    
+                    内存管理+gc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.9" data-path="../../../03_语言/Java/反射机制.html">
+            
+                <a href="../../../03_语言/Java/反射机制.html">
+            
+                    
+                    反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.10" data-path="../../../03_语言/Java/变量作用域.html">
+            
+                <a href="../../../03_语言/Java/变量作用域.html">
+            
+                    
+                    变量作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.11" data-path="../../../03_语言/Java/并发与多线程.html">
+            
+                <a href="../../../03_语言/Java/并发与多线程.html">
+            
+                    
+                    并发与多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.12" data-path="../../../03_语言/Java/异常处理.html">
+            
+                <a href="../../../03_语言/Java/异常处理.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.13" data-path="../../../03_语言/Java/泛型.html">
+            
+                <a href="../../../03_语言/Java/泛型.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.14" data-path="../../../03_语言/Java/注解.html">
+            
+                <a href="../../../03_语言/Java/注解.html">
+            
+                    
+                    注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.15" data-path="../../../03_语言/Java/浅拷贝与深拷贝.html">
+            
+                <a href="../../../03_语言/Java/浅拷贝与深拷贝.html">
+            
+                    
+                    浅拷贝与深拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.16" data-path="../../../03_语言/Java/集合框架.html">
+            
+                <a href="../../../03_语言/Java/集合框架.html">
+            
+                    
+                    集合框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.17" data-path="../../../03_语言/Java/面试题.html">
+            
+                <a href="../../../03_语言/Java/面试题.html">
+            
+                    
+                    面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../03_语言/">
+            
+                <a href="../../../03_语言/">
+            
+                    
+                    Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../../03_语言/Javascript/REFERS.html">
+            
+                <a href="../../../03_语言/Javascript/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../../03_语言/">
+            
+                <a href="../../../03_语言/">
+            
+                    
+                    Kotlin
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../../03_语言/Kotlin/Kotlin-Basics.html">
+            
+                <a href="../../../03_语言/Kotlin/Kotlin-Basics.html">
+            
+                    
+                    Kotlin-basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../../../03_语言/Kotlin/Kotlin-StandardLibrary.html">
+            
+                <a href="../../../03_语言/Kotlin/Kotlin-StandardLibrary.html">
+            
+                    
+                    Kotlin-standardlibrary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../../03_语言/">
+            
+                <a href="../../../03_语言/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../../../03_语言/Python/datetime的使用.html">
+            
+                <a href="../../../03_语言/Python/datetime的使用.html">
+            
+                    
+                    Datetime的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../../../03_语言/Python/Playwright.html">
+            
+                <a href="../../../03_语言/Python/Playwright.html">
+            
+                    
+                    Playwright
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../../../03_语言/Python/Python使用中遇到的问题解决.html">
+            
+                <a href="../../../03_语言/Python/Python使用中遇到的问题解决.html">
+            
+                    
+                    Python使用中遇到的问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../../../03_语言/Python/Python打包.html">
+            
+                <a href="../../../03_语言/Python/Python打包.html">
+            
+                    
+                    Python打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../../../03_语言/Python/Python方法注释.html">
+            
+                <a href="../../../03_语言/Python/Python方法注释.html">
+            
+                    
+                    Python方法注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../../../03_语言/Python/Python简明教程.html">
+            
+                <a href="../../../03_语言/Python/Python简明教程.html">
+            
+                    
+                    Python简明教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="../../../03_语言/Python/python装饰器.html">
+            
+                <a href="../../../03_语言/Python/python装饰器.html">
+            
+                    
+                    Python装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" data-path="../../../03_语言/Python/Python详细教程.html">
+            
+                <a href="../../../03_语言/Python/Python详细教程.html">
+            
+                    
+                    Python详细教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.9" data-path="../../../03_语言/Python/添加路径到sys.path.html">
+            
+                <a href="../../../03_语言/Python/添加路径到sys.path.html">
+            
+                    
+                    添加路径到sys.path
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../../03_语言/">
+            
+                <a href="../../../03_语言/">
+            
+                    
+                    Rust
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../../../03_语言/Rust/Rust.html">
+            
+                <a href="../../../03_语言/Rust/Rust.html">
+            
+                    
+                    Rust
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../../03_语言/为什么汇编语言不可移植，但C可以.html">
+            
+                <a href="../../../03_语言/为什么汇编语言不可移植，但C可以.html">
+            
+                    
+                    为什么汇编语言不可移植，但c可以
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../../../03_语言/琐碎的Coding规则.html">
+            
+                <a href="../../../03_语言/琐碎的Coding规则.html">
+            
+                    
+                    琐碎的coding规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    04_android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    代码测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../代码测试/Airtest.html">
+            
+                <a href="../../代码测试/Airtest.html">
+            
+                    
+                    Airtest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../代码测试/Calabash的功能和特点.html">
+            
+                <a href="../../代码测试/Calabash的功能和特点.html">
+            
+                    
+                    Calabash的功能和特点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../代码测试/RanoreX.html">
+            
+                <a href="../../代码测试/RanoreX.html">
+            
+                    
+                    Ranorex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../../代码测试/Robotium介绍.html">
+            
+                <a href="../../代码测试/Robotium介绍.html">
+            
+                    
+                    Robotium介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5" data-path="../../代码测试/">
+            
+                <a href="../../代码测试/">
+            
+                    
+                    Ui测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.5.1" data-path="../../代码测试/UI测试/Appium.html">
+            
+                <a href="../../代码测试/UI测试/Appium.html">
+            
+                    
+                    Appium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5.2" data-path="../../代码测试/UI测试/Espresso.html">
+            
+                <a href="../../代码测试/UI测试/Espresso.html">
+            
+                    
+                    Espresso
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.6" data-path="../../代码测试/">
+            
+                <a href="../../代码测试/">
+            
+                    
+                    压力测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.6.1" data-path="../../代码测试/压力测试/Monkey.html">
+            
+                <a href="../../代码测试/压力测试/Monkey.html">
+            
+                    
+                    Monkey
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7" data-path="../../代码测试/">
+            
+                <a href="../../代码测试/">
+            
+                    
+                    本地ut
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.7.1" data-path="../../代码测试/本地UT/Jacoco.html">
+            
+                <a href="../../代码测试/本地UT/Jacoco.html">
+            
+                    
+                    Jacoco
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7.2" data-path="../../代码测试/本地UT/Junit.html">
+            
+                <a href="../../代码测试/本地UT/Junit.html">
+            
+                    
+                    Junit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7.3" data-path="../../代码测试/本地UT/Mockito.html">
+            
+                <a href="../../代码测试/本地UT/Mockito.html">
+            
+                    
+                    Mockito
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7.4" data-path="../../代码测试/本地UT/PowerMock.html">
+            
+                <a href="../../代码测试/本地UT/PowerMock.html">
+            
+                    
+                    Powermock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7.5" data-path="../../代码测试/本地UT/Robolectric.html">
+            
+                <a href="../../代码测试/本地UT/Robolectric.html">
+            
+                    
+                    Robolectric
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7.6" data-path="../../代码测试/本地UT/RulesOfUnitTests.html">
+            
+                <a href="../../代码测试/本地UT/RulesOfUnitTests.html">
+            
+                    
+                    Rulesofunittests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7.7" data-path="../../代码测试/本地UT/ut-问题解决.html">
+            
+                <a href="../../代码测试/本地UT/ut-问题解决.html">
+            
+                    
+                    Ut-问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.8" data-path="../../代码测试/">
+            
+                <a href="../../代码测试/">
+            
+                    
+                    概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.8.1" data-path="../../代码测试/概念/Android本地测试.html">
+            
+                <a href="../../代码测试/概念/Android本地测试.html">
+            
+                    
+                    Android本地测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.8.2" data-path="../../代码测试/概念/Android测试基本概念.html">
+            
+                <a href="../../代码测试/概念/Android测试基本概念.html">
+            
+                    
+                    Android测试基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.9" data-path="../../代码测试/踩坑记录.html">
+            
+                <a href="../../代码测试/踩坑记录.html">
+            
+                    
+                    踩坑记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../应用层/Android问题.html">
+            
+                <a href="../../应用层/Android问题.html">
+            
+                    
+                    Android问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../应用层/">
+            
+                <a href="../../应用层/">
+            
+                    
+                    Sdk
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.1" data-path="../../应用层/SDK/">
+            
+                <a href="../../应用层/SDK/">
+            
+                    
+                    2-1.应用层-基础与源码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.1.1" data-path="../../应用层/SDK/2-1.应用层-基础与源码/Activity.html">
+            
+                <a href="../../应用层/SDK/2-1.应用层-基础与源码/Activity.html">
+            
+                    
+                    Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.1.2" data-path="../../应用层/SDK/2-1.应用层-基础与源码/AndroidManifest.html">
+            
+                <a href="../../应用层/SDK/2-1.应用层-基础与源码/AndroidManifest.html">
+            
+                    
+                    Androidmanifest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.1.3" data-path="../../应用层/SDK/2-1.应用层-基础与源码/Application.html">
+            
+                <a href="../../应用层/SDK/2-1.应用层-基础与源码/Application.html">
+            
+                    
+                    Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.1.4" data-path="../../应用层/SDK/2-1.应用层-基础与源码/Broadcast.html">
+            
+                <a href="../../应用层/SDK/2-1.应用层-基础与源码/Broadcast.html">
+            
+                    
+                    Broadcast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.1.5" data-path="../../应用层/SDK/2-1.应用层-基础与源码/Context.html">
+            
+                <a href="../../应用层/SDK/2-1.应用层-基础与源码/Context.html">
+            
+                    
+                    Context
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.1.6" data-path="../../应用层/SDK/2-1.应用层-基础与源码/Fragment.html">
+            
+                <a href="../../应用层/SDK/2-1.应用层-基础与源码/Fragment.html">
+            
+                    
+                    Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.1.7" data-path="../../应用层/SDK/2-1.应用层-基础与源码/Intent.html">
+            
+                <a href="../../应用层/SDK/2-1.应用层-基础与源码/Intent.html">
+            
+                    
+                    Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2" data-path="../../应用层/SDK/">
+            
+                <a href="../../应用层/SDK/">
+            
+                    
+                    2-2.应用层-样式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.2.1" data-path="../../应用层/SDK/2-2.应用层-样式/Dialog.html">
+            
+                <a href="../../应用层/SDK/2-2.应用层-样式/Dialog.html">
+            
+                    
+                    Dialog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.2" data-path="../../应用层/SDK/2-2.应用层-样式/Jetpack.html">
+            
+                <a href="../../应用层/SDK/2-2.应用层-样式/Jetpack.html">
+            
+                    
+                    Jetpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.3" data-path="../../应用层/SDK/2-2.应用层-样式/MaterialDesign.html">
+            
+                <a href="../../应用层/SDK/2-2.应用层-样式/MaterialDesign.html">
+            
+                    
+                    Materialdesign
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.4" data-path="../../应用层/SDK/2-2.应用层-样式/Menu.html">
+            
+                <a href="../../应用层/SDK/2-2.应用层-样式/Menu.html">
+            
+                    
+                    Menu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.5" data-path="../../应用层/SDK/2-2.应用层-样式/Style.html">
+            
+                <a href="../../应用层/SDK/2-2.应用层-样式/Style.html">
+            
+                    
+                    Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.6" data-path="../../应用层/SDK/2-2.应用层-样式/Theme.html">
+            
+                <a href="../../应用层/SDK/2-2.应用层-样式/Theme.html">
+            
+                    
+                    Theme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.7" data-path="../../应用层/SDK/2-2.应用层-样式/View-others.html">
+            
+                <a href="../../应用层/SDK/2-2.应用层-样式/View-others.html">
+            
+                    
+                    View-others
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.8" data-path="../../应用层/SDK/2-2.应用层-样式/View.html">
+            
+                <a href="../../应用层/SDK/2-2.应用层-样式/View.html">
+            
+                    
+                    View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.9" data-path="../../应用层/SDK/2-2.应用层-样式/事件分发机制.html">
+            
+                <a href="../../应用层/SDK/2-2.应用层-样式/事件分发机制.html">
+            
+                    
+                    事件分发机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.10" data-path="../../应用层/SDK/2-2.应用层-样式/如何检测UI卡顿.html">
+            
+                <a href="../../应用层/SDK/2-2.应用层-样式/如何检测UI卡顿.html">
+            
+                    
+                    如何检测ui卡顿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.11" data-path="../../应用层/SDK/2-2.应用层-样式/屏幕适配.html">
+            
+                <a href="../../应用层/SDK/2-2.应用层-样式/屏幕适配.html">
+            
+                    
+                    屏幕适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.12" data-path="../../应用层/SDK/2-2.应用层-样式/设计规范.html">
+            
+                <a href="../../应用层/SDK/2-2.应用层-样式/设计规范.html">
+            
+                    
+                    设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.2.13" data-path="../../应用层/SDK/2-2.应用层-样式/键盘.html">
+            
+                <a href="../../应用层/SDK/2-2.应用层-样式/键盘.html">
+            
+                    
+                    键盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3" data-path="../../应用层/SDK/">
+            
+                <a href="../../应用层/SDK/">
+            
+                    
+                    2-3.应用层-数据持久化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.3.1" data-path="../../应用层/SDK/2-3.应用层-数据持久化/Android中Serializable和Parcelable有什么区别.html">
+            
+                <a href="../../应用层/SDK/2-3.应用层-数据持久化/Android中Serializable和Parcelable有什么区别.html">
+            
+                    
+                    Android中serializable和parcelable有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.2" data-path="../../应用层/SDK/2-3.应用层-数据持久化/ContentProvider.html">
+            
+                <a href="../../应用层/SDK/2-3.应用层-数据持久化/ContentProvider.html">
+            
+                    
+                    Contentprovider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.3" data-path="../../应用层/SDK/2-3.应用层-数据持久化/GreenDao基本使用.html">
+            
+                <a href="../../应用层/SDK/2-3.应用层-数据持久化/GreenDao基本使用.html">
+            
+                    
+                    Greendao基本使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.4" data-path="../../应用层/SDK/2-3.应用层-数据持久化/okio框架.html">
+            
+                <a href="../../应用层/SDK/2-3.应用层-数据持久化/okio框架.html">
+            
+                    
+                    Okio框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.5" data-path="../../应用层/SDK/2-3.应用层-数据持久化/Room Persistent Library基本介绍.html">
+            
+                <a href="../../应用层/SDK/2-3.应用层-数据持久化/Room Persistent Library基本介绍.html">
+            
+                    
+                    Room persistent library基本介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.6" data-path="../../应用层/SDK/2-3.应用层-数据持久化/ScopeStorage.html">
+            
+                <a href="../../应用层/SDK/2-3.应用层-数据持久化/ScopeStorage.html">
+            
+                    
+                    Scopestorage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.7" data-path="../../应用层/SDK/2-3.应用层-数据持久化/SharedPreferences.html">
+            
+                <a href="../../应用层/SDK/2-3.应用层-数据持久化/SharedPreferences.html">
+            
+                    
+                    Sharedpreferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.8" data-path="../../应用层/SDK/2-3.应用层-数据持久化/SQLite基本使用.html">
+            
+                <a href="../../应用层/SDK/2-3.应用层-数据持久化/SQLite基本使用.html">
+            
+                    
+                    Sqlite基本使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.3.9" data-path="../../应用层/SDK/2-3.应用层-数据持久化/文件.html">
+            
+                <a href="../../应用层/SDK/2-3.应用层-数据持久化/文件.html">
+            
+                    
+                    文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4" data-path="../../应用层/SDK/">
+            
+                <a href="../../应用层/SDK/">
+            
+                    
+                    2-4.应用层-功能模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.4.1" data-path="../../应用层/SDK/2-4.应用层-功能模块/AndroidX.html">
+            
+                <a href="../../应用层/SDK/2-4.应用层-功能模块/AndroidX.html">
+            
+                    
+                    Androidx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4.2" data-path="../../应用层/SDK/2-4.应用层-功能模块/MediaSession框架.html">
+            
+                <a href="../../应用层/SDK/2-4.应用层-功能模块/MediaSession框架.html">
+            
+                    
+                    Mediasession框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4.3" data-path="../../应用层/SDK/2-4.应用层-功能模块/动画.html">
+            
+                <a href="../../应用层/SDK/2-4.应用层-功能模块/动画.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4.4" data-path="../../应用层/SDK/2-4.应用层-功能模块/图片处理.html">
+            
+                <a href="../../应用层/SDK/2-4.应用层-功能模块/图片处理.html">
+            
+                    
+                    图片处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4.5" data-path="../../应用层/SDK/2-4.应用层-功能模块/推送.html">
+            
+                <a href="../../应用层/SDK/2-4.应用层-功能模块/推送.html">
+            
+                    
+                    推送
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4.6" data-path="../../应用层/SDK/2-4.应用层-功能模块/时间.html">
+            
+                <a href="../../应用层/SDK/2-4.应用层-功能模块/时间.html">
+            
+                    
+                    时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4.7" data-path="../../应用层/SDK/2-4.应用层-功能模块/蓝牙.html">
+            
+                <a href="../../应用层/SDK/2-4.应用层-功能模块/蓝牙.html">
+            
+                    
+                    蓝牙
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.4.8" data-path="../../应用层/SDK/2-4.应用层-功能模块/音视频.html">
+            
+                <a href="../../应用层/SDK/2-4.应用层-功能模块/音视频.html">
+            
+                    
+                    音视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.5" data-path="../../应用层/SDK/">
+            
+                <a href="../../应用层/SDK/">
+            
+                    
+                    2-5.应用层-网络通信
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.5.1" data-path="../../应用层/SDK/2-5.应用层-网络通信/HttpClient和UriConnection的区别.html">
+            
+                <a href="../../应用层/SDK/2-5.应用层-网络通信/HttpClient和UriConnection的区别.html">
+            
+                    
+                    Httpclient和uriconnection的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.5.2" data-path="../../应用层/SDK/2-5.应用层-网络通信/网络通信.html">
+            
+                <a href="../../应用层/SDK/2-5.应用层-网络通信/网络通信.html">
+            
+                    
+                    网络通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6" data-path="../../应用层/SDK/">
+            
+                <a href="../../应用层/SDK/">
+            
+                    
+                    2-6.应用层-应用通信
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.2.6.1" data-path="../../应用层/SDK/2-6.应用层-应用通信/AIDL-RemoteCallbackList.html">
+            
+                <a href="../../应用层/SDK/2-6.应用层-应用通信/AIDL-RemoteCallbackList.html">
+            
+                    
+                    Aidl-remotecallbacklist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.2" data-path="../../应用层/SDK/2-6.应用层-应用通信/AIDL.html">
+            
+                <a href="../../应用层/SDK/2-6.应用层-应用通信/AIDL.html">
+            
+                    
+                    Aidl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.3" data-path="../../应用层/SDK/2-6.应用层-应用通信/Binder-onTransact.html">
+            
+                <a href="../../应用层/SDK/2-6.应用层-应用通信/Binder-onTransact.html">
+            
+                    
+                    Binder-ontransact
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.4" data-path="../../应用层/SDK/2-6.应用层-应用通信/Binder.html">
+            
+                <a href="../../应用层/SDK/2-6.应用层-应用通信/Binder.html">
+            
+                    
+                    Binder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.5" data-path="../../应用层/SDK/2-6.应用层-应用通信/EventBus.html">
+            
+                <a href="../../应用层/SDK/2-6.应用层-应用通信/EventBus.html">
+            
+                    
+                    Eventbus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.6" data-path="../../应用层/SDK/2-6.应用层-应用通信/Handler.html">
+            
+                <a href="../../应用层/SDK/2-6.应用层-应用通信/Handler.html">
+            
+                    
+                    Handler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.7" data-path="../../应用层/SDK/2-6.应用层-应用通信/Service-IntentService.html">
+            
+                <a href="../../应用层/SDK/2-6.应用层-应用通信/Service-IntentService.html">
+            
+                    
+                    Service-intentservice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.8" data-path="../../应用层/SDK/2-6.应用层-应用通信/Service-JobService.html">
+            
+                <a href="../../应用层/SDK/2-6.应用层-应用通信/Service-JobService.html">
+            
+                    
+                    Service-jobservice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.9" data-path="../../应用层/SDK/2-6.应用层-应用通信/Service-manifest.html">
+            
+                <a href="../../应用层/SDK/2-6.应用层-应用通信/Service-manifest.html">
+            
+                    
+                    Service-manifest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.10" data-path="../../应用层/SDK/2-6.应用层-应用通信/Service-保活方案.html">
+            
+                <a href="../../应用层/SDK/2-6.应用层-应用通信/Service-保活方案.html">
+            
+                    
+                    Service-保活方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.11" data-path="../../应用层/SDK/2-6.应用层-应用通信/Service-生命周期.html">
+            
+                <a href="../../应用层/SDK/2-6.应用层-应用通信/Service-生命周期.html">
+            
+                    
+                    Service-生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.12" data-path="../../应用层/SDK/2-6.应用层-应用通信/Service-绑定方法-Binder&Messager&AIDL.html">
+            
+                <a href="../../应用层/SDK/2-6.应用层-应用通信/Service-绑定方法-Binder&Messager&AIDL.html">
+            
+                    
+                    Service-绑定方法-binder&messager&aidl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2.6.13" data-path="../../应用层/SDK/2-6.应用层-应用通信/Service-问题解决.html">
+            
+                <a href="../../应用层/SDK/2-6.应用层-应用通信/Service-问题解决.html">
+            
+                    
+                    Service-问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../应用层/">
+            
+                <a href="../../应用层/">
+            
+                    
+                    Tv
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.3.1" data-path="../../应用层/TV/AndroidTV.html">
+            
+                <a href="../../应用层/TV/AndroidTV.html">
+            
+                    
+                    Androidtv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3.2" data-path="../../应用层/TV/DayDream互动屏保.html">
+            
+                <a href="../../应用层/TV/DayDream互动屏保.html">
+            
+                    
+                    Daydream互动屏保
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3.3" data-path="../../应用层/TV/KEYCODE.html">
+            
+                <a href="../../应用层/TV/KEYCODE.html">
+            
+                    
+                    Keycode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3.4" data-path="../../应用层/TV/VoiceInteractionServiceAPI.html">
+            
+                <a href="../../应用层/TV/VoiceInteractionServiceAPI.html">
+            
+                    
+                    Voiceinteractionserviceapi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../../应用层/">
+            
+                <a href="../../应用层/">
+            
+                    
+                    反编译
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.4.1" data-path="../../应用层/反编译/Android反编译.html">
+            
+                <a href="../../应用层/反编译/Android反编译.html">
+            
+                    
+                    Android反编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="../../应用层/名词解释.html">
+            
+                <a href="../../应用层/名词解释.html">
+            
+                    
+                    名词解释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="../../应用层/">
+            
+                <a href="../../应用层/">
+            
+                    
+                    工程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.6.1" data-path="../../应用层/工程/">
+            
+                <a href="../../应用层/工程/">
+            
+                    
+                    1.工程-androidstudio
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.6.1.1" data-path="../../应用层/工程/1.工程-AndroidStudio/ADB-命令.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/ADB-命令.html">
+            
+                    
+                    Adb-命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.2" data-path="../../应用层/工程/1.工程-AndroidStudio/AndroidStudio-快捷键.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/AndroidStudio-快捷键.html">
+            
+                    
+                    Androidstudio-快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.3" data-path="../../应用层/工程/1.工程-AndroidStudio/AndroidStudio-插件.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/AndroidStudio-插件.html">
+            
+                    
+                    Androidstudio-插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.4" data-path="../../应用层/工程/1.工程-AndroidStudio/AndroidStudio-问题解决.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/AndroidStudio-问题解决.html">
+            
+                    
+                    Androidstudio-问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.5" data-path="../../应用层/工程/1.工程-AndroidStudio/AndroidStudio-项目文件与目录.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/AndroidStudio-项目文件与目录.html">
+            
+                    
+                    Androidstudio-项目文件与目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.6" data-path="../../应用层/工程/1.工程-AndroidStudio/AndroidStudio与IntelliJIDEA.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/AndroidStudio与IntelliJIDEA.html">
+            
+                    
+                    Androidstudio与intellijidea
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.7" data-path="../../应用层/工程/1.工程-AndroidStudio/Android中的混淆.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/Android中的混淆.html">
+            
+                    
+                    Android中的混淆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.8" data-path="../../应用层/工程/1.工程-AndroidStudio/Android热修复.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/Android热修复.html">
+            
+                    
+                    Android热修复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.9" data-path="../../应用层/工程/1.工程-AndroidStudio/Android项目构建流程.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/Android项目构建流程.html">
+            
+                    
+                    Android项目构建流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.10" data-path="../../应用层/工程/1.工程-AndroidStudio/APK&JAR&AAR处理.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/APK&JAR&AAR处理.html">
+            
+                    
+                    Apk&jar&aar处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.11" data-path="../../应用层/工程/1.工程-AndroidStudio/Maven.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/Maven.html">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.12" data-path="../../应用层/工程/1.工程-AndroidStudio/ubuntu下安装AndroidStudio.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/ubuntu下安装AndroidStudio.html">
+            
+                    
+                    Ubuntu下安装androidstudio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.13" data-path="../../应用层/工程/1.工程-AndroidStudio/内存占用分析.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/内存占用分析.html">
+            
+                    
+                    内存占用分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.14" data-path="../../应用层/工程/1.工程-AndroidStudio/打包.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/打包.html">
+            
+                    
+                    打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.1.15" data-path="../../应用层/工程/1.工程-AndroidStudio/网络设置ADB调试.html">
+            
+                <a href="../../应用层/工程/1.工程-AndroidStudio/网络设置ADB调试.html">
+            
+                    
+                    网络设置adb调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2" data-path="../../应用层/工程/">
+            
+                <a href="../../应用层/工程/">
+            
+                    
+                    1.工程-gradle-groovy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.6.2.1" data-path="../../应用层/工程/1.工程-Gradle-Groovy/Gradle-AndroidDSL语言.html">
+            
+                <a href="../../应用层/工程/1.工程-Gradle-Groovy/Gradle-AndroidDSL语言.html">
+            
+                    
+                    Gradle-androiddsl语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2.2" data-path="../../应用层/工程/1.工程-Gradle-Groovy/Gradle-AndroidStudio文件解析.html">
+            
+                <a href="../../应用层/工程/1.工程-Gradle-Groovy/Gradle-AndroidStudio文件解析.html">
+            
+                    
+                    Gradle-androidstudio文件解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2.3" data-path="../../应用层/工程/1.工程-Gradle-Groovy/Gradle-Android插件.html">
+            
+                <a href="../../应用层/工程/1.工程-Gradle-Groovy/Gradle-Android插件.html">
+            
+                    
+                    Gradle-android插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2.4" data-path="../../应用层/工程/1.工程-Gradle-Groovy/Gradle-DSL语言.html">
+            
+                <a href="../../应用层/工程/1.工程-Gradle-Groovy/Gradle-DSL语言.html">
+            
+                    
+                    Gradle-dsl语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2.5" data-path="../../应用层/工程/1.工程-Gradle-Groovy/Gradle-Gradlew命令.html">
+            
+                <a href="../../应用层/工程/1.工程-Gradle-Groovy/Gradle-Gradlew命令.html">
+            
+                    
+                    Gradle-gradlew命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2.6" data-path="../../应用层/工程/1.工程-Gradle-Groovy/Gradle-插件.html">
+            
+                <a href="../../应用层/工程/1.工程-Gradle-Groovy/Gradle-插件.html">
+            
+                    
+                    Gradle-插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2.7" data-path="../../应用层/工程/1.工程-Gradle-Groovy/Gradle-问题解决.html">
+            
+                <a href="../../应用层/工程/1.工程-Gradle-Groovy/Gradle-问题解决.html">
+            
+                    
+                    Gradle-问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.2.8" data-path="../../应用层/工程/1.工程-Gradle-Groovy/Groovy基础.html">
+            
+                <a href="../../应用层/工程/1.工程-Gradle-Groovy/Groovy基础.html">
+            
+                    
+                    Groovy基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.3" data-path="../../应用层/工程/">
+            
+                <a href="../../应用层/工程/">
+            
+                    
+                    1.工程-构建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.6.3.1" data-path="../../应用层/工程/1.工程-构建/AndroidGradle插件构建流程.html">
+            
+                <a href="../../应用层/工程/1.工程-构建/AndroidGradle插件构建流程.html">
+            
+                    
+                    Androidgradle插件构建流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.3.2" data-path="../../应用层/工程/1.工程-构建/pk8&pem签名.html">
+            
+                <a href="../../应用层/工程/1.工程-构建/pk8&pem签名.html">
+            
+                    
+                    Pk8&pem签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.3.3" data-path="../../应用层/工程/1.工程-构建/基于编译时注解的项目.html">
+            
+                <a href="../../应用层/工程/1.工程-构建/基于编译时注解的项目.html">
+            
+                    
+                    基于编译时注解的项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6.3.4" data-path="../../应用层/工程/1.工程-构建/签名-问题解决.html">
+            
+                <a href="../../应用层/工程/1.工程-构建/签名-问题解决.html">
+            
+                    
+                    签名-问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="../../应用层/常用代码.html">
+            
+                <a href="../../应用层/常用代码.html">
+            
+                    
+                    常用代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8" data-path="../../应用层/">
+            
+                <a href="../../应用层/">
+            
+                    
+                    应用架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.8.1" data-path="../../应用层/应用架构/Android单例模式.html">
+            
+                <a href="../../应用层/应用架构/Android单例模式.html">
+            
+                    
+                    Android单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8.2" data-path="../../应用层/应用架构/App的几种架构.html">
+            
+                <a href="../../应用层/应用架构/App的几种架构.html">
+            
+                    
+                    App的几种架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8.3" data-path="../../应用层/应用架构/MVVM和MVP.html">
+            
+                <a href="../../应用层/应用架构/MVVM和MVP.html">
+            
+                    
+                    Mvvm和mvp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8.4" data-path="../../应用层/应用架构/REFERS.html">
+            
+                <a href="../../应用层/应用架构/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    框架层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    4-1.框架层-基础与源码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1.1" data-path="1-1.Android系统流程.html">
+            
+                <a href="1-1.Android系统流程.html">
+            
+                    
+                    1-1.android系统流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.2" data-path="1-2.init.c.html">
+            
+                <a href="1-2.init.c.html">
+            
+                    
+                    1-2.init.c
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.3" data-path="1-3.init.rc.html">
+            
+                <a href="1-3.init.rc.html">
+            
+                    
+                    1-3.init.rc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.4" data-path="1-4.Zygote.html">
+            
+                <a href="1-4.Zygote.html">
+            
+                    
+                    1-4.zygote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.5" data-path="Android架构.html">
+            
+                <a href="Android架构.html">
+            
+                    
+                    Android架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.6" data-path="Android目录.html">
+            
+                <a href="Android目录.html">
+            
+                    
+                    Android目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.7" data-path="Android结构.html">
+            
+                <a href="Android结构.html">
+            
+                    
+                    Android结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3.1.8" data-path="PhoneWindowManager-Power键的处理.html">
+            
+                <a href="PhoneWindowManager-Power键的处理.html">
+            
+                    
+                    Phonewindowmanager-power键的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.9" data-path="PhoneWindowManager.html">
+            
+                <a href="PhoneWindowManager.html">
+            
+                    
+                    Phonewindowmanager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.10" data-path="REFERS.html">
+            
+                <a href="REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.11" data-path="ueventd.html">
+            
+                <a href="ueventd.html">
+            
+                    
+                    Ueventd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.12" data-path="屏保在系统的相关处理.html">
+            
+                <a href="屏保在系统的相关处理.html">
+            
+                    
+                    屏保在系统的相关处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    4-2.框架层-权限
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.2.1" data-path="../4-2.框架层-权限/Android权限管理-SELinux.html">
+            
+                <a href="../4-2.框架层-权限/Android权限管理-SELinux.html">
+            
+                    
+                    Android权限管理-selinux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2.2" data-path="../4-2.框架层-权限/Android权限管理.html">
+            
+                <a href="../4-2.框架层-权限/Android权限管理.html">
+            
+                    
+                    Android权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2.3" data-path="../4-2.框架层-权限/Android运行时权限.html">
+            
+                <a href="../4-2.框架层-权限/Android运行时权限.html">
+            
+                    
+                    Android运行时权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2.4" data-path="../4-2.框架层-权限/REFERS.html">
+            
+                <a href="../4-2.框架层-权限/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2.5" data-path="../4-2.框架层-权限/白名单和权限.html">
+            
+                <a href="../4-2.框架层-权限/白名单和权限.html">
+            
+                    
+                    白名单和权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    4-2.框架层-编译
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.3.1" data-path="../4-2.框架层-编译/Android.mk和Android.bp.html">
+            
+                <a href="../4-2.框架层-编译/Android.mk和Android.bp.html">
+            
+                    
+                    Android.mk和android.bp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3.2" data-path="../4-2.框架层-编译/Repo工具的使用.html">
+            
+                <a href="../4-2.框架层-编译/Repo工具的使用.html">
+            
+                    
+                    Repo工具的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3.3" data-path="../4-2.框架层-编译/准备编译环境.html">
+            
+                <a href="../4-2.框架层-编译/准备编译环境.html">
+            
+                    
+                    准备编译环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3.4" data-path="../4-2.框架层-编译/几种不同解锁的区别.html">
+            
+                <a href="../4-2.框架层-编译/几种不同解锁的区别.html">
+            
+                    
+                    几种不同解锁的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3.5" data-path="../4-2.框架层-编译/启动模拟器.html">
+            
+                <a href="../4-2.框架层-编译/启动模拟器.html">
+            
+                    
+                    启动模拟器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3.6" data-path="../4-2.框架层-编译/编译aosp源码.html">
+            
+                <a href="../4-2.框架层-编译/编译aosp源码.html">
+            
+                    
+                    编译aosp源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3.7" data-path="../4-2.框架层-编译/获取aosp源码.html">
+            
+                <a href="../4-2.框架层-编译/获取aosp源码.html">
+            
+                    
+                    获取aosp源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    4-3.框架层-性能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.4.1" data-path="../4-3.框架层-性能/REFERS.html">
+            
+                <a href="../4-3.框架层-性能/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4.2" data-path="../4-3.框架层-性能/【高性能Android应用开发】读书笔记.html">
+            
+                <a href="../4-3.框架层-性能/【高性能Android应用开发】读书笔记.html">
+            
+                    
+                    【高性能android应用开发】读书笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    4-4.框架层-运行时
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.5.1" data-path="../4-4.框架层-运行时/Android后台任务.html">
+            
+                <a href="../4-4.框架层-运行时/Android后台任务.html">
+            
+                    
+                    Android后台任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5.2" data-path="../4-4.框架层-运行时/ANR问题.html">
+            
+                <a href="../4-4.框架层-运行时/ANR问题.html">
+            
+                    
+                    Anr问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    05_linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../../05_Linux/fork.html">
+            
+                <a href="../../../05_Linux/fork.html">
+            
+                    
+                    Fork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../../05_Linux/Linux - Others -用户与用户组管理（命令&原理）.html">
+            
+                <a href="../../../05_Linux/Linux - Others -用户与用户组管理（命令&原理）.html">
+            
+                    
+                    Linux - others -用户与用户组管理（命令&原理）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../../05_Linux/Linux - Others.html">
+            
+                <a href="../../../05_Linux/Linux - Others.html">
+            
+                    
+                    Linux - others
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../../05_Linux/Linux - 命令 - 其它.html">
+            
+                <a href="../../../05_Linux/Linux - 命令 - 其它.html">
+            
+                    
+                    Linux - 命令 - 其它
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../../05_Linux/Linux - 工具 - GCC编辑器.html">
+            
+                <a href="../../../05_Linux/Linux - 工具 - GCC编辑器.html">
+            
+                    
+                    Linux - 工具 - gcc编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../../05_Linux/Linux - 工具 - GDB调试工具.html">
+            
+                <a href="../../../05_Linux/Linux - 工具 - GDB调试工具.html">
+            
+                    
+                    Linux - 工具 - gdb调试工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../../../05_Linux/Linux - 文件系统（原理&命令&编程）.html">
+            
+                <a href="../../../05_Linux/Linux - 文件系统（原理&命令&编程）.html">
+            
+                    
+                    Linux - 文件系统（原理&命令&编程）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../../../05_Linux/Linux - 服务器（原理&编程）.html">
+            
+                <a href="../../../05_Linux/Linux - 服务器（原理&编程）.html">
+            
+                    
+                    Linux - 服务器（原理&编程）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../../../05_Linux/Linux - 管道操作.html">
+            
+                <a href="../../../05_Linux/Linux - 管道操作.html">
+            
+                    
+                    Linux - 管道操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../../../05_Linux/Linux - 进程管理（原理&命令&编程）.html">
+            
+                <a href="../../../05_Linux/Linux - 进程管理（原理&命令&编程）.html">
+            
+                    
+                    Linux - 进程管理（原理&命令&编程）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../../../05_Linux/REFERS.html">
+            
+                <a href="../../../05_Linux/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../../../05_Linux/Vi编辑器.html">
+            
+                <a href="../../../05_Linux/Vi编辑器.html">
+            
+                    
+                    Vi编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    06_数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../../06_数据库/MySQL.html">
+            
+                <a href="../../../06_数据库/MySQL.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../../06_数据库/SQLite基础.html">
+            
+                <a href="../../../06_数据库/SQLite基础.html">
+            
+                    
+                    Sqlite基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../../06_数据库/SQL注入.html">
+            
+                <a href="../../../06_数据库/SQL注入.html">
+            
+                    
+                    Sql注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    07_项目管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../../07_项目管理/">
+            
+                <a href="../../../07_项目管理/">
+            
+                    
+                    Cicd
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../../../07_项目管理/CICD/CICD.html">
+            
+                <a href="../../../07_项目管理/CICD/CICD.html">
+            
+                    
+                    Cicd
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../../07_项目管理/">
+            
+                <a href="../../../07_项目管理/">
+            
+                    
+                    Coding
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../../../07_项目管理/Coding/REFERS.html">
+            
+                <a href="../../../07_项目管理/Coding/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../../../07_项目管理/Coding/SOLID原则.html">
+            
+                <a href="../../../07_项目管理/Coding/SOLID原则.html">
+            
+                    
+                    Solid原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="../../../07_项目管理/Coding/【CleanCode】阅读笔记.html">
+            
+                <a href="../../../07_项目管理/Coding/【CleanCode】阅读笔记.html">
+            
+                    
+                    【cleancode】阅读笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="../../../07_项目管理/Coding/【Refractoring - Improving the existing code】阅读笔记.html">
+            
+                <a href="../../../07_项目管理/Coding/【Refractoring - Improving the existing code】阅读笔记.html">
+            
+                    
+                    【refractoring - improving the existing code】阅读笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="../../../07_项目管理/Coding/【代码大全】阅读笔记.html">
+            
+                <a href="../../../07_项目管理/Coding/【代码大全】阅读笔记.html">
+            
+                    
+                    【代码大全】阅读笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.6" data-path="../../../07_项目管理/Coding/【设计模式-可复用面向对象软件的基础】阅读笔记.html">
+            
+                <a href="../../../07_项目管理/Coding/【设计模式-可复用面向对象软件的基础】阅读笔记.html">
+            
+                    
+                    【设计模式-可复用面向对象软件的基础】阅读笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.7" data-path="../../../07_项目管理/Coding/设计模式六大原则.html">
+            
+                <a href="../../../07_项目管理/Coding/设计模式六大原则.html">
+            
+                    
+                    设计模式六大原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../../07_项目管理/">
+            
+                <a href="../../../07_项目管理/">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../../../07_项目管理/Git/">
+            
+                <a href="../../../07_项目管理/Git/">
+            
+                    
+                    Ebook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1.1" data-path="../../../07_项目管理/Git/ebook/REFERS.html">
+            
+                <a href="../../../07_项目管理/Git/ebook/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.2" data-path="../../../07_项目管理/Git/Git-命令.html">
+            
+                <a href="../../../07_项目管理/Git/Git-命令.html">
+            
+                    
+                    Git-命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.3" data-path="../../../07_项目管理/Git/Git-四个工作区原理及命令.html">
+            
+                <a href="../../../07_项目管理/Git/Git-四个工作区原理及命令.html">
+            
+                    
+                    Git-四个工作区原理及命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.4" data-path="../../../07_项目管理/Git/Git-操作原理.html">
+            
+                <a href="../../../07_项目管理/Git/Git-操作原理.html">
+            
+                    
+                    Git-操作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.5" data-path="../../../07_项目管理/Git/Git-环境.html">
+            
+                <a href="../../../07_项目管理/Git/Git-环境.html">
+            
+                    
+                    Git-环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.6" data-path="../../../07_项目管理/Git/Git-问题及处理.html">
+            
+                <a href="../../../07_项目管理/Git/Git-问题及处理.html">
+            
+                    
+                    Git-问题及处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.7" data-path="../../../07_项目管理/Git/git_submodule.html">
+            
+                <a href="../../../07_项目管理/Git/git_submodule.html">
+            
+                    
+                    Git submodule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.8" data-path="../../../07_项目管理/Git/">
+            
+                <a href="../../../07_项目管理/Git/">
+            
+                    
+                    Imgs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.8.1" data-path="../../../07_项目管理/Git/imgs/REFERS.html">
+            
+                <a href="../../../07_项目管理/Git/imgs/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.9" data-path="../../../07_项目管理/Git/REFERS.html">
+            
+                <a href="../../../07_项目管理/Git/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../../07_项目管理/">
+            
+                <a href="../../../07_项目管理/">
+            
+                    
+                    Jira
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.1" data-path="../../../07_项目管理/Jira/Jira（一）核心概念.html">
+            
+                <a href="../../../07_项目管理/Jira/Jira（一）核心概念.html">
+            
+                    
+                    Jira（一）核心概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.2" data-path="../../../07_项目管理/Jira/REFERS.html">
+            
+                <a href="../../../07_项目管理/Jira/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../../07_项目管理/">
+            
+                <a href="../../../07_项目管理/">
+            
+                    
+                    Uml
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.5.1" data-path="../../../07_项目管理/Uml/UML.html">
+            
+                <a href="../../../07_项目管理/Uml/UML.html">
+            
+                    
+                    Uml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.2" data-path="../../../07_项目管理/Uml/时序图.html">
+            
+                <a href="../../../07_项目管理/Uml/时序图.html">
+            
+                    
+                    时序图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.3" data-path="../../../07_项目管理/Uml/类图.html">
+            
+                <a href="../../../07_项目管理/Uml/类图.html">
+            
+                    
+                    类图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    08_others
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../../08_Others/">
+            
+                <a href="../../../08_Others/">
+            
+                    
+                    Backend
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="../../../08_Others/BackEnd/backEnd.html">
+            
+                <a href="../../../08_Others/BackEnd/backEnd.html">
+            
+                    
+                    Backend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="../../../08_Others/BackEnd/后端相关.html">
+            
+                <a href="../../../08_Others/BackEnd/后端相关.html">
+            
+                    
+                    后端相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../../08_Others/">
+            
+                <a href="../../../08_Others/">
+            
+                    
+                    Hardware
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="../../../08_Others/Hardware/HDMI的逻辑输入和物理输入.html">
+            
+                <a href="../../../08_Others/Hardware/HDMI的逻辑输入和物理输入.html">
+            
+                    
+                    Hdmi的逻辑输入和物理输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="../../../08_Others/Hardware/REFERS.html">
+            
+                <a href="../../../08_Others/Hardware/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.3" data-path="../../../08_Others/Hardware/U盘相关.html">
+            
+                <a href="../../../08_Others/Hardware/U盘相关.html">
+            
+                    
+                    U盘相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../../08_Others/">
+            
+                <a href="../../../08_Others/">
+            
+                    
+                    Know
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="../../../08_Others/Know/REFERS.html">
+            
+                <a href="../../../08_Others/Know/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="../../../08_Others/Know/大语言模型简介和前景预估.html">
+            
+                <a href="../../../08_Others/Know/大语言模型简介和前景预估.html">
+            
+                    
+                    大语言模型简介和前景预估
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../../08_Others/">
+            
+                <a href="../../../08_Others/">
+            
+                    
+                    Script
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.1" data-path="../../../08_Others/script/REFERS.html">
+            
+                <a href="../../../08_Others/script/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../../08_Others/">
+            
+                <a href="../../../08_Others/">
+            
+                    
+                    Shortcutkey
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.5.1" data-path="../../../08_Others/ShortcutKey/Cmd.html">
+            
+                <a href="../../../08_Others/ShortcutKey/Cmd.html">
+            
+                    
+                    Cmd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.2" data-path="../../../08_Others/ShortcutKey/VsCode.html">
+            
+                <a href="../../../08_Others/ShortcutKey/VsCode.html">
+            
+                    
+                    Vscode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5.3" data-path="../../../08_Others/ShortcutKey/Windows.html">
+            
+                <a href="../../../08_Others/ShortcutKey/Windows.html">
+            
+                    
+                    Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../../08_Others/">
+            
+                <a href="../../../08_Others/">
+            
+                    
+                    Ui_ux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.6.1" data-path="../../../08_Others/Ui_Ux/点石成金-Web设计原则.html">
+            
+                <a href="../../../08_Others/Ui_Ux/点石成金-Web设计原则.html">
+            
+                    
+                    点石成金-web设计原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../../../08_Others/Utils_Know&Use.html">
+            
+                <a href="../../../08_Others/Utils_Know&Use.html">
+            
+                    
+                    Utils know&use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../../../08_Others/">
+            
+                <a href="../../../08_Others/">
+            
+                    
+                    Webapp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.1" data-path="../../../08_Others/WebApp/">
+            
+                <a href="../../../08_Others/WebApp/">
+            
+                    
+                    Css
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.1.1" data-path="../../../08_Others/WebApp/css/">
+            
+                <a href="../../../08_Others/WebApp/css/">
+            
+                    
+                    Css3
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.1.1.1" data-path="../../../08_Others/WebApp/css/css3/REFERS.html">
+            
+                <a href="../../../08_Others/WebApp/css/css3/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8.1.2" data-path="../../../08_Others/WebApp/css/Float设计的初衷.html">
+            
+                <a href="../../../08_Others/WebApp/css/Float设计的初衷.html">
+            
+                    
+                    Float设计的初衷
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8.2" data-path="../../../08_Others/WebApp/">
+            
+                <a href="../../../08_Others/WebApp/">
+            
+                    
+                    Html
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.2.1" data-path="../../../08_Others/WebApp/html/">
+            
+                <a href="../../../08_Others/WebApp/html/">
+            
+                    
+                    Html&css
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.2.1.1" data-path="../../../08_Others/WebApp/html/html&css/REFERS.html">
+            
+                <a href="../../../08_Others/WebApp/html/html&css/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8.2.2" data-path="../../../08_Others/WebApp/html/">
+            
+                <a href="../../../08_Others/WebApp/html/">
+            
+                    
+                    Html5
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.2.2.1" data-path="../../../08_Others/WebApp/html/html5/REFERS.html">
+            
+                <a href="../../../08_Others/WebApp/html/html5/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8.2.3" data-path="../../../08_Others/WebApp/html/">
+            
+                <a href="../../../08_Others/WebApp/html/">
+            
+                    
+                    Html_w3c
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.2.3.1" data-path="../../../08_Others/WebApp/html/html_w3c/REFERS.html">
+            
+                <a href="../../../08_Others/WebApp/html/html_w3c/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8.3" data-path="../../../08_Others/WebApp/">
+            
+                <a href="../../../08_Others/WebApp/">
+            
+                    
+                    Layout
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.8.3.1" data-path="../../../08_Others/WebApp/layout/REFERS.html">
+            
+                <a href="../../../08_Others/WebApp/layout/REFERS.html">
+            
+                    
+                    Refers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../../../08_Others/">
+            
+                <a href="../../../08_Others/">
+            
+                    
+                    Windowsapp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.9.1" data-path="../../../08_Others/WindowsApp/C_hashtag_Winform.html">
+            
+                <a href="../../../08_Others/WindowsApp/C_hashtag_Winform.html">
+            
+                    
+                    C hashtag winform
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9.2" data-path="../../../08_Others/WindowsApp/WindowsMFC.html">
+            
+                <a href="../../../08_Others/WindowsApp/WindowsMFC.html">
+            
+                    
+                    Windowsmfc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../../../08_Others/正则表达式.html">
+            
+                <a href="../../../08_Others/正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../../../08_Others/远程连接主机方案.html">
+            
+                <a href="../../../08_Others/远程连接主机方案.html">
+            
+                    
+                    远程连接主机方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Phonewindowmanager-power键的处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="power&#x6309;&#x952E;&#x5982;&#x4F55;&#x5206;&#x53D1;&#x7ED9;phonewindowmanager">Power&#x6309;&#x952E;&#x5982;&#x4F55;&#x5206;&#x53D1;&#x7ED9;PhoneWindowManager</h1>
+<p>1.&#x7CFB;&#x7EDF;&#x7684;&#x6838;&#x5FC3;&#x8FDB;&#x7A0B;SystemServer&#x5728;run()&#x65B9;&#x6CD5;&#x4E2D;&#x542F;&#x52A8;InputManagerService&#x548C;WindowManagerService&#x3002;&#x521B;&#x5EFA;WindowManagerService&#x524D;&#xFF0C;&#x5148;&#x521B;&#x5EFA;InputManager&#xFF0C;&#x5C06;&#x5176;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x4E14;&#x521B;&#x5EFA;&#x4E86;PhoneWindowManager&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<p>&#x6E90;&#x7801;&#x8DEF;&#x5F84;&#xFF1A;frameworks/base/services/java/com/android/server/SystemServer.java</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">startOtherServices</span><span class="hljs-params">()</span> </span>{
+       ......
+       inputManager = <span class="hljs-keyword">new</span> InputManagerService(context);   <span class="hljs-comment">//&#x8F93;&#x5165;&#x7CFB;&#x7EDF;&#x670D;&#x52A1;   &#x3010;step_SystemServer_1&#x3011;</span>
+
+       ......
+&#x3000;&#x3000;&#x3000;&#x3000;<span class="hljs-comment">//&#x3010;step_SystemServer_2&#x3011;</span>
+       wm = WindowManagerService.main(context, inputManager,
+                 mFactoryTestMode != FactoryTest.FACTORY_TEST_LOW_LEVEL,
+                 !mFirstBoot, mOnlyCore, <span class="hljs-keyword">new</span> PhoneWindowManager());   <span class="hljs-comment">//PhoneWindowManager&#x5B9E;&#x4F8B;</span>
+       ServiceManager.addService(Context.WINDOW_SERVICE, wm);
+       ServiceManager.addService(Context.INPUT_SERVICE, inputManager);
+
+}
+</code></pre>
+<p>&#x6E90;&#x7801;&#x8DEF;&#x5F84;&#xFF1A;frameworks/base/services/core/java/com/android/server/wm/WindowManagerService.java</p>
+<pre><code class="lang-java">
+
+<span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">WindowManagerService</span><span class="hljs-params">(Context context, InputManagerService inputManager,
+            <span class="hljs-keyword">boolean</span> haveInputMethods, <span class="hljs-keyword">boolean</span> showBootMsgs, <span class="hljs-keyword">boolean</span> onlyCore,
+            WindowManagerPolicy policy)</span> </span>{
+            ......
+
+             mPolicy = policy;    <span class="hljs-comment">//&#x5B9E;&#x4F8B;&#xFF1A; PhoneWindowManager&#x5BF9;&#x8C61;      &#x3010;step_InputMonitor_2&#x3011;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;......}</span>
+</code></pre>
+<p>2&#x3001;&#x542F;&#x52A8;inputManager&#x4E4B;&#x524D;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E86;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x63A5;&#x53E3;&#xFF1A;</p>
+<pre><code class="lang-java">&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;<span class="hljs-comment">//&#x6D88;&#x606F;&#x5206;&#x53D1;&#x4E4B;&#x524D;&#x56DE;&#x8C03;---&gt;&#x67E5;&#x770B;InputManagerService</span>
+&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;inputManager.setWindowManagerCallbacks(wm.getInputMonitor());   
+&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;inputManager.start();
+</code></pre>
+<p>3&#x3001;InputMonitor.java&#xFF1A;</p>
+<p>&#x5E95;&#x5C42;&#x6536;&#x5230;&#x6309;&#x952E;&#x4F1A;&#x56DE;&#x8C03;InputManagerService&#x7684;dispatchUnhandledKey()---&gt;InputMonitor&#x7684;&#x51FD;&#x6570;dispatchUnhandledKey()&#x3002;&#x5177;&#x4F53;&#x7531;&#x5E95;&#x5C42;InputDispatcher.cpp&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x6E90;&#x7801;&#x8DEF;&#x5F84;&#xFF1A; frameworks/base/services/core/java/com/android/server/wm/InputMonitor.java</p>
+<pre><code class="lang-java"><span class="hljs-comment">//&#x3010;Power&#x952E;&#x5C5E;&#x4E8E;&#x7CFB;&#x7EDF;&#x7EA7;&#x6309;&#x952E;&#xFF0C;&#x56E0;&#x6B64;&#x5904;&#x7406;&#x65B9;&#x6CD5;&#x662F;dispatchUnhandledKey&#x3011;</span>
+    <span class="hljs-comment">/* Provides an opportunity for the window manager policy to process a key that
+     * the application did not handle. */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> KeyEvent <span class="hljs-title">dispatchUnhandledKey</span><span class="hljs-params">(
+            InputWindowHandle focus, KeyEvent event, <span class="hljs-keyword">int</span> policyFlags)</span> </span>{
+        WindowState windowState = focus != <span class="hljs-keyword">null</span> ? (WindowState) focus.windowState : <span class="hljs-keyword">null</span>;
+
+        <span class="hljs-comment">//&#x6B64;&#x5904; mservice: WindowManagerService    &#x3010;step_InputMonitor_0&#x3011;</span>
+        <span class="hljs-keyword">return</span> mService.mPolicy.dispatchUnhandledKey(windowState, event, policyFlags);
+    }
+</code></pre>
+<p>&#x7531;&#x8FD9;&#x4E09;&#x6B65;&#x53EF;&#x77E5;&#xFF0C;&#x6700;&#x7EC8;&#x7531;PhoneWindowManager&#x5904;&#x7406;&#x3002;&#x5C06;&#x4E0A;&#x8FF0;&#x6574;&#x7406;&#x6210;&#x65F6;&#x5E8F;&#x56FE;&#xFF1A;</p>
+<p><img src="PhoneWindowManager-Power&#x952E;&#x7684;&#x5904;&#x7406;_imgs/0NSpo29YqCK.png" alt="img"></p>
+<h1 id="phonewindowmanager&#x5904;&#x7406;power&#x952E;&#x7684;&#x57FA;&#x672C;&#x6D41;&#x7A0B;">PhoneWindowManager&#x5904;&#x7406;Power&#x952E;&#x7684;&#x57FA;&#x672C;&#x6D41;&#x7A0B;</h1>
+<p><strong>1.&#x62E6;&#x622A;&#x6309;&#x952E;&#x4E8B;&#x4EF6;</strong></p>
+<p><code>PhoneWindowManager</code> &#x4F7F;&#x7528; <code>interceptKeyBeforeQueueing()</code> &#x548C; <code>interceptKeyBeforeDispatching()</code> &#x65B9;&#x6CD5;&#x6765;&#x62E6;&#x622A;&#x548C;&#x5904;&#x7406;&#x6309;&#x952E;&#x4E8B;&#x4EF6;&#x3002;&#x5176;&#x4E2D;&#xFF0C;&#x7535;&#x6E90;&#x952E;&#x7684;&#x4E8B;&#x4EF6;&#x4F1A;&#x88AB;&#x7CFB;&#x7EDF;&#x8BC6;&#x522B;&#x4E3A; <code>KeyEvent.KEYCODE_POWER</code>&#x3002;</p>
+<ul>
+<li><strong><code>interceptKeyBeforeQueueing</code></strong>&#xFF1A; &#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x662F;&#x5728;&#x6309;&#x952E;&#x4E8B;&#x4EF6;&#x52A0;&#x5165;&#x4E8B;&#x4EF6;&#x961F;&#x5217;&#x4E4B;&#x524D;&#x8C03;&#x7528;&#x7684;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x51B3;&#x5B9A;&#x4E8B;&#x4EF6;&#x662F;&#x5426;&#x5E94;&#x8BE5;&#x88AB;&#x8FDB;&#x4E00;&#x6B65;&#x5904;&#x7406;&#xFF0C;&#x6216;&#x8005;&#x5E94;&#x8BE5;&#x88AB;&#x4E22;&#x5F03;&#x3002;</li>
+<li><strong><code>interceptKeyBeforeDispatching</code></strong>&#xFF1A; &#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x662F;&#x5728;&#x4E8B;&#x4EF6;&#x6D3E;&#x53D1;&#x7ED9;&#x7A97;&#x53E3;&#x4E4B;&#x524D;&#x8C03;&#x7528;&#x7684;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x5177;&#x4F53;&#x7684;&#x6309;&#x952E;&#x903B;&#x8F91;&#x3002;&#x5BF9;&#x4E8E;&#x7535;&#x6E90;&#x952E;&#xFF0C;&#x7CFB;&#x7EDF;&#x5728;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#x4F1A;&#x6839;&#x636E;&#x6309;&#x952E;&#x72B6;&#x6001;&#xFF08;&#x6309;&#x4E0B;&#x6216;&#x677E;&#x5F00;&#xFF09;&#x8FDB;&#x884C;&#x7279;&#x5B9A;&#x64CD;&#x4F5C;&#x3002;</li>
+</ul>
+<p><strong>2.&#x6309;&#x4E0B;&#x7535;&#x6E90;&#x952E;</strong></p>
+<p>&#x5F53;&#x7535;&#x6E90;&#x952E;&#x88AB;&#x6309;&#x4E0B;&#x65F6;&#xFF0C;<code>PhoneWindowManager</code> &#x9996;&#x5148;&#x4F1A;&#x6355;&#x83B7;&#x5230; <code>KeyEvent.ACTION_DOWN</code> &#x4E8B;&#x4EF6;&#x3002;&#x6839;&#x636E;&#x7CFB;&#x7EDF;&#x5F53;&#x524D;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x89E6;&#x53D1;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<ul>
+<li><strong>&#x5C4F;&#x5E55;&#x5173;&#x95ED;&#xFF08;&#x9501;&#x5C4F;&#xFF09;</strong>&#xFF1A;&#x5982;&#x679C;&#x7535;&#x6E90;&#x952E;&#x6309;&#x4E0B;&#x65F6;&#x95F4;&#x8F83;&#x77ED;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x89E6;&#x53D1;&#x5C4F;&#x5E55;&#x7184;&#x706D;&#x548C;&#x9501;&#x5C4F;&#x64CD;&#x4F5C;&#xFF0C;&#x8C03;&#x7528; <code>goToSleep()</code>&#x3002;</li>
+<li><strong>&#x5524;&#x9192;&#x5C4F;&#x5E55;</strong>&#xFF1A;&#x5982;&#x679C;&#x5C4F;&#x5E55;&#x5904;&#x4E8E;&#x5173;&#x95ED;&#x72B6;&#x6001;&#xFF0C;&#x6309;&#x4E0B;&#x7535;&#x6E90;&#x952E;&#x4F1A;&#x5524;&#x9192;&#x5C4F;&#x5E55;&#x5E76;&#x70B9;&#x4EAE;&#x663E;&#x793A;&#x5668;&#x3002;</li>
+<li><strong>&#x957F;&#x6309;&#x7535;&#x6E90;&#x952E;</strong>&#xFF1A;&#x5982;&#x679C;&#x7528;&#x6237;&#x957F;&#x6309;&#x7535;&#x6E90;&#x952E;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x542F;&#x52A8;&#x7535;&#x6E90;&#x83DC;&#x5355;&#xFF08;Power Menu&#xFF09;&#xFF0C;&#x7528;&#x4E8E;&#x663E;&#x793A;&#x91CD;&#x542F;&#x3001;&#x5173;&#x673A;&#x7B49;&#x9009;&#x9879;&#x3002;</li>
+</ul>
+<p><strong>3.&#x677E;&#x5F00;&#x7535;&#x6E90;&#x952E;</strong></p>
+<p>&#x5F53;&#x7535;&#x6E90;&#x952E;&#x88AB;&#x677E;&#x5F00;&#x65F6;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x6355;&#x83B7;&#x5230; <code>KeyEvent.ACTION_UP</code> &#x4E8B;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x4E4B;&#x524D;&#x7684;&#x6309;&#x952E;&#x88AB;&#x8BC6;&#x522B;&#x4E3A;&#x77ED;&#x6309;&#xFF0C;&#x5219;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;&#x957F;&#x6309;&#x903B;&#x8F91;&#xFF1B;&#x76F8;&#x53CD;&#xFF0C;&#x5982;&#x679C;&#x957F;&#x6309;&#x65F6;&#x4F1A;&#x5F39;&#x51FA;&#x7535;&#x6E90;&#x83DC;&#x5355;&#x3002;</p>
+<p><strong>4.&#x7535;&#x6E90;&#x952E;&#x7684;&#x7279;&#x6B8A;&#x5904;&#x7406;</strong></p>
+<p>&#x5728;&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7535;&#x6E90;&#x952E;&#x8FD8;&#x4F1A;&#x89E6;&#x53D1;&#x5176;&#x4ED6;&#x884C;&#x4E3A;&#xFF0C;&#x5982;&#xFF1A;</p>
+<ul>
+<li><strong>&#x5FEB;&#x901F;&#x53CC;&#x51FB;&#x7535;&#x6E90;&#x952E;</strong>&#xFF1A;&#x542F;&#x52A8;&#x76F8;&#x673A;&#x6216;&#x67D0;&#x4E9B;&#x5FEB;&#x6377;&#x64CD;&#x4F5C;&#x3002;</li>
+<li><strong>&#x7535;&#x6E90;&#x952E;+&#x97F3;&#x91CF;&#x952E;&#x7EC4;&#x5408;</strong>&#xFF1A;&#x7528;&#x4E8E;&#x622A;&#x5C4F;&#x7B49;&#x529F;&#x80FD;&#x3002;</li>
+</ul>
+<p>&#x8FD9;&#x4E9B;&#x884C;&#x4E3A;&#x901A;&#x5E38;&#x7531; <code>PhoneWinterceptKeyBeforeQueueingindowManager</code> &#x7ED3;&#x5408;&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;&#x6765;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x548C;&#x5904;&#x7406;&#x3002;</p>
+<h1 id="interceptkeybeforequeueing&#x4E2D;&#x5BF9;&#x4E8E;power&#x952E;&#x7684;&#x5904;&#x7406;">interceptKeyBeforeQueueing&#x4E2D;&#x5BF9;&#x4E8E;Power&#x952E;&#x7684;&#x5904;&#x7406;</h1>
+<p>&#x6309;&#x952E;&#x52A8;&#x4F5C;&#x5207;&#x5272;&#xFF1A;</p>
+<ul>
+<li>&#x6309;&#x4E0B;&#xFF1A; interceptPowerKeyDown(KeyEvent event, boolean interactive)</li>
+<li>&#x91CA;&#x653E;&#xFF1A; interceptPowerKeyUp(KeyEvent event, boolean interactive, boolean canceled)</li>
+</ul>
+<p>&#x53C2;&#x6570;&#x542B;&#x4E49;&#xFF1A;</p>
+<ul>
+<li>interactive&#xFF1A;&#x662F;&#x5426;&#x4EAE;&#x5C4F;</li>
+<li>KeyEvent.FLAG_FALLBACK&#xFF1A;&#x4E0D;&#x88AB;&#x5E94;&#x7528;&#x5904;&#x7406;&#x7684;&#x6309;&#x952E;&#x4E8B;&#x4EF6;&#x6216;&#x4E00;&#x4E9B;&#x5728; &#x952E;&#x503C;&#x6620;&#x5C04;&#x4E2D;&#x4E0D;&#x88AB;&#x5904;&#x7406;&#x7684;&#x4E8B;&#x4EF6;(&#x4F8B;&#xFF1A;&#x8F68;&#x8FF9;&#x7403;&#x4E8B;&#x4EF6;&#x7B49;)&#x3002;</li>
+</ul>
+<p>&#x6D89;&#x53CA;&#x5230;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x7684;&#x76F8;&#x5173;&#x6E90;&#x7801;&#x8DEF;&#x5F84;&#xFF1A;</p>
+<p>(&#x4E0B;&#x8FF0;&#x4EE3;&#x7801;&#x7684;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x6709;&#x5BF9;&#x4E00;&#x4E9B;&#x53D8;&#x91CF;&#x7684;&#x5224;&#x65AD;&#xFF0C;&#x800C;&#x8FD9;&#x4E9B;&#x503C;&#x90FD;&#x662F;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#x7684;&#xFF0C;&#x5728;config.xml&#x4E2D;&#xFF0C;&#x56E0;&#x6B64;&#x5177;&#x4F53;&#x6267;&#x884C;&#x54EA;&#x4E2A;&#x6D41;&#x7A0B;&#x4EE5;&#x5F53;&#x524D;&#x5E73;&#x53F0;&#x914D;&#x7F6E;&#x4E3A;&#x51C6;)</p>
+<pre><code>frameworks/base/core/java/android/view/ViewConfiguration.java
+frameworks/base/core/res/res/values/config.xml
+</code></pre><h2 id="interceptpowerkeydown">interceptPowerKeyDown</h2>
+<pre><code class="lang-java">  <span class="hljs-number">1</span>  <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">interceptPowerKeyDown</span><span class="hljs-params">(KeyEvent event, <span class="hljs-keyword">boolean</span> interactive)</span> </span>{
+              <span class="hljs-comment">// ???</span>
+  <span class="hljs-number">2</span>         <span class="hljs-comment">//FACE_UNLOCK_SUPPORT start</span>
+  <span class="hljs-number">3</span>         Slog.i(<span class="hljs-string">&quot;FaceUnlockUtil&quot;</span>, <span class="hljs-string">&quot;interceptPowerKeyDown interactive = &quot;</span> + interactive);
+  <span class="hljs-number">4</span>         Settings.System.putInt(mContext.getContentResolver(), <span class="hljs-string">&quot;faceunlock_start&quot;</span>, <span class="hljs-number">1</span>);
+  <span class="hljs-number">5</span>         <span class="hljs-comment">//FACE_UNLOCK_SUPPORT end</span>
+
+              <span class="hljs-comment">// &#x83B7;&#x5F97;&#x5524;&#x9192;&#x9501;</span>
+  <span class="hljs-number">6</span>         <span class="hljs-comment">// Hold a wake lock until the power key is released.</span>
+  <span class="hljs-number">7</span>         <span class="hljs-keyword">if</span> (!mPowerKeyWakeLock.isHeld()) {
+  <span class="hljs-number">8</span>             mPowerKeyWakeLock.acquire();          
+  <span class="hljs-number">9</span>         }
+ <span class="hljs-number">10</span> 
+             <span class="hljs-comment">// &#x53D6;&#x6D88;&#x8FDE;&#x6309;&#x8D85;&#x65F6;&#x68C0;&#x6D4B;</span>
+ <span class="hljs-number">11</span>         <span class="hljs-comment">// Cancel multi-press detection timeout.</span>
+ <span class="hljs-number">12</span>         <span class="hljs-keyword">if</span> (mPowerKeyPressCounter != <span class="hljs-number">0</span>) {
+ <span class="hljs-number">13</span>             mHandler.removeMessages(MSG_POWER_DELAYED_PRESS);
+ <span class="hljs-number">14</span>         }
+ <span class="hljs-number">15</span> 
+
+ <span class="hljs-number">16</span>         <span class="hljs-comment">// Detect user pressing the power button in panic when an application has</span>
+ <span class="hljs-number">17</span>         <span class="hljs-comment">// taken over the whole screen.</span>
+ <span class="hljs-number">18</span>         <span class="hljs-keyword">boolean</span> panic = mImmersiveModeConfirmation.onPowerKeyDown(
+                    <span class="hljs-comment">// &#x5C4F;&#x5E55;&#x662F;&#x5426;&#x70B9;&#x4EAE;</span>
+                    interactive,
+                    <span class="hljs-comment">// &#x7528;&#x6765;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7684;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;&#xFF0C;&#x53EF;&#x80FD;&#x7528;&#x4E8E;&#x5224;&#x65AD;&#x6309;&#x952E;&#x6309;&#x4E0B;&#x7684;&#x65F6;&#x95F4;&#x6216;&#x6309;&#x4E0B;&#x7684;&#x9891;&#x7387;&#x3002;</span>
+ <span class="hljs-number">19</span>                 SystemClock.elapsedRealtime(), 
+                    <span class="hljs-comment">// &#x68C0;&#x67E5;&#x5F53;&#x524D;&#x662F;&#x5426;&#x5904;&#x4E8E;&#x6C89;&#x6D78;&#x6A21;&#x5F0F;&#x3002;&#x6C89;&#x6D78;&#x6A21;&#x5F0F;&#x4F1A;&#x9690;&#x85CF;&#x7CFB;&#x7EDF;&#x5BFC;&#x822A;&#x680F;&#x548C;&#x72B6;&#x6001;&#x680F;&#xFF0C;&#x5141;&#x8BB8;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5B8C;&#x5168;&#x5360;&#x636E;&#x5C4F;&#x5E55;&#x3002;</span>
+                    isImmersiveMode(mLastSystemUiFlags),
+                    <span class="hljs-comment">// &#x68C0;&#x67E5;&#x5BFC;&#x822A;&#x680F;&#x662F;&#x5426;&#x4E3A;&#x7A7A;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x662F;&#x5426;&#x6709;&#x5E94;&#x7528;&#x5360;&#x636E;&#x6574;&#x4E2A;&#x5C4F;&#x5E55;&#x3002;</span>
+ <span class="hljs-number">20</span>                 isNavBarEmpty(mLastSystemUiFlags));
+            <span class="hljs-comment">// panic = true&#x610F;&#x5473;&#x7740;&#x7528;&#x6237;&#x53EF;&#x80FD;&#x662F;&#x5728;&#x5168;&#x5C4F;&#x7684;&#x5E94;&#x7528;&#x4E2D;&#x65E0;&#x6CD5;&#x9000;&#x51FA;&#x7684;&#x7D27;&#x6025;&#x60C5;&#x51B5;&#x4E0B;&#x6309;&#x4E0B;&#x7535;&#x6E90;&#x952E;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x67D0;&#x4E9B;&#x5168;&#x5C4F;&#x5E94;&#x7528;&#x53EF;&#x80FD;&#x8BA9;&#x7528;&#x6237;&#x611F;&#x89C9;&#x5230;&#x88AB;&quot;&#x9501;&#x5B9A;&quot;&#x800C;&#x4E0D;&#x80FD;&#x6B63;&#x5E38;&#x9000;&#x51FA;&#xFF0C;&#x5BFC;&#x81F4;&#x7528;&#x6237;&#x6309;&#x4E0B;&#x7535;&#x6E90;&#x952E;&#x5BFB;&#x6C42;&#x5E2E;&#x52A9;&#x3002;</span>
+ <span class="hljs-number">21</span>         <span class="hljs-keyword">if</span> (panic) {
+                <span class="hljs-comment">// &#x4E00;&#x65E6;&#x8FDB;&#x5165;&#x6050;&#x614C;&#x6A21;&#x5F0F;&#xFF0C;&#x4EE3;&#x7801;&#x4F1A;&#x5C06; mHiddenNavPanic &#x4E8B;&#x4EF6;&#x901A;&#x8FC7; mHandler.post &#x63D0;&#x4EA4;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;&#x53BB;&#x6267;&#x884C;&#x3002;&#x8FD9;&#x901A;&#x5E38;&#x662F;&#x4E3A;&#x4E86;&#x786E;&#x4FDD;&#x5BFC;&#x822A;&#x680F;&#x6216;&#x7CFB;&#x7EDF;&#x754C;&#x9762;&#xFF08;&#x5982;&#x72B6;&#x6001;&#x680F;&#xFF09;&#x6062;&#x590D;&#x663E;&#x793A;&#xFF0C;&#x4EE5;&#x4FBF;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x9000;&#x51FA;&#x5F53;&#x524D;&#x5168;&#x5C4F;&#x5E94;&#x7528;&#xFF0C;&#x907F;&#x514D;&#x9677;&#x5165;&#x65E0;&#x6CD5;&#x64CD;&#x4F5C;&#x7684;&#x60C5;&#x51B5;&#x3002;</span>
+ <span class="hljs-number">22</span>             mHandler.post(mHiddenNavPanic);
+ <span class="hljs-number">23</span>         }
+ <span class="hljs-number">24</span> 
+ <span class="hljs-number">25</span>         <span class="hljs-comment">// Latch power key state to detect screenshot chord.</span>
+                <span class="hljs-comment">// &#x6761;&#x4EF6;1&#xFF1A;&#x4EAE;&#x5C4F;</span>
+ <span class="hljs-number">26</span>         <span class="hljs-keyword">if</span> (interactive &amp;&amp; 
+                <span class="hljs-comment">// &#x6761;&#x4EF6;2&#xFF1A;&#x622A;&#x5C4F;&#x7EC4;&#x5408;&#x952E;&#x4E2D;Power&#x952E;Trigger&#x4F4D;&#x672A;&#x88AB;&#x8BBE;&#x7F6E;</span>
+                !mScreenshotChordPowerKeyTriggered &amp;&amp; 
+                <span class="hljs-comment">// &#x6761;&#x4EF6;3&#xFF1A;&#x4E0D;&#x4E3A;Fallback&#x6309;&#x952E;&#x4E8B;&#x4EF6;</span>
+                (event.getFlags() &amp; KeyEvent.FLAG_FALLBACK) == <span class="hljs-number">0</span>) { 
+                 <span class="hljs-comment">// &#x6807;&#x8BB0;&#x6309;&#x4E0B;power key&#xFF0C;&#x7528;&#x4E8E;&#x7EC4;&#x5408;&#x952E;&#x622A;&#x5C4F;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x8003;&#x4E0B;&#x8FF0;3</span>
+ <span class="hljs-number">28</span>             mScreenshotChordPowerKeyTriggered = <span class="hljs-keyword">true</span>;                
+ <span class="hljs-number">29</span>             mScreenshotChordPowerKeyTime = event.getDownTime();
+ <span class="hljs-number">30</span>             interceptScreenshotChord();
+ <span class="hljs-number">31</span>         }
+ <span class="hljs-number">32</span> 
+ <span class="hljs-number">33</span>         <span class="hljs-comment">// Stop ringing or end call if configured to do so when power is pressed.</span>
+ <span class="hljs-number">34</span>         TelecomManager telecomManager = getTelecommService();
+ <span class="hljs-number">35</span>         <span class="hljs-keyword">boolean</span> hungUp = <span class="hljs-keyword">false</span>;
+ <span class="hljs-number">36</span>         <span class="hljs-keyword">if</span> (telecomManager != <span class="hljs-keyword">null</span>) {
+ <span class="hljs-number">37</span>             <span class="hljs-keyword">if</span> (telecomManager.isRinging()) {
+ <span class="hljs-number">38</span>                 <span class="hljs-comment">// Pressing Power while there&apos;s a ringing incoming</span>
+ <span class="hljs-number">39</span>                 <span class="hljs-comment">// call should silence the ringer.</span>
+ <span class="hljs-number">40</span>                 telecomManager.silenceRinger();
+ <span class="hljs-number">41</span>             } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ((mIncallPowerBehavior
+ <span class="hljs-number">42</span>                     &amp; Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR_HANGUP) != <span class="hljs-number">0</span>
+ <span class="hljs-number">43</span>                     &amp;&amp; telecomManager.isInCall() &amp;&amp; interactive) {
+ <span class="hljs-number">44</span>                 <span class="hljs-comment">// Otherwise, if &quot;Power button ends call&quot; is enabled,</span>
+ <span class="hljs-number">45</span>                 <span class="hljs-comment">// the Power button will hang up any current active call.</span>
+ <span class="hljs-number">46</span>                 hungUp = telecomManager.endCall();
+ <span class="hljs-number">47</span>             }
+ <span class="hljs-number">48</span>         }
+ <span class="hljs-number">49</span> 
+ <span class="hljs-number">50</span>         GestureLauncherService gestureService = LocalServices.getService(
+ <span class="hljs-number">51</span>                 GestureLauncherService.class);
+ <span class="hljs-number">52</span>         <span class="hljs-keyword">boolean</span> gesturedServiceIntercepted = <span class="hljs-keyword">false</span>;
+ <span class="hljs-number">53</span>         <span class="hljs-keyword">if</span> (gestureService != <span class="hljs-keyword">null</span>) {
+                <span class="hljs-comment">// gesturedServiceIntercepted &#x662F;&#x4E00;&#x4E2A;&#x6807;&#x5FD7;&#x53D8;&#x91CF;&#xFF0C;&#x7528;&#x6765;&#x6307;&#x793A;&#x624B;&#x52BF;&#x670D;&#x52A1;&#x662F;&#x5426;&#x62E6;&#x622A;&#x4E86;&#x7535;&#x6E90;&#x952E;&#x7684;&#x6309;&#x4E0B;&#x4E8B;&#x4EF6;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x8BBE;&#x4E3A; false&#xFF0C;&#x8868;&#x793A;&#x4E8B;&#x4EF6;&#x5C1A;&#x672A;&#x88AB;&#x62E6;&#x622A;&#x3002;</span>
+ <span class="hljs-number">54</span>             gesturedServiceIntercepted = gestureService.interceptPowerKeyDown(event, interactive,
+ <span class="hljs-number">55</span>                     mTmpBoolean);
+                <span class="hljs-comment">// &#x5728;&#x8BBE;&#x5907;&#x5373;&#x5C06;&#x8FDB;&#x5165;&#x7761;&#x7720;&#x72B6;&#x6001;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x7684;&#x624B;&#x52BF;&#xFF08;&#x5982;&#x5FEB;&#x901F;&#x53CC;&#x51FB;&#x7535;&#x6E90;&#x952E;&#x542F;&#x52A8;&#x76F8;&#x673A;&#xFF09;&#x89E6;&#x53D1;&#x4E86;&#x76F8;&#x673A;&#x542F;&#x52A8;&#x64CD;&#x4F5C;&#x3002;</span>
+ <span class="hljs-number">56</span>             <span class="hljs-keyword">if</span> (mTmpBoolean.value &amp;&amp; mRequestedOrGoingToSleep) {
+ <span class="hljs-number">57</span>                 mCameraGestureTriggeredDuringGoingToSleep = <span class="hljs-keyword">true</span>;
+ <span class="hljs-number">58</span>             }
+ <span class="hljs-number">59</span>         }
+ <span class="hljs-number">60</span> 
+ <span class="hljs-number">61</span>         <span class="hljs-comment">// Inform the StatusBar; but do not allow it to consume the event.</span>
+ <span class="hljs-number">62</span>         sendSystemKeyToStatusBarAsync(event.getKeyCode());     <span class="hljs-comment">//</span>
+ <span class="hljs-number">63</span> 
+ <span class="hljs-number">64</span>         <span class="hljs-comment">// If the power key has still not yet been handled, then detect short</span>
+ <span class="hljs-number">65</span>         <span class="hljs-comment">// press, long press, or multi press and decide what to do.</span>
+ <span class="hljs-number">66</span>         mPowerKeyHandled = hungUp || mScreenshotChordVolumeDownKeyTriggered
+ <span class="hljs-number">67</span>                 || mA11yShortcutChordVolumeUpKeyTriggered || gesturedServiceIntercepted;
+ <span class="hljs-number">68</span>         <span class="hljs-keyword">if</span> (!mPowerKeyHandled) {
+ <span class="hljs-number">69</span>             <span class="hljs-keyword">if</span> (interactive) {   <span class="hljs-comment">// &#x4EAE;&#x5C4F;</span>
+ <span class="hljs-number">70</span>                 <span class="hljs-comment">// When interactive, we&apos;re already awake.</span>
+ <span class="hljs-number">71</span>                 <span class="hljs-comment">// Wait for a long press or for the button to be released to decide what to do.</span>
+ <span class="hljs-number">72</span>                 <span class="hljs-keyword">if</span> (hasLongPressOnPowerBehavior()) { <span class="hljs-comment">//&#x957F;&#x6309;----&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x5F39;&#x51FA;&#x64CD;&#x4F5C;&#x754C;&#x9762;&#x7684;&#x903B;&#x8F91;</span>
+ <span class="hljs-number">73</span>                     Message msg = mHandler.obtainMessage(MSG_POWER_LONG_PRESS);
+ <span class="hljs-number">74</span>                     msg.setAsynchronous(<span class="hljs-keyword">true</span>);
+ <span class="hljs-number">75</span>                     mHandler.sendMessageDelayed(msg,
+ <span class="hljs-number">76</span>                             ViewConfiguration.get(mContext).getDeviceGlobalActionKeyTimeout());  <span class="hljs-comment">//500ms</span>
+ <span class="hljs-number">77</span>                 }
+ <span class="hljs-number">78</span>             } <span class="hljs-keyword">else</span> {
+ <span class="hljs-number">79</span>                 wakeUpFromPowerKey(event.getDownTime());     <span class="hljs-comment">//&#x5524;&#x9192;&#x5C4F;&#x5E55;---......</span>
+ <span class="hljs-number">80</span> 
+ <span class="hljs-number">81</span>                 <span class="hljs-keyword">if</span> (mSupportLongPressPowerWhenNonInteractive &amp;&amp; hasLongPressOnPowerBehavior()) { <span class="hljs-comment">//&#x5F53;&#x524D;&#x914D;&#x7F6E;mSupportLongPressPowerWhenNonInteractive=false</span>
+ <span class="hljs-number">82</span>                     Message msg = mHandler.obtainMessage(MSG_POWER_LONG_PRESS);
+ <span class="hljs-number">83</span>                     msg.setAsynchronous(<span class="hljs-keyword">true</span>);
+ <span class="hljs-number">84</span>                     mHandler.sendMessageDelayed(msg,
+ <span class="hljs-number">85</span>                             ViewConfiguration.get(mContext).getDeviceGlobalActionKeyTimeout());
+ <span class="hljs-number">86</span>                     mBeganFromNonInteractive = <span class="hljs-keyword">true</span>;
+ <span class="hljs-number">87</span>                 } <span class="hljs-keyword">else</span> {
+ <span class="hljs-number">88</span>                     <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> maxCount = getMaxMultiPressPowerCount();   <span class="hljs-comment">//&#x5F53;&#x524D;&#x914D;&#x7F6E;&#x4E0D;&#x652F;&#x6301;config.xml</span>
+ <span class="hljs-number">89</span> 
+ <span class="hljs-number">90</span>                     <span class="hljs-keyword">if</span> (maxCount &lt;= <span class="hljs-number">1</span>) {
+ <span class="hljs-number">91</span>                         mPowerKeyHandled = <span class="hljs-keyword">true</span>;      <span class="hljs-comment">//&#x6267;&#x884C;&#x6B64;&#x5904;#</span>
+ <span class="hljs-number">92</span>                     } <span class="hljs-keyword">else</span> {
+ <span class="hljs-number">93</span>                         mBeganFromNonInteractive = <span class="hljs-keyword">true</span>;
+ <span class="hljs-number">94</span>                     }
+ <span class="hljs-number">95</span>                 }
+ <span class="hljs-number">96</span>             }
+ <span class="hljs-number">97</span>         }
+ <span class="hljs-number">98</span>     }
+ <span class="hljs-number">99</span> 
+<span class="hljs-number">100</span> ......
+<span class="hljs-number">101</span> 
+<span class="hljs-number">102</span>     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getResolvedLongPressOnPowerBehavior</span><span class="hljs-params">()</span> </span>{
+<span class="hljs-number">103</span>         <span class="hljs-keyword">if</span> (FactoryTest.isLongPressOnPowerOffEnabled()) { <span class="hljs-comment">//&#x9ED8;&#x8BA4;false,</span>
+<span class="hljs-number">104</span>             <span class="hljs-keyword">return</span> LONG_PRESS_POWER_SHUT_OFF_NO_CONFIRM;    <span class="hljs-comment">//&#x957F;&#x6309;Power,&#x76F4;&#x63A5;&#x5173;&#x673A;&#xFF1B;&#x5BF9;&#x5E94;&#x5C5E;&#x6027;&#xFF1A;factory.long_press_power_off</span>
+<span class="hljs-number">105</span>         }
+<span class="hljs-number">106</span>         <span class="hljs-keyword">return</span> mLongPressOnPowerBehavior;
+<span class="hljs-number">107</span>     }
+<span class="hljs-number">108</span> 
+<span class="hljs-number">109</span>     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">hasLongPressOnPowerBehavior</span><span class="hljs-params">()</span> </span>{
+<span class="hljs-number">110</span>         <span class="hljs-keyword">return</span> getResolvedLongPressOnPowerBehavior() != LONG_PRESS_POWER_NOTHING;
+<span class="hljs-number">111</span>     }
+</code></pre>
+<h3 id="1-&#x4EAE;&#x5C4F;">(1) &#x4EAE;&#x5C4F;</h3>
+<p>hasLongPressOnPowerBehavior()---mHandler&#x53D1;&#x9001;&#x6D88;&#x606F;(500ms)--powerLongPress() ------&gt;getResolvedLongPressOnPowerBehavior()&#x6839;&#x636E;&#x83B7;&#x53D6;&#x7684;&#x503C;&#x6765; &#x6267;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x6D41;&#x7A0B;&#xFF1A;&#x3000;&#x3000;&#x3000;&#x3000;</p>
+<ul>
+<li>LONG_PRESS_POWER_GLOBAL_ACTIONS&#xFF1A;&#x5F39;&#x51FA;&#x64CD;&#x4F5C;&#x754C;&#x9762;----&gt;showGlobalActionsInternal()---&gt;sendCloseSystemWindows(String reason) /mGlobalActions.showDialog()----&gt;PhoneWindow.sendCloseSystemWindows(mContext, reason)....</li>
+<li>LONG_PRESS_POWER_SHUT_OFF/LONG_PRESS_POWER_SHUT_OFF_NO_CONFIRM&#xFF1A;&#x76F4;&#x63A5;&#x5173;&#x673A;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x70B9;&#x51FB;&#x4E0A;&#x8FF0;&#x5F39;&#x6846;&#x4E2D;&#x7684;&#x5173;&#x673A;&#x64CD;&#x4F5C;&#x3002;&#x6B64;&#x5904;&#x53EF;&#x7ED3;&#x5408;&#x6E90;&#x7801;&#x67E5;&#x770B;&#xFF1A; &#x5BF9;&#x5E94;&#x5C5E;&#x6027;&#xFF1A;factory.long_press_power_off &#x4F7F;&#x7528;&#x547D;&#x4EE4;&#xFF1A;adb shell getprop/setprop...&#x5373;&#x53EF;&#x6D4B;&#x8BD5;&#x6548;&#x679C;&#x3002;</li>
+</ul>
+<h3 id="2-&#x706D;&#x5C4F;">(2) &#x706D;&#x5C4F;</h3>
+<p>wakeUpFromPowerKey()----&gt;wakeUp()---- &gt;mPowerManager.wakeUp()....&#x8C03;&#x7528;PowerManagerService&#x5524;&#x9192;&#x5C4F;&#x5E55;.</p>
+<pre><code class="lang-java"> <span class="hljs-number">1</span>     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">wakeUpFromPowerKey</span><span class="hljs-params">(<span class="hljs-keyword">long</span> eventTime)</span> </span>{
+ <span class="hljs-number">2</span>         wakeUp(eventTime, mAllowTheaterModeWakeFromPowerKey, <span class="hljs-string">&quot;android.policy:POWER&quot;</span>);
+ <span class="hljs-number">3</span>     }
+ <span class="hljs-number">4</span> 
+ <span class="hljs-number">5</span>     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">wakeUp</span><span class="hljs-params">(<span class="hljs-keyword">long</span> wakeTime, <span class="hljs-keyword">boolean</span> wakeInTheaterMode, String reason)</span> </span>{
+ <span class="hljs-number">6</span>         ......
+<span class="hljs-number">10</span>         <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> theaterModeEnabled = isTheaterModeEnabled();
+<span class="hljs-number">11</span>         <span class="hljs-keyword">if</span> (!wakeInTheaterMode &amp;&amp; theaterModeEnabled) {
+<span class="hljs-number">12</span>             <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+<span class="hljs-number">13</span>         }
+<span class="hljs-number">14</span> 
+<span class="hljs-number">15</span>         <span class="hljs-comment">// Settings.Global.THEATER_MODE_ON&#xFF1A;</span>
+<span class="hljs-number">16</span>         <span class="hljs-keyword">if</span> (theaterModeEnabled) {
+<span class="hljs-number">17</span>             Settings.Global.putInt(mContext.getContentResolver(),
+<span class="hljs-number">18</span>                     Settings.Global.THEATER_MODE_ON, <span class="hljs-number">0</span>);
+<span class="hljs-number">19</span>         }
+<span class="hljs-number">20</span> 
+<span class="hljs-number">21</span>         mPowerManager.wakeUp(wakeTime, reason);
+<span class="hljs-number">22</span>         <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+<span class="hljs-number">23</span>     }
+</code></pre>
+<h2 id="interceptpowerkeyup">interceptPowerKeyUp</h2>
+<pre><code class="lang-java"> <span class="hljs-number">1</span> <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">interceptPowerKeyUp</span><span class="hljs-params">(KeyEvent event, <span class="hljs-keyword">boolean</span> interactive, <span class="hljs-keyword">boolean</span> canceled)</span> </span>{
+ <span class="hljs-number">2</span>         <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> handled = canceled || mPowerKeyHandled;  
+ <span class="hljs-number">3</span>         mScreenshotChordPowerKeyTriggered = <span class="hljs-keyword">false</span>;
+ <span class="hljs-number">4</span>         cancelPendingScreenshotChordAction();
+ <span class="hljs-number">5</span>         cancelPendingPowerKeyAction();   <span class="hljs-comment">//&#x53D6;&#x6D88;&#x957F;&#x6309;&#x4E8B;&#x4EF6;---&#x5373;500ms&#x5185;&#x672A;&#x76D1;&#x542C;&#x5230;&#x91CA;&#x653E;&#xFF0C;&#x624D;&#x6267;&#x884C;&#x957F;&#x6309;&#x4E8B;&#x4EF6;</span>
+ <span class="hljs-number">6</span> 
+ <span class="hljs-number">7</span>         <span class="hljs-keyword">if</span> (!handled) { <span class="hljs-comment">//&#x4EAE;&#x5C4F; &#x77ED;&#x6309;Power&#x91CA;&#x653E;&#x65F6;&#x6267;&#x884C;&#x6B64;&#x5904;##  &#x56E0;mPowerKeyHandled=false</span>
+ <span class="hljs-number">8</span>             <span class="hljs-comment">// Figure out how to handle the key now that it has been released.</span>
+ <span class="hljs-number">9</span>             mPowerKeyPressCounter += <span class="hljs-number">1</span>;
+<span class="hljs-number">10</span> 
+<span class="hljs-number">11</span>             <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> maxCount = getMaxMultiPressPowerCount();  <span class="hljs-comment">//maxCount=1</span>
+<span class="hljs-number">12</span>             <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> eventTime = event.getDownTime();
+<span class="hljs-number">13</span>             <span class="hljs-keyword">if</span> (mPowerKeyPressCounter &lt; maxCount) {  <span class="hljs-comment">//&#x4E0D;&#x6210;&#x7ACB;</span>
+<span class="hljs-number">14</span>                 <span class="hljs-comment">// This could be a multi-press.  Wait a little bit longer to confirm.</span>
+<span class="hljs-number">15</span>                 <span class="hljs-comment">// Continue holding the wake lock.</span>
+<span class="hljs-number">16</span>                 Message msg = mHandler.obtainMessage(MSG_POWER_DELAYED_PRESS,
+<span class="hljs-number">17</span>                         interactive ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>, mPowerKeyPressCounter, eventTime);
+<span class="hljs-number">18</span>                 msg.setAsynchronous(<span class="hljs-keyword">true</span>);
+<span class="hljs-number">19</span>                 mHandler.sendMessageDelayed(msg, ViewConfiguration.getMultiPressTimeout());
+<span class="hljs-number">20</span>                 <span class="hljs-keyword">return</span>;
+<span class="hljs-number">21</span>             }
+<span class="hljs-number">22</span> 
+<span class="hljs-number">23</span>             <span class="hljs-comment">// No other actions.  Handle it immediately.</span>
+<span class="hljs-number">24</span>             powerPress(eventTime, interactive, mPowerKeyPressCounter);    <span class="hljs-comment">//mPowerKeyPressCounter=1</span>
+<span class="hljs-number">25</span>         }
+<span class="hljs-number">26</span> 
+<span class="hljs-number">27</span>         <span class="hljs-comment">// Done.  Reset our state.</span>
+<span class="hljs-number">28</span>         finishPowerKeyPress();   
+<span class="hljs-number">29</span>     }
+<span class="hljs-number">30</span> 
+<span class="hljs-number">31</span>     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">finishPowerKeyPress</span><span class="hljs-params">()</span> </span>{
+<span class="hljs-number">32</span>         mBeganFromNonInteractive = <span class="hljs-keyword">false</span>;
+<span class="hljs-number">33</span>         mPowerKeyPressCounter = <span class="hljs-number">0</span>;
+<span class="hljs-number">34</span>         <span class="hljs-keyword">if</span> (mPowerKeyWakeLock.isHeld()) {
+<span class="hljs-number">35</span>             mPowerKeyWakeLock.release();    <span class="hljs-comment">//&#x91CA;&#x653E;down&#x4E8B;&#x4EF6;&#x65F6;&#x83B7;&#x5F97;&#x7684;&#x9501;</span>
+<span class="hljs-number">36</span>         }
+<span class="hljs-number">37</span>     }
+<span class="hljs-number">38</span> ......
+<span class="hljs-number">39</span> 
+<span class="hljs-number">40</span>     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">powerPress</span><span class="hljs-params">(<span class="hljs-keyword">long</span> eventTime, <span class="hljs-keyword">boolean</span> interactive, <span class="hljs-keyword">int</span> count)</span> </span>{
+<span class="hljs-number">41</span>         <span class="hljs-keyword">if</span> (mScreenOnEarly &amp;&amp; !mScreenOnFully) {
+<span class="hljs-number">42</span>             Slog.i(TAG, <span class="hljs-string">&quot;Suppressed redundant power key press while &quot;</span>
+<span class="hljs-number">43</span>                     + <span class="hljs-string">&quot;already in the process of turning the screen on.&quot;</span>);
+<span class="hljs-number">44</span>             <span class="hljs-keyword">return</span>;
+<span class="hljs-number">45</span>         }
+<span class="hljs-number">46</span> 
+<span class="hljs-number">47</span>         <span class="hljs-keyword">if</span> (count == <span class="hljs-number">2</span>) {
+<span class="hljs-number">48</span>             powerMultiPressAction(eventTime, interactive, mDoublePressOnPowerBehavior);
+<span class="hljs-number">49</span>         } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (count == <span class="hljs-number">3</span>) {
+<span class="hljs-number">50</span>             powerMultiPressAction(eventTime, interactive, mTriplePressOnPowerBehavior);
+<span class="hljs-number">51</span>         } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (interactive &amp;&amp; !mBeganFromNonInteractive) {   <span class="hljs-comment">//  mBeganFromNonInteractive=false</span>
+<span class="hljs-number">52</span>             <span class="hljs-keyword">switch</span> (mShortPressOnPowerBehavior) {  <span class="hljs-comment">//mShortPressOnPowerBehavior : &#x914D;&#x7F6E;&#x4E3A;1</span>
+<span class="hljs-number">53</span>                 <span class="hljs-keyword">case</span> SHORT_PRESS_POWER_NOTHING:
+<span class="hljs-number">54</span>                     <span class="hljs-keyword">break</span>;
+<span class="hljs-number">55</span>                 <span class="hljs-keyword">case</span> SHORT_PRESS_POWER_GO_TO_SLEEP: <span class="hljs-comment">//&#x6267;&#x884C;#</span>
+<span class="hljs-number">56</span>                     goToSleep(eventTime, PowerManager.GO_TO_SLEEP_REASON_POWER_BUTTON, <span class="hljs-number">0</span>);
+<span class="hljs-number">57</span>                     <span class="hljs-keyword">break</span>;
+<span class="hljs-number">58</span>       &#x3000;&#x3000;&#x3000;&#x3000;.......
+<span class="hljs-number">59</span>       }
+<span class="hljs-number">60</span> } <span class="hljs-number">65</span>
+</code></pre>
+<h3 id="1-&#x4EAE;&#x5C4F;">(1) &#x4EAE;&#x5C4F;</h3>
+<p>powerPress()---&gt;goToSleep()--- &gt;mPowerManager.goToSleep()...&#x8C03;&#x7528;PowerManagerService &#x4F7F;&#x7CFB;&#x7EDF;&#x7761;&#x7720;&#x3002;</p>
+<h3 id="2-&#x706D;&#x5C4F;">(2) &#x706D;&#x5C4F;</h3>
+<p>finishPowerKeyPress()...</p>
+<h2 id="&#x7EC4;&#x5408;&#x952E;&#xFF08;power--&#x97F3;&#x91CF;&#x51CF;&#xFF09;&#xFF1A;&#x529F;&#x80FD;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x7684;&#x5C4F;&#x5E55;&#x622A;&#x56FE;&#x7684;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x3002;">&#x7EC4;&#x5408;&#x952E;&#xFF08;Power + &#x97F3;&#x91CF;&#x51CF;&#xFF09;&#xFF1A;&#x529F;&#x80FD;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x7684;<strong>&#x5C4F;&#x5E55;&#x622A;&#x56FE;</strong>&#x7684;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x3002;</h2>
+<pre><code class="lang-java">  <span class="hljs-number">1</span>     <span class="hljs-meta">@Override</span>
+  <span class="hljs-number">2</span>     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">interceptKeyBeforeQueueing</span><span class="hljs-params">(KeyEvent event, <span class="hljs-keyword">int</span> policyFlags)</span> </span>{
+  <span class="hljs-number">3</span>         <span class="hljs-keyword">if</span> (!mSystemBooted) {
+  <span class="hljs-number">4</span>             <span class="hljs-comment">// If we have not yet booted, don&apos;t let key events do anything.</span>
+  <span class="hljs-number">5</span>             <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+  <span class="hljs-number">6</span>         }
+  <span class="hljs-number">7</span>         
+  <span class="hljs-number">8</span>         ......<span class="hljs-comment">//&#x4EE3;&#x7801;&#x7565;</span>
+  <span class="hljs-number">9</span>         <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> keyCode = event.getKeyCode();
+ <span class="hljs-number">10</span>         <span class="hljs-comment">// Basic policy based on interactive state.</span>
+ <span class="hljs-number">11</span>         <span class="hljs-keyword">int</span> result;
+ <span class="hljs-number">12</span>         
+ <span class="hljs-number">13</span>         <span class="hljs-comment">// Handle special keys.</span>
+ <span class="hljs-number">14</span>         <span class="hljs-keyword">switch</span> (keyCode) {
+ <span class="hljs-number">15</span>             ......
+ <span class="hljs-number">16</span>             <span class="hljs-keyword">case</span> KeyEvent.KEYCODE_VOLUME_MUTE: {
+ <span class="hljs-number">17</span>                 <span class="hljs-keyword">if</span> (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {   <span class="hljs-comment">//&#x97F3;&#x91CF;&#x952E;&#x51CF;-     &#x3010;Power + VOLUME_DOWN&#x3011;&#x622A;&#x5C4F;&#x64CD;&#x4F5C;</span>
+ <span class="hljs-number">18</span>                     <span class="hljs-keyword">if</span> (down) {
+ <span class="hljs-number">19</span>                         <span class="hljs-keyword">if</span> (interactive &amp;&amp; !mScreenshotChordVolumeDownKeyTriggered
+ <span class="hljs-number">20</span>                                 &amp;&amp; (event.getFlags() &amp; KeyEvent.FLAG_FALLBACK) == <span class="hljs-number">0</span>) {
+ <span class="hljs-number">21</span>                             mScreenshotChordVolumeDownKeyTriggered = <span class="hljs-keyword">true</span>;
+ <span class="hljs-number">22</span>                             mScreenshotChordVolumeDownKeyTime = event.getDownTime();
+ <span class="hljs-number">23</span>                             mScreenshotChordVolumeDownKeyConsumed = <span class="hljs-keyword">false</span>;
+ <span class="hljs-number">24</span>                             cancelPendingPowerKeyAction();
+ <span class="hljs-number">25</span>                             interceptScreenshotChord();
+ <span class="hljs-number">26</span>                             interceptAccessibilityShortcutChord();
+ <span class="hljs-number">27</span>                         }
+ <span class="hljs-number">28</span>                     } <span class="hljs-keyword">else</span> {
+ <span class="hljs-number">29</span>                         mScreenshotChordVolumeDownKeyTriggered = <span class="hljs-keyword">false</span>;
+ <span class="hljs-number">30</span>                         cancelPendingScreenshotChordAction();
+ <span class="hljs-number">31</span>                         cancelPendingAccessibilityShortcutAction();
+ <span class="hljs-number">32</span>                     }
+ <span class="hljs-number">33</span>                 } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(...){
+ <span class="hljs-number">34</span>                     ......
+ <span class="hljs-number">35</span>                 }
+ <span class="hljs-number">36</span>                 ......
+ <span class="hljs-number">37</span>                 <span class="hljs-keyword">break</span>;    
+ <span class="hljs-number">38</span>             }
+ <span class="hljs-number">39</span>             <span class="hljs-keyword">case</span> KeyEvent.KEYCODE_POWER: {      <span class="hljs-comment">//POWER &#x952E;</span>
+ <span class="hljs-number">40</span>                 <span class="hljs-keyword">if</span>(SystemProperties.getBoolean(<span class="hljs-string">&quot;sys.requireKey&quot;</span>, <span class="hljs-keyword">false</span>)) <span class="hljs-keyword">break</span>;
+ <span class="hljs-number">41</span>                 <span class="hljs-comment">// Any activity on the power button stops the accessibility shortcut</span>
+ <span class="hljs-number">42</span>                 cancelPendingAccessibilityShortcutAction();
+ <span class="hljs-number">43</span>                 result &amp;= ~ACTION_PASS_TO_USER;        <span class="hljs-comment">//&#x4E0D;&#x5206;&#x53D1;&#x6309;&#x952E;&#x81F3;&#x5E94;&#x7528;</span>
+ <span class="hljs-number">44</span>                 isWakeKey = <span class="hljs-keyword">false</span>; <span class="hljs-comment">// wake-up will be handled separately</span>
+ <span class="hljs-number">45</span>                 <span class="hljs-keyword">if</span> (down) {
+ <span class="hljs-number">46</span>                     interceptPowerKeyDown(event, interactive);   <span class="hljs-comment">//&#x5728;&#x4E0A;&#x8FF0;1&#x4E2D;interceptPowerKeyDown()&#x7684;&#x7B2C;28&#x884C;&#x53EF;&#x89C1;&#x6807;&#x8BB0;mScreenshotChordPowerKeyTriggered = true;</span>
+ <span class="hljs-number">47</span>                 } <span class="hljs-keyword">else</span> {
+ <span class="hljs-number">48</span>                     interceptPowerKeyUp(event, interactive, canceled);
+ <span class="hljs-number">49</span>                 }
+ <span class="hljs-number">50</span>                 <span class="hljs-keyword">break</span>;
+ <span class="hljs-number">51</span>             }
+ <span class="hljs-number">52</span>             ......
+ <span class="hljs-number">53</span>         }
+ <span class="hljs-number">54</span>         
+ <span class="hljs-number">55</span>         ......
+ <span class="hljs-number">56</span>         <span class="hljs-keyword">return</span> result;    
+ <span class="hljs-number">57</span>     }
+ <span class="hljs-number">58</span>     
+ <span class="hljs-number">59</span>     <span class="hljs-comment">// &#x622A;&#x5C4F;</span>
+ <span class="hljs-number">60</span>     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">interceptScreenshotChord</span><span class="hljs-params">()</span> </span>{
+ <span class="hljs-number">61</span>         <span class="hljs-keyword">if</span> (mScreenshotChordEnabled
+ <span class="hljs-number">62</span>                 &amp;&amp; mScreenshotChordVolumeDownKeyTriggered &amp;&amp; mScreenshotChordPowerKeyTriggered    <span class="hljs-comment">//&#x540C;&#x65F6;&#x6309;&#x4E0B;Volum_down + Power, &#x540E;&#x6267;&#x884C;&#x7684;&#x8BE5;&#x65B9;&#x6CD5;</span>
+ <span class="hljs-number">63</span>                 &amp;&amp; !mA11yShortcutChordVolumeUpKeyTriggered) {
+ <span class="hljs-number">64</span>             <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> now = SystemClock.uptimeMillis();
+ <span class="hljs-number">65</span>             <span class="hljs-keyword">if</span> (now &lt;= mScreenshotChordVolumeDownKeyTime + SCREENSHOT_CHORD_DEBOUNCE_DELAY_MILLIS
+ <span class="hljs-number">66</span>                     &amp;&amp; now &lt;= mScreenshotChordPowerKeyTime
+ <span class="hljs-number">67</span>                             + SCREENSHOT_CHORD_DEBOUNCE_DELAY_MILLIS) {   <span class="hljs-comment">//150ms</span>
+ <span class="hljs-number">68</span>                 mScreenshotChordVolumeDownKeyConsumed = <span class="hljs-keyword">true</span>;
+ <span class="hljs-number">69</span>                 cancelPendingPowerKeyAction();
+ <span class="hljs-number">70</span>                 mScreenshotRunnable.setScreenshotType(TAKE_SCREENSHOT_FULLSCREEN);
+                    <span class="hljs-comment">// &#x6839;&#x636E;&#x662F;&#x5426;&#x5728;&#x9501;&#x5C4F;&#x754C;&#x9762;&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x7684;&#x5EF6;&#x8FDF;&#x65F6;&#x95F4;&#xFF0C;&#x4E86;&#x89E3;&#x5373;&#x53EF;</span>
+ <span class="hljs-number">71</span>                 mHandler.postDelayed(mScreenshotRunnable, getScreenshotChordLongPressDelay());   
+ <span class="hljs-number">72</span>             }
+ <span class="hljs-number">73</span>         }
+ <span class="hljs-number">74</span>     }
+ <span class="hljs-number">75</span>     
+ <span class="hljs-number">76</span>     <span class="hljs-keyword">private</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ScreenshotRunnable</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Runnable</span> </span>{
+ <span class="hljs-number">77</span>         <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> mScreenshotType = TAKE_SCREENSHOT_FULLSCREEN;
+ <span class="hljs-number">78</span> 
+ <span class="hljs-number">79</span>         <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setScreenshotType</span><span class="hljs-params">(<span class="hljs-keyword">int</span> screenshotType)</span> </span>{
+ <span class="hljs-number">80</span>             mScreenshotType = screenshotType;
+ <span class="hljs-number">81</span>         }
+ <span class="hljs-number">82</span> 
+ <span class="hljs-number">83</span>         <span class="hljs-meta">@Override</span>
+ <span class="hljs-number">84</span>         <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+ <span class="hljs-number">85</span>             takeScreenshot(mScreenshotType); <span class="hljs-comment">//#</span>
+ <span class="hljs-number">86</span>         }
+ <span class="hljs-number">87</span>     }
+ <span class="hljs-number">88</span>     
+ <span class="hljs-number">89</span>     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SYSUI_PACKAGE = <span class="hljs-string">&quot;com.android.systemui&quot;</span>;
+ <span class="hljs-number">90</span>     <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SYSUI_SCREENSHOT_SERVICE =
+ <span class="hljs-number">91</span>             <span class="hljs-string">&quot;com.android.systemui.screenshot.TakeScreenshotService&quot;</span>;
+ <span class="hljs-number">92</span>     
+ <span class="hljs-number">93</span>     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">takeScreenshot</span><span class="hljs-params">(<span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> screenshotType)</span> </span>{
+ <span class="hljs-number">94</span>         <span class="hljs-keyword">synchronized</span> (mScreenshotLock) {
+ <span class="hljs-number">95</span>             <span class="hljs-keyword">if</span> (mScreenshotConnection != <span class="hljs-keyword">null</span>) {
+ <span class="hljs-number">96</span>                 <span class="hljs-keyword">return</span>;
+ <span class="hljs-number">97</span>             }
+ <span class="hljs-number">98</span>             <span class="hljs-keyword">final</span> ComponentName serviceComponent = <span class="hljs-keyword">new</span> ComponentName(SYSUI_PACKAGE,
+ <span class="hljs-number">99</span>                     SYSUI_SCREENSHOT_SERVICE);  <span class="hljs-comment">//SystemUI&#x4E2D;&#x7684;&#x622A;&#x5C4F;&#x670D;&#x52A1;</span>
+<span class="hljs-number">100</span>             <span class="hljs-keyword">final</span> Intent serviceIntent = <span class="hljs-keyword">new</span> Intent();
+<span class="hljs-number">101</span>             serviceIntent.setComponent(serviceComponent);
+<span class="hljs-number">102</span>             ServiceConnection conn = <span class="hljs-keyword">new</span> ServiceConnection() {
+<span class="hljs-number">103</span>                 <span class="hljs-meta">@Override</span>
+<span class="hljs-number">104</span>                 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onServiceConnected</span><span class="hljs-params">(ComponentName name, IBinder service)</span> </span>{
+<span class="hljs-number">105</span>                     <span class="hljs-keyword">synchronized</span> (mScreenshotLock) {
+<span class="hljs-number">106</span>                         <span class="hljs-keyword">if</span> (mScreenshotConnection != <span class="hljs-keyword">this</span>) {
+<span class="hljs-number">107</span>                             <span class="hljs-keyword">return</span>;
+<span class="hljs-number">108</span>                         }
+<span class="hljs-number">109</span>                         Messenger messenger = <span class="hljs-keyword">new</span> Messenger(service);
+<span class="hljs-number">110</span>                         Message msg = Message.obtain(<span class="hljs-keyword">null</span>, screenshotType);
+<span class="hljs-number">111</span>                         <span class="hljs-keyword">final</span> ServiceConnection myConn = <span class="hljs-keyword">this</span>;
+<span class="hljs-number">112</span>                         Handler h = <span class="hljs-keyword">new</span> Handler(mHandler.getLooper()) {
+<span class="hljs-number">113</span>                             <span class="hljs-meta">@Override</span>
+<span class="hljs-number">114</span>                             <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleMessage</span><span class="hljs-params">(Message msg)</span> </span>{
+<span class="hljs-number">115</span>                                 <span class="hljs-keyword">synchronized</span> (mScreenshotLock) {
+<span class="hljs-number">116</span>                                     <span class="hljs-keyword">if</span> (mScreenshotConnection == myConn) {
+<span class="hljs-number">117</span>                                         mContext.unbindService(mScreenshotConnection);
+<span class="hljs-number">118</span>                                         mScreenshotConnection = <span class="hljs-keyword">null</span>;
+<span class="hljs-number">119</span>                                         mHandler.removeCallbacks(mScreenshotTimeout);
+<span class="hljs-number">120</span>                                     }
+<span class="hljs-number">121</span>                                 }
+<span class="hljs-number">122</span>                             }
+<span class="hljs-number">123</span>                         };
+<span class="hljs-number">124</span>                         msg.replyTo = <span class="hljs-keyword">new</span> Messenger(h);
+<span class="hljs-number">125</span>                         msg.arg1 = msg.arg2 = <span class="hljs-number">0</span>;
+<span class="hljs-number">126</span>                         <span class="hljs-keyword">if</span> (mStatusBar != <span class="hljs-keyword">null</span> &amp;&amp; mStatusBar.isVisibleLw())
+<span class="hljs-number">127</span>                             msg.arg1 = <span class="hljs-number">1</span>;
+<span class="hljs-number">128</span>                         <span class="hljs-keyword">if</span> (mNavigationBar != <span class="hljs-keyword">null</span> &amp;&amp; mNavigationBar.isVisibleLw())
+<span class="hljs-number">129</span>                             msg.arg2 = <span class="hljs-number">1</span>;
+<span class="hljs-number">130</span>                         <span class="hljs-keyword">try</span> {
+<span class="hljs-number">131</span>                             messenger.send(msg);
+<span class="hljs-number">132</span>                         } <span class="hljs-keyword">catch</span> (RemoteException e) {
+<span class="hljs-number">133</span>                         }
+<span class="hljs-number">134</span>                     }
+<span class="hljs-number">135</span>                 }
+<span class="hljs-number">136</span> 
+<span class="hljs-number">137</span>                 <span class="hljs-meta">@Override</span>
+<span class="hljs-number">138</span>                 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onServiceDisconnected</span><span class="hljs-params">(ComponentName name)</span> </span>{
+<span class="hljs-number">139</span>                     <span class="hljs-keyword">synchronized</span> (mScreenshotLock) {
+<span class="hljs-number">140</span>                         <span class="hljs-keyword">if</span> (mScreenshotConnection != <span class="hljs-keyword">null</span>) {
+<span class="hljs-number">141</span>                             mContext.unbindService(mScreenshotConnection);
+<span class="hljs-number">142</span>                             mScreenshotConnection = <span class="hljs-keyword">null</span>;
+<span class="hljs-number">143</span>                             mHandler.removeCallbacks(mScreenshotTimeout);
+<span class="hljs-number">144</span>                             notifyScreenshotError();
+<span class="hljs-number">145</span>                         }
+<span class="hljs-number">146</span>                     }
+<span class="hljs-number">147</span>                 }
+<span class="hljs-number">148</span>             };
+<span class="hljs-number">149</span>             <span class="hljs-keyword">if</span> (mContext.bindServiceAsUser(serviceIntent, conn,
+<span class="hljs-number">150</span>                     Context.BIND_AUTO_CREATE | Context.BIND_FOREGROUND_SERVICE_WHILE_AWAKE,
+<span class="hljs-number">151</span>                     UserHandle.CURRENT)) {
+<span class="hljs-number">152</span>                 mScreenshotConnection = conn;
+<span class="hljs-number">153</span>                 mHandler.postDelayed(mScreenshotTimeout, <span class="hljs-number">10000</span>);
+<span class="hljs-number">154</span>             }
+<span class="hljs-number">155</span>         }
+<span class="hljs-number">156</span>     }
+</code></pre>
+<p>&#x7ED3;&#x5408;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x6982;&#x62EC;&#x6D41;&#x7A0B;&#x4E3A;&#xFF1A;</p>
+<p>interceptScreenshotChord()&#xFF1A;-----&gt;&#x542F;&#x52A8;&#x7EBF;&#x7A0B;ScreenshotRunnable----&gt;takeScreenshot()----&#x53EF;&#x770B;&#x51FA;&#x771F;&#x6B63;&#x7684;&#x622A;&#x56FE;&#x64CD;&#x4F5C;&#x662F;&#x5728;SystemUI&#x4E2D;&#x3002;</p>
+<footer class="page-footer"><span class="copyright">No Copyright all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">modified time:
+2024-12-31 05:21:51
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Android结构.html" class="navigation navigation-prev " aria-label="Previous page: Android结构">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="PhoneWindowManager.html" class="navigation navigation-next " aria-label="Next page: Phonewindowmanager">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Phonewindowmanager-power键的处理","level":"1.4.3.1.8","depth":4,"next":{"title":"Phonewindowmanager","level":"1.4.3.1.9","depth":4,"path":"04_Android/框架层/4-1.框架层-基础与源码/PhoneWindowManager.md","ref":"04_Android/框架层/4-1.框架层-基础与源码/PhoneWindowManager.md","articles":[]},"previous":{"title":"Android结构","level":"1.4.3.1.7","depth":4,"path":"04_Android/框架层/4-1.框架层-基础与源码/Android结构.md","ref":"04_Android/框架层/4-1.框架层-基础与源码/Android结构.md","articles":[]},"dir":"ltr"},"config":{"plugins":["accordion","search-pro","-search","tbfed-pagefooter"],"root":"/","styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"No Copyright","modify_label":"modified time:","modift_format":"YYYY-MM-DD HH:mm:ss"},"accordion":{},"search-pro":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"theme":"default","author":"Aki","page":{"title":"CS Note"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"authorName":"Aki"},"title":"CS Note","gitbook":"3.2.3"},"file":{"path":"04_Android/框架层/4-1.框架层-基础与源码/PhoneWindowManager-Power键的处理.md","mtime":"2024-12-31T05:21:51.911Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-31T05:22:32.548Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-accordion/accordionSelector.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
