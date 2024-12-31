@@ -1,0 +1,37 @@
+name: Deploy GitBook
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js 12
+        uses: actions/setup-node@v3
+        with:
+          node-version: '12'
+
+      - name: Install Latest graceful-fs
+        run: npm install graceful-fs@4.2.0 -g
+
+      - name: Install GitBook CLI
+        run: npm install gitbook-cli@2.1.2 -g
+
+      - name: Install GitBook
+        run: gitbook install
+
+      - name: Build GitBook
+        run: gitbook build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: ./_book
+          publish_branch: gh-pages 
