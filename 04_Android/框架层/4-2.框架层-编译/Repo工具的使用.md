@@ -3,7 +3,7 @@ Android使用repo来管理多个Git项目。它需要一个manifest XML文件来
 # Manifest
 
 repo manifest XML可以包含下面的元素。
-以如下，manifest片段为例：https://github.com/CyanogenMod/android
+以如下，manifest片段为例：（from https://github.com/CyanogenMod/android/blob/cm-14.1/default.xml)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
